@@ -19,6 +19,10 @@ The backpack is a thing.  Understand "bookbag" or "bag" or "schoolbag" or "schoo
 
 When play begins:
 	now the player is wearing the backpack.
+	
+The school books are things in the backpack.  Understand "schoolbooks" or "text books" or "textbooks" as school books.  The description is "Trigonometry, chemistry, Spanish… your backpack is loaded with heavy textbooks."
+
+The note is a thing in the backpack.  Understand "note from Dad" as note.  The description is "This is the note Dad put on your backpack when he left this morning before you woke up.  It reads:[line break][line break]Hey, sport,[line break]I went down to the coffee shop to get my donut with my Decaf.  I won't see you 'till after school.[line break]-Dad"
 
 The Basement is a room.  "The basement is a dark and dank area.  It is small; the only things here are an old chest and some wooden stairs leading up to [if basement door is unlocked]a locked[otherwise]an unlocked[end if] door.[if the basement door is locked]  You don't know how you managed to lock yourself in when you came down to get your book, but the important thing is the bus leaves in 10 minutes, so you'd better get out of here soon."
 
@@ -51,10 +55,14 @@ Instead of closing the book:
 	say "You close the book.";
 	change the bookiness of the book to bookless.
 	
-[Reading is an action applying to one thing.  Understand "read [something]" as reading.]
-
-[Instead of reading the book:
-	say "To unlock things:[line break]abcde"]
+Alreadyread is a kind of value.  The alreadyreads are readalready and haventread.  Things have alreadyread.  Things are usually haventread.
+	
+Instead of examining the book:
+	if the player is holding the spell book and the book is booky and the book is readalready:
+		say "The book says:[line break][line break]To unlock things:[line break]abcde[line break]";
+	otherwise:
+		say the description of the book;
+		change the book to readalready.
 	
 The flute is a thing in the chest.  Understand "magic flute" as flute.  The description is "The flute is the length of your hand, carved from wood and painted blue.  The underside is engraved with[if we have not examined the spell book]  strange symbols.[otherwise]  letters and symbols similar to those on the book.[end if]  The top has several holes drilled in a line.  The shaft is hollow.[if we have not examined the flute]  Holding it in your hand, you find that you know how to play."
 
@@ -75,6 +83,32 @@ Instead of magicing:
 		if the player is in the basement and the basement door is locked:
 			say "You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.";
 			change the basement door to unlocked.
+			
+Donut is a kind of thing.
+
+Donuting is an action applying to nothing.  Understand "play Decaf" or "play Decaf on flute" as donuting.
+			
+The Living Room is up from the basement door.
+
+The Kitchen is north of the living room.
+
+The Second Floor is up from the Living room.
+
+The Street is east of the living room.
+
+The School Entrance is east of the street.
+
+The Quad is north of the school entrance.
+
+The Computer Lab is west of the quad.
+
+The Science Building is north of the quad.
+
+The Chemistry Lab is up from the science building.
+
+The Gym is east of the quad.
+
+The Dance is east of the gym.
 			
 		
 
