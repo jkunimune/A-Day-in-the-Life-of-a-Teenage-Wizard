@@ -49,6 +49,8 @@ Instead of dusting:
 Bookiness is a kind of value.  The bookinesses are booky and bookless.  Things have bookiness.  Things are usually bookless.
 
 Donutspell is a kind of value.  The donutspells are donutfalse and donuttrue.  Things have donutspell.  Things are usually donutfalse.
+
+Rainspell is a kind of value.  The Rainspells are raintrue and rainfalse.  Things have rainspell.  Things are usually rainfalse.
 		
 The spell book is a thing in the chest.  Understand "spellbook" or "melody" or "brief melody" as the spell book.  The description is "It is a mystic-looking leather-bound hand-sized book.[if the spell book is bookless]The cover is embroidered with strange symbols that you don't understand.[otherwise]It is open.  The pages inside are mostly covered in blank musical staffs, but the first page has a brief melody recorded with a title.[end if]  Somehow, the book seems to eminate pure power.[line break]"
 
@@ -66,6 +68,7 @@ Instead of examining the book:
 	if the player is holding the spell book and the book is booky and the book is readalready:
 		say "The book says:[line break][line break]To unlock things:[line break]cdefg[line break]";
 		if the donutspell of the book is donuttrue, say "[line break]Decaf[line break]";
+		if the rainspell of the book is raintrue, say "[line break]From the hooded man:[line break]cdeee[line break]";
 	otherwise:
 		say the description of the book;
 		change the book to readalready.
@@ -114,9 +117,44 @@ The Street is east of the living room.
 
 The School Entrance is east of the street.
 
-The Quad is north of the school entrance.
+The Quad is north of the school entrance.  "The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  The Math, English, Social Studies, and Language buildings are behind the science building, but you don't have any of those classes today.[if the flute is rainy]  It is raining hard."
 
-The Computer Lab is west of the quad.
+The flowers are things in the quad.  Understand "flower" as flowers.  Understand "rose" or "roses" as flowers.  The description is "These roses have a lovely aroma.  They sure seem romantic.  You could give these to Jane."
+
+The hooded man is a thing in the quad.  Understand "hood" or "cloak" or "hooded cloak" or "cloaked man" or "man in a hooded cloak" or "figure" as hooded man.  The description is "There is a man in a hooded cloak standing about the quad, whistling a strange tune.  The first three notes are similar to your unlocking spell, but then it repeats the last not twice.[line break]You wonder if you should tell security about this guy.[line break]Nah, he doesn't seem to be a threat."
+
+Writeraining is an action applying to nothing.  Understand "write cdeee" or "write cdeee down" or "write cdeee in book" or "write cdeee in the book" or "write cdeee on the book" or "write cdeee on book" or "write cdeee on the spell book" or "write cdeee in the spellbook" or "write cdeee on the spellbook" or "write cdeee on spellbook" or "write cdeee in spellbook" or "write cdeee on spell book" or "write cdeee in spell book" or "record cdeee" or "put cdeee in book" or "put cdeee in the book" or "put cdeee on the book" or "put cdeee on book" or "put cdeee on the spell book" or "put cdeee in the spellbook" or "put cdeee on the spellbook" or "put cdeee on spellbook" or "put cdeee in spellbook" or "put cdeee on spell book" or "put cdeee in spell book" as writeraining.
+
+After writeraining:
+	say "You scribble the word 'cdeee' into your spell book, along with the words 'From the hooded man'.";
+	change the rainspell of the spell book to raintrue.
+			
+Castraining is an action applying to nothing.  Understand "play cdeee" or "play cdeee on flute" as castraining.
+
+Things can be rainy or unrainy.  Things are usually unrainy.
+
+Instead of castraining:
+	say "You play the tune you heard the hooded man whistling on your flute.[if the flute is rainy]  Nothing happens.  The rain will probably stop on it's own.[otherwise]  A sudden downpour comes down, soaking everyone in the quad.";
+	change the flute to rainy.
+
+The Computer Lab is west of the quad.  "The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it."
+
+A thing can be beforecs or aftercs. A thing is usually beforecs.
+
+Before going west:
+	if the player is in the quad:
+		if the flute is beforecs, say "You hurry into the computer lab building just as Computer Science starts.  Your crush, Jane, is here.  You have to remember to ask her to the dance before she leaves class.[line break]'Today, we will be working on our text-based adventure games,' begins the teacher…'[line break][line break]'Remember, games are due next class,' says the teacher as class ends and everyone begins to pack up.  Your heart skips a beat as you realize Jane is leaving, also.  You need to get her to stay a little longer!";
+		if the flute is beforecs, change the flute to aftercs.
+
+The desks are things in the computer lab.  Understand "desk" as desks.  Understand "table" or "tables" as desks.  They are scenery.  They are supporters.  The description is "The desks are made of rectangular pieces of wood, with thin metal legs."
+
+The legs are things in the computer lab.  They are scenery.  The description is "The legs are made of several pieces of metal, and are covered in rust."
+
+The rust is a thing in the computer lab.  It is scenery.
+
+The computers are things on the desks.  They are scenery.  The description is "The computers are fairly new.  They are turned off, but you probably shouldn't turn them on without the teacher here.  They are all Banana brand computers."
+
+Jane is a person in the computer lab.
 
 The Science Building is north of the quad.
 
