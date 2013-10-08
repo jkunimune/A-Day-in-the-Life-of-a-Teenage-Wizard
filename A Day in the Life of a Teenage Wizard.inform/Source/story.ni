@@ -140,8 +140,13 @@ Castraining is an action applying to nothing.  Understand "play cdeee" or "play 
 Things can be rainy or unrainy.  Things are usually unrainy.
 
 Instead of castraining:
-	say "You play the tune you heard the hooded man whistling on your flute.[if the flute is rainy]  Nothing happens.  The rain will probably stop on it's own.[otherwise]  A sudden downpour comes down, soaking everyone in the quad.";
+	say "You play the tune you heard the hooded man whistling on your flute.[if the flute is rainy]  Nothing happens.  The rain will probably stop on it's own.[otherwise]  A sudden downpour comes down, soaking everyone in the quad.[end if][if Jane is in the computer lab and the flute is unrainy][line break]It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.";
 	change the flute to rainy.
+	
+Every turn when a random chance of 1 in 2 succeeds:
+	if the flute is rainy:
+		change the flute to unrainy;
+		say "The rain has stopped.".
 
 The Computer Lab is west of the quad.  "The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it."
 
@@ -162,12 +167,54 @@ The computers are things on the desks.  They are scenery.  The description is "T
 
 Jane is a person in the computer lab.  Understand "Janet" or "girl" or "crush" or "date" as Jane.  The description is "Jane is by far the prettiest girl in school, she gets straight A's, and she has a ton of friends.  She's way out of your league, but that won't stop you from trying."
 
+Bladderstate is a number variable.  The bladderstate is 0.
+
+Decisiveness is a kind of value.  The decisivenesses are decisive and indecisive.  People have decisiveness.  People are usually decisive.
+	
 Instead of talking Jane:
-	if Jane is in the gym, end the game in victory;
+	if Jane is in the dance, end the game in victory;
 	if Jane is in the computer lab:
 		if the flute is unrainy, say "She's leaving in a big hurry.  You need to get her to stop first.";
 		if the flute is rainy:
-			say "You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  Nice timing, bladder!  It's too late now.  Jane is already turning around.  You'll just have to hold it.[line break][line break]'Hi, Jane,' you mutter nervously.  'Crazy weather, huh?'[line break]'Yeah, it sure is.  Almost magical,' she replies."
+			change bladderstate to 1;
+			say "You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  You've got to be joking!  It's too late now.  Jane is already turning around.  You'll just have to hold it.[line break][line break]'Hi, Jane,' you mutter nervously.  'Crazy weather, huh?'[line break]'Yeah, it sure is.  Almost magical,' she replies.  'Don't you just love the rain?'";
+			if player consents:
+				say "'It's amazing if you think about it,' she continues, 'Tons and tons of liquid water rushing down from the sky and flowing down rivers.'[line break][line break]Her words painfully remind you that you have to pee.[line break][line break]";
+				increase bladderstate by 1;
+			say "'Well, anyway,' you stammer, 'I was just… I wanted to…'[line break]You can't quite remember your train of thought.  This isn't good.  You're looking bad in front of Jane.  You start sweating violently.  Also not good.[line break]'Is is hot in here, or is it just me?' you ask.[line break]'I have some water, if you want,' offers Jane.";
+			if player consents:
+				say "She pulls a water bottle out of her backpack and hands it to you.  You waterfall a sizable gulp, into your mouth, much to your bladder's protest.[line break]";
+				increase bladderstate by 1;
+			otherwise:
+				say "'No thank you,' you say.";
+			say "'So, there's the dance tonight…' you begin uneasily.[line break]'Oh, yeah!' Jane says, 'Did you know the theme is underwater?";
+			if player consents:
+				say "'Seems a little cliché to me,' she adds.";
+			otherwise:
+				say "'I heard they're going to have fish tanks and water sound effects and waterfalls,' she explains.[line break][line break]Waterfalls are not fun to think about when you have to pee.[line break][line break]";
+				increase bladderstate by 1;
+			say "'Do you have a date for that?' you inquire abruptly.[line break]'Not yet,' answers Jane, 'If I don't get one soon, I'll probably just skip the dance and go whitewater rafting.  Have you ever been whitewater rafting?'";
+			if player consents:
+				say "'Pretty fun, huh?' says Jane.";
+			otherwise:
+				say "'It's where you ride down choppy rivers in a raft,' Jane elaborates, 'The best part of it, I think, is just the gurgling, rushing, splashing sound the water makes.'[line break][line break]All those sound effects make you think of is the flushing of a toilet.[line break][line break]";
+				increase bladderstate by 1;
+			say "'Yeah… so, do you want to come to the dance with me?' you blurt out.[line break]'Oh.  Really?  Well…'[line break][line break]She's indecisive!  You should give her something to tip the scales.";
+			change Jane to indecisive.
+
+Instead of giving the flowers to Jane:
+	if Jane is decisive:
+		say "Shouldn't you talk to her first?";
+	otherwise:
+		say "'Wow, thanks!' Jane exclaims.  'That's so sweet.  You know what?  I will go to the dance with you.'[line break]She turns and walks out into the rain, and then sprints off towards the Math building.  Mission accompished: you have the perfect date to the dance.";
+		remove the flowers from play;
+		change the decisiveness of Jane to decisive;
+		move Jane to the dance.
+		
+Before going east:
+	if the player is in the computer lab and Jane is indecisive:
+		say "You bailed on Jane before she could make a decision!  She probably thinks you're a jerk now.  Nice going, you horrible person.";
+		end the story saying "You have lost.".
 
 The Science Building is north of the quad.
 
