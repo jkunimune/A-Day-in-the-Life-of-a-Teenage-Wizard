@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x6c634b0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x6cccdf0" />
+  <activeNode nodeId="node-0x1841b00" />
   <item nodeId="node-0x6c634b0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -22,7 +22,7 @@ You can see a chest (closed) here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">NO</temporary>
+    <temporary score="260">NO</temporary>
     <children>
       <child nodeId="node-0x6c63840" />
       <child nodeId="node-0x6c63550" />
@@ -646,7 +646,7 @@ A donut appears in your hand!
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x6c644b0" />
       <child nodeId="node-0x6c64990" />
@@ -938,7 +938,7 @@ A donut appears in your hand!
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x6c65410" />
       <child nodeId="node-0x6c64520" />
@@ -1180,7 +1180,7 @@ abcde
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x6c63200" />
       <child nodeId="node-0x6c65480" />
@@ -1281,7 +1281,7 @@ You hear a click from just above you.  Looking up, you see that the basement doo
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x7391e40" />
     </children>
@@ -1295,7 +1295,7 @@ Living Room
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x6c31710" />
     </children>
@@ -1308,7 +1308,7 @@ Street
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x1b269c0" />
     </children>
@@ -1321,7 +1321,7 @@ School Entrance
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0xb9baca0" />
     </children>
@@ -1336,8 +1336,8 @@ You can see a flowers and a hooded man here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="140">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x6cdbe40" />
     </children>
@@ -1352,10 +1352,12 @@ You can see a flowers and a hooded man here.
 Computer Lab
 The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
 
+You can see Jane here.
+
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x6cb2770" />
     </children>
@@ -1367,7 +1369,7 @@ The computer lab is a small, square-shaped room with rows of desks facing the no
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0xb9ac870" />
     </children>
@@ -1379,7 +1381,7 @@ The computer lab is a small, square-shaped room with rows of desks facing the no
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x1b21f50" />
     </children>
@@ -1391,7 +1393,7 @@ The computer lab is a small, square-shaped room with rows of desks facing the no
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0xb9cb750" />
     </children>
@@ -1403,7 +1405,7 @@ The computer lab is a small, square-shaped room with rows of desks facing the no
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x1bbb7f0" />
     </children>
@@ -1418,8 +1420,8 @@ You can see a flowers and a hooded man here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="140">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0xb904270" />
     </children>
@@ -1433,7 +1435,7 @@ Nah, he doesn&apos;t seem to be a threat.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0xe9544d0" />
     </children>
@@ -1445,7 +1447,7 @@ Nah, he doesn&apos;t seem to be a threat.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0xb8f9bd0" />
     </children>
@@ -1457,7 +1459,7 @@ Nah, he doesn&apos;t seem to be a threat.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x6c3f880" />
     </children>
@@ -1469,7 +1471,7 @@ Nah, he doesn&apos;t seem to be a threat.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0xf857700" />
     </children>
@@ -1481,7 +1483,7 @@ Nah, he doesn&apos;t seem to be a threat.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x181a770" />
     </children>
@@ -1494,7 +1496,7 @@ Nah, he doesn&apos;t seem to be a threat.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0xf863de0" />
     </children>
@@ -1506,7 +1508,7 @@ Nah, he doesn&apos;t seem to be a threat.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0xf8dfee0" />
     </children>
@@ -1518,7 +1520,7 @@ Nah, he doesn&apos;t seem to be a threat.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0xe977180" />
     </children>
@@ -1530,7 +1532,7 @@ Nah, he doesn&apos;t seem to be a threat.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0xb98ddd0" />
     </children>
@@ -1550,7 +1552,7 @@ cdeee
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0xe96a110" />
     </children>
@@ -1563,7 +1565,7 @@ cdeee
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="140">YES</temporary>
+    <temporary score="260">YES</temporary>
     <children>
       <child nodeId="node-0x6cccdf0" />
     </children>
@@ -1577,8 +1579,75 @@ You can see a hooded man here.
 
 &gt;</result>
     <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="260">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ba5ca0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ba5ca0">
+    <command xml:space="preserve">talk to hooded man</command>
+    <result xml:space="preserve">You try to get the attention of the hooded man.  He ignores you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="260">YES</temporary>
+    <children>
+      <child nodeId="node-0xb905b70" />
+    </children>
+  </item>
+  <item nodeId="node-0xb905b70">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Computer Lab
+The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
+
+You can see Jane here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="260">YES</temporary>
+    <children>
+      <child nodeId="node-0xb9ec6b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb9ec6b0">
+    <command xml:space="preserve">talk to jane</command>
+    <result xml:space="preserve">You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  Nice timing, bladder!  It&apos;s too late now.  Jane is already turning around.  You&apos;ll just have to hold it.
+
+&quot;Hi, Jane,&quot; you mutter nervously.  &quot;Crazy weather, huh?&quot;
+&quot;Yeah, it sure is.  Almost magical,&quot; she replies.
+
+&gt;</result>
+    <played>YES</played>
     <changed>YES</changed>
-    <temporary score="139">YES</temporary>
+    <temporary score="260">YES</temporary>
+    <children>
+      <child nodeId="node-0xb8d7630" />
+    </children>
+  </item>
+  <item nodeId="node-0xb8d7630">
+    <command xml:space="preserve">talk to computers</command>
+    <result xml:space="preserve">You strike up a conversation with the computers.  Weirdo.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="260">YES</temporary>
+    <children>
+      <child nodeId="node-0x1841b00" />
+    </children>
+  </item>
+  <item nodeId="node-0x1841b00">
+    <command xml:space="preserve">x me</command>
+    <result xml:space="preserve">You are a sixteen-year-old with dark hair and dark eyes.  You have a heavy-looking backpack on your back.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="259">YES</temporary>
   </item>
   <item nodeId="node-0x6c65b10">
     <command xml:space="preserve">x basement door</command>

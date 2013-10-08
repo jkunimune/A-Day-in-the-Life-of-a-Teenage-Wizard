@@ -123,6 +123,12 @@ The flowers are things in the quad.  Understand "flower" as flowers.  Understand
 
 The hooded man is a thing in the quad.  Understand "hood" or "cloak" or "hooded cloak" or "cloaked man" or "man in a hooded cloak" or "figure" as hooded man.  The description is "There is a man in a hooded cloak standing about the quad, whistling a strange tune.  The first three notes are similar to your unlocking spell, but then it repeats the last not twice.[line break]You wonder if you should tell security about this guy.[line break]Nah, he doesn't seem to be a threat."
 
+Talking is an action applying to one thing.  Understand "talk to [something]" as talking.
+
+Instead of talking:
+	if the noun is not the hooded man and the noun is not Jane, say "You strike up a conversation with the [noun].  Weirdo.";
+	if the noun is the hooded man, say "You try to get the attention of the hooded man.  He ignores you.".
+
 Writeraining is an action applying to nothing.  Understand "write cdeee" or "write cdeee down" or "write cdeee in book" or "write cdeee in the book" or "write cdeee on the book" or "write cdeee on book" or "write cdeee on the spell book" or "write cdeee in the spellbook" or "write cdeee on the spellbook" or "write cdeee on spellbook" or "write cdeee in spellbook" or "write cdeee on spell book" or "write cdeee in spell book" or "record cdeee" or "put cdeee in book" or "put cdeee in the book" or "put cdeee on the book" or "put cdeee on book" or "put cdeee on the spell book" or "put cdeee in the spellbook" or "put cdeee on the spellbook" or "put cdeee on spellbook" or "put cdeee in spellbook" or "put cdeee on spell book" or "put cdeee in spell book" as writeraining.
 
 After writeraining:
@@ -154,7 +160,14 @@ The rust is a thing in the computer lab.  It is scenery.
 
 The computers are things on the desks.  They are scenery.  The description is "The computers are fairly new.  They are turned off, but you probably shouldn't turn them on without the teacher here.  They are all Banana brand computers."
 
-Jane is a person in the computer lab.
+Jane is a person in the computer lab.  Understand "Janet" or "girl" or "crush" or "date" as Jane.  The description is "Jane is by far the prettiest girl in school, she gets straight A's, and she has a ton of friends.  She's way out of your league, but that won't stop you from trying."
+
+Instead of talking Jane:
+	if Jane is in the gym, end the game in victory;
+	if Jane is in the computer lab:
+		if the flute is unrainy, say "She's leaving in a big hurry.  You need to get her to stop first.";
+		if the flute is rainy:
+			say "You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  Nice timing, bladder!  It's too late now.  Jane is already turning around.  You'll just have to hold it.[line break][line break]'Hi, Jane,' you mutter nervously.  'Crazy weather, huh?'[line break]'Yeah, it sure is.  Almost magical,' she replies."
 
 The Science Building is north of the quad.
 
