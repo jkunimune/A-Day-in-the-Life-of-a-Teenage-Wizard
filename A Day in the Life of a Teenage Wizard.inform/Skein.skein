@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x189da70" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x1bd1950" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1becc60" />
-  <item nodeId="node-0x189da70">
+  <activeNode nodeId="node-0xc0b3570" />
+  <item nodeId="node-0x1bd1950">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -12,7 +12,7 @@ You&apos;re practically ripping out your hair from stress.  Today is the date of
 
 A Day in the Life of a Teenage Wizard
 Ordinary Problems, Magical Solutions by Justin Kunimune
-Release 1 / Serial number 131007 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 131008 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Basement
 The basement is a dark and dank area.  It is small; the only things here are an old chest and some wooden stairs leading up to an unlocked door.  You don&apos;t know how you managed to lock yourself in when you came down to get your book, but the important thing is the bus leaves in 10 minutes, so you&apos;d better get out of here soon.
@@ -22,20 +22,206 @@ You can see a chest (closed) here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="60">NO</temporary>
+    <temporary score="125">NO</temporary>
     <children>
-      <child nodeId="node-0x6c9cf10" />
-      <child nodeId="node-0x6c997e0" />
-      <child nodeId="node-0x6c9cdc0" />
-      <child nodeId="node-0x6c9a350" />
-      <child nodeId="node-0x6c99fd0" />
-      <child nodeId="node-0x6c998c0" />
-      <child nodeId="node-0x6c995b0" />
-      <child nodeId="node-0x6c9da70" />
-      <child nodeId="node-0x6c990b0" />
+      <child nodeId="node-0x6c74010" />
+      <child nodeId="node-0x6c765c0" />
+      <child nodeId="node-0x6c74480" />
+      <child nodeId="node-0x1bd19c0" />
+      <child nodeId="node-0x6c73f30" />
+      <child nodeId="node-0x6c738e0" />
     </children>
   </item>
-  <item nodeId="node-0x6c990b0">
+  <item nodeId="node-0x6c738e0">
+    <command xml:space="preserve">play</command>
+    <result xml:space="preserve">(the backpack)
+That&apos;s not something you can play.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x1bd1c40" />
+    </children>
+  </item>
+  <item nodeId="node-0x1bd1c40">
+    <command xml:space="preserve">open chest</command>
+    <result xml:space="preserve">You open the chest, revealing a spell book and a flute.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73950" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73950">
+    <command xml:space="preserve">play</command>
+    <result xml:space="preserve">(the backpack)
+That&apos;s not something you can play.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c739c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c739c0">
+    <command xml:space="preserve">take flute</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73a30" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73a30">
+    <command xml:space="preserve">take pack</command>
+    <result xml:space="preserve">You already have that.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73aa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73aa0">
+    <command xml:space="preserve">wear flute</command>
+    <result xml:space="preserve">You can&apos;t wear that!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73b10" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73b10">
+    <command xml:space="preserve">drop flute</command>
+    <result xml:space="preserve">Dropped.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73b80" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73b80">
+    <command xml:space="preserve">play</command>
+    <result xml:space="preserve">(the backpack)
+That&apos;s not something you can play.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73820" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73820">
+    <command xml:space="preserve">take flue</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73870" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73870">
+    <command xml:space="preserve">take flute</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73d70" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73d70">
+    <command xml:space="preserve">play</command>
+    <result xml:space="preserve">What do you want to play?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73de0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73de0">
+    <command xml:space="preserve">play flute</command>
+    <result xml:space="preserve">You play a charming melody on your flute.  The flute grows warm and seems to vibrate with energy--an energy almost magical.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73e50" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73e50">
+    <command xml:space="preserve">play</command>
+    <result xml:space="preserve">What do you want to play?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73ec0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73ec0">
+    <command xml:space="preserve">x flute</command>
+    <result xml:space="preserve">The flute is the length of your hand, carved from wood and painted blue.  The underside is engraved with  strange symbolsThe top has several holes drilled in a line.  The shaft is hollow.  Holding it in your hand, you find that you know how to play.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="31">YES</temporary>
+  </item>
+  <item nodeId="node-0x6c73f30">
+    <command xml:space="preserve">dust chest</command>
+    <result xml:space="preserve">You achieve nothing by this.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="25">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73fa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73fa0">
+    <command xml:space="preserve">brush the dsut off of the chest</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="24">YES</temporary>
+  </item>
+  <item nodeId="node-0x1bd19c0">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -44,10 +230,10 @@ You can see a chest (closed) here.
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x6c98da0" />
+      <child nodeId="node-0x1bd1a10" />
     </children>
   </item>
-  <item nodeId="node-0x6c98da0">
+  <item nodeId="node-0x1bd1a10">
     <command xml:space="preserve">open chest</command>
     <result xml:space="preserve">You open the chest, revealing a spell book and a flute.
 
@@ -56,10 +242,10 @@ You can see a chest (closed) here.
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x6c99120" />
+      <child nodeId="node-0x1bd1a60" />
     </children>
   </item>
-  <item nodeId="node-0x6c99120">
+  <item nodeId="node-0x1bd1a60">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -68,10 +254,10 @@ You can see a chest (closed) here.
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x6c99190" />
+      <child nodeId="node-0x1bd1ad0" />
     </children>
   </item>
-  <item nodeId="node-0x6c99190">
+  <item nodeId="node-0x1bd1ad0">
     <command xml:space="preserve">x book</command>
     <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
 &gt;</result>
@@ -79,10 +265,10 @@ You can see a chest (closed) here.
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x6c99200" />
+      <child nodeId="node-0x1bd1b40" />
     </children>
   </item>
-  <item nodeId="node-0x6c99200">
+  <item nodeId="node-0x1bd1b40">
     <command xml:space="preserve">x book</command>
     <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
 &gt;</result>
@@ -90,10 +276,10 @@ You can see a chest (closed) here.
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x6c99270" />
+      <child nodeId="node-0x1bd1bb0" />
     </children>
   </item>
-  <item nodeId="node-0x6c99270">
+  <item nodeId="node-0x1bd1bb0">
     <command xml:space="preserve">open book</command>
     <result xml:space="preserve">You open the book.
 
@@ -102,10 +288,10 @@ You can see a chest (closed) here.
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x6c992e0" />
+      <child nodeId="node-0x1bd1ca0" />
     </children>
   </item>
-  <item nodeId="node-0x6c992e0">
+  <item nodeId="node-0x1bd1ca0">
     <command xml:space="preserve">x book</command>
     <result xml:space="preserve">The book says:
 
@@ -117,10 +303,10 @@ abcde
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x6c99350" />
+      <child nodeId="node-0x1bd1cf0" />
     </children>
   </item>
-  <item nodeId="node-0x6c99350">
+  <item nodeId="node-0x1bd1cf0">
     <command xml:space="preserve">take flute</command>
     <result xml:space="preserve">Taken.
 
@@ -129,10 +315,10 @@ abcde
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x6c98ff0" />
+      <child nodeId="node-0x1bd1d40" />
     </children>
   </item>
-  <item nodeId="node-0x6c98ff0">
+  <item nodeId="node-0x1bd1d40">
     <command xml:space="preserve">play abcde</command>
     <result xml:space="preserve">You play a simple scale on your flute.
 You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.
@@ -142,10 +328,10 @@ You hear a click from just above you.  Looking up, you see that the basement doo
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x6c99040" />
+      <child nodeId="node-0x1bd1db0" />
     </children>
   </item>
-  <item nodeId="node-0x6c99040">
+  <item nodeId="node-0x1bd1db0">
     <command xml:space="preserve">play abcde</command>
     <result xml:space="preserve">You play a simple scale on your flute.
 
@@ -154,10 +340,10 @@ You hear a click from just above you.  Looking up, you see that the basement doo
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x6c99540" />
+      <child nodeId="node-0x1bd1e20" />
     </children>
   </item>
-  <item nodeId="node-0x6c99540">
+  <item nodeId="node-0x1bd1e20">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">(first opening the basement door)
 You can&apos;t, since the basement door leads nowhere.
@@ -167,449 +353,22 @@ You can&apos;t, since the basement door leads nowhere.
     <changed>YES</changed>
     <temporary score="198">YES</temporary>
   </item>
-  <item nodeId="node-0x6c9da70">
-    <command xml:space="preserve">x chest</command>
-    <result xml:space="preserve">The chest is incredibly old-looking.  You can&apos;t make out any details under the thick layer of dust sitting on it.  It appears as though it hasn&apos;t been touched for years.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="17">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9dae0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9dae0">
-    <command xml:space="preserve">open chest</command>
-    <result xml:space="preserve">You open the chest, revealing a spell book.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="17">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9db50" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9db50">
-    <command xml:space="preserve">x chest</command>
-    <result xml:space="preserve">The chest is incredibly old-looking.  You can&apos;t make out any details under the thick layer of dust sitting on it.  It appears as though it hasn&apos;t been touched for years.
-
-In the chest is a spell book.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="17">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9dbc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9dbc0">
-    <command xml:space="preserve">take book</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="17">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9dc30" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9dc30">
-    <command xml:space="preserve">x book</command>
-    <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="17">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9dca0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9dca0">
-    <command xml:space="preserve">open book</command>
-    <result xml:space="preserve">You open the book.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="17">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9dd10" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9dd10">
-    <command xml:space="preserve">x book</command>
-    <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.It is open.  The pages inside are mostly covered in blank musical staffs, but the first page has a brief melody recorded.  Somehow, the book seems to eminate pure power.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="17">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9dd80" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9dd80">
-    <command xml:space="preserve">read book</command>
-    <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.It is open.  The pages inside are mostly covered in blank musical staffs, but the first page has a brief melody recorded.  Somehow, the book seems to eminate pure power.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="17">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9ddf0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9ddf0">
-    <command xml:space="preserve">write me in book</command>
-    <result xml:space="preserve">&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="16">YES</temporary>
-  </item>
-  <item nodeId="node-0x6c995b0">
-    <command xml:space="preserve">x me</command>
-    <result xml:space="preserve">You are a sixteen-year-old with dark hair and dark eyes.  You have a heavy-looking backpack on your back.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="18">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99620" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99620">
-    <command xml:space="preserve">x backpack</command>
-    <result xml:space="preserve">Your backpack is black and weighed down with all of your school books.  Your shoulders ache from wearing it.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="18">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99690" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99690">
-    <command xml:space="preserve">x chest</command>
-    <result xml:space="preserve">The chest is incredibly old-looking.  You can&apos;t make out any details under the thick layer of dust sitting on it.  It appears as though it hasn&apos;t been touched for years.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="18">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99700" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99700">
-    <command xml:space="preserve">dust chest</command>
-    <result xml:space="preserve">You achieve nothing by this.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="18">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99770" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99770">
-    <command xml:space="preserve">dust the chest</command>
-    <result xml:space="preserve">You achieve nothing by this.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="17">YES</temporary>
-  </item>
-  <item nodeId="node-0x6c998c0">
-    <command xml:space="preserve">play</command>
-    <result xml:space="preserve">(the backpack)
-That&apos;s not something you can play.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99930" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99930">
-    <command xml:space="preserve">open chest</command>
-    <result xml:space="preserve">You open the chest, revealing a spell book and a flute.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c999a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c999a0">
-    <command xml:space="preserve">play</command>
-    <result xml:space="preserve">(the backpack)
-That&apos;s not something you can play.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c993c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c993c0">
-    <command xml:space="preserve">take flute</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99430" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99430">
-    <command xml:space="preserve">take pack</command>
-    <result xml:space="preserve">You already have that.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c994a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c994a0">
-    <command xml:space="preserve">wear flute</command>
-    <result xml:space="preserve">You can&apos;t wear that!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99c50" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99c50">
-    <command xml:space="preserve">drop flute</command>
-    <result xml:space="preserve">Dropped.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99cc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99cc0">
-    <command xml:space="preserve">play</command>
-    <result xml:space="preserve">(the backpack)
-That&apos;s not something you can play.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99d30" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99d30">
-    <command xml:space="preserve">take flue</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99da0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99da0">
-    <command xml:space="preserve">take flute</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99e10" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99e10">
-    <command xml:space="preserve">play</command>
-    <result xml:space="preserve">What do you want to play?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99e80" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99e80">
-    <command xml:space="preserve">play flute</command>
-    <result xml:space="preserve">You play a charming melody on your flute.  The flute grows warm and seems to vibrate with energy--an energy almost magical.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99ef0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99ef0">
-    <command xml:space="preserve">play</command>
-    <result xml:space="preserve">What do you want to play?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99f60" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99f60">
-    <command xml:space="preserve">x flute</command>
-    <result xml:space="preserve">The flute is the length of your hand, carved from wood and painted blue.  The underside is engraved with  strange symbolsThe top has several holes drilled in a line.  The shaft is hollow.  Holding it in your hand, you find that you know how to play.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="31">YES</temporary>
-  </item>
-  <item nodeId="node-0x6c99fd0">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You&apos;re carrying nothing.  You are wearing a backpack.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="99">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9a040" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9a040">
+  <item nodeId="node-0x6c74480">
     <command xml:space="preserve">open chest</command>
     <result xml:space="preserve">You open the chest, revealing a spell book and a flute.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="99">YES</temporary>
+    <temporary score="125">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9a0b0" />
+      <child nodeId="node-0x6c74a30" />
+      <child nodeId="node-0x1bef590" />
+      <child nodeId="node-0x6c746b0" />
+      <child nodeId="node-0x6c744f0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9a0b0">
-    <command xml:space="preserve">take flute</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="99">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9a120" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9a120">
-    <command xml:space="preserve">take book</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="99">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9a190" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9a190">
-    <command xml:space="preserve">play Decaf</command>
-    <result xml:space="preserve">You play an odd-sounding melody on the flute.
-*Poof!*
-A donut appears in your hand!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="99">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9a200" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9a200">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You&apos;re carrying a spell book and a flute and 1 donut.  You are wearing a backpack.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="99">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9a270" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9a270">
-    <command xml:space="preserve">play Decaf</command>
-    <result xml:space="preserve">You play an odd-sounding melody on the flute.
-*Poof!*
-A donut appears in your hand!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="99">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9a2e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9a2e0">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You&apos;re carrying a spell book and a flute and 2 donuts.  You are wearing a backpack.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="98">YES</temporary>
-  </item>
-  <item nodeId="node-0x6c9a350">
-    <command xml:space="preserve">open chest</command>
-    <result xml:space="preserve">You open the chest, revealing a spell book and a flute.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9b620" />
-      <child nodeId="node-0x6c9a6d0" />
-      <child nodeId="node-0x6c99bd0" />
-      <child nodeId="node-0x6c99a10" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99a10">
+  <item nodeId="node-0x6c744f0">
     <command xml:space="preserve">x book</command>
     <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
 &gt;</result>
@@ -617,10 +376,10 @@ A donut appears in your hand!
     <changed>YES</changed>
     <temporary score="188">YES</temporary>
     <children>
-      <child nodeId="node-0x6c99a80" />
+      <child nodeId="node-0x6c74560" />
     </children>
   </item>
-  <item nodeId="node-0x6c99a80">
+  <item nodeId="node-0x6c74560">
     <command xml:space="preserve">open book</command>
     <result xml:space="preserve">You open the book.
 
@@ -629,10 +388,10 @@ A donut appears in your hand!
     <changed>YES</changed>
     <temporary score="188">YES</temporary>
     <children>
-      <child nodeId="node-0x6c99af0" />
+      <child nodeId="node-0x6c745d0" />
     </children>
   </item>
-  <item nodeId="node-0x6c99af0">
+  <item nodeId="node-0x6c745d0">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -641,10 +400,10 @@ A donut appears in your hand!
     <changed>YES</changed>
     <temporary score="188">YES</temporary>
     <children>
-      <child nodeId="node-0x6c99b60" />
+      <child nodeId="node-0x6c74640" />
     </children>
   </item>
-  <item nodeId="node-0x6c99b60">
+  <item nodeId="node-0x6c74640">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">The book says:
 
@@ -656,7 +415,7 @@ abcde
     <changed>YES</changed>
     <temporary score="187">YES</temporary>
   </item>
-  <item nodeId="node-0x6c99bd0">
+  <item nodeId="node-0x6c746b0">
     <command xml:space="preserve">x flute</command>
     <result xml:space="preserve">The flute is the length of your hand, carved from wood and painted blue.  The underside is engraved with  strange symbols.  The top has several holes drilled in a line.  The shaft is hollow.  Holding it in your hand, you find that you know how to play.
 
@@ -665,10 +424,10 @@ abcde
     <changed>NO</changed>
     <temporary score="67">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9a3c0" />
+      <child nodeId="node-0x6c74720" />
     </children>
   </item>
-  <item nodeId="node-0x6c9a3c0">
+  <item nodeId="node-0x6c74720">
     <command xml:space="preserve">x book</command>
     <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
 
@@ -677,10 +436,10 @@ abcde
     <changed>NO</changed>
     <temporary score="67">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9a430" />
+      <child nodeId="node-0x6c74790" />
     </children>
   </item>
-  <item nodeId="node-0x6c9a430">
+  <item nodeId="node-0x6c74790">
     <command xml:space="preserve">x flute</command>
     <result xml:space="preserve">The flute is the length of your hand, carved from wood and painted blue.  The underside is engraved with  letters and symbols similar to those on the book.  The top has several holes drilled in a line.  The shaft is hollow.
 
@@ -689,10 +448,10 @@ abcde
     <changed>NO</changed>
     <temporary score="67">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9a4a0" />
+      <child nodeId="node-0x6c74800" />
     </children>
   </item>
-  <item nodeId="node-0x6c9a4a0">
+  <item nodeId="node-0x6c74800">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -701,10 +460,10 @@ abcde
     <changed>NO</changed>
     <temporary score="67">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9a510" />
+      <child nodeId="node-0x6c74870" />
     </children>
   </item>
-  <item nodeId="node-0x6c9a510">
+  <item nodeId="node-0x6c74870">
     <command xml:space="preserve">take flute</command>
     <result xml:space="preserve">Taken.
 
@@ -713,10 +472,10 @@ abcde
     <changed>NO</changed>
     <temporary score="67">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9a580" />
+      <child nodeId="node-0x6c748e0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9a580">
+  <item nodeId="node-0x6c748e0">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
 
@@ -725,10 +484,10 @@ abcde
     <changed>NO</changed>
     <temporary score="67">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9a5f0" />
+      <child nodeId="node-0x6c74950" />
     </children>
   </item>
-  <item nodeId="node-0x6c9a5f0">
+  <item nodeId="node-0x6c74950">
     <command xml:space="preserve">read the book</command>
     <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
 
@@ -737,10 +496,10 @@ abcde
     <changed>NO</changed>
     <temporary score="67">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9a660" />
+      <child nodeId="node-0x6c749c0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9a660">
+  <item nodeId="node-0x6c749c0">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
 
@@ -749,794 +508,80 @@ abcde
     <changed>NO</changed>
     <temporary score="66">YES</temporary>
   </item>
-  <item nodeId="node-0x6c9a6d0">
+  <item nodeId="node-0x1bef590">
+    <command xml:space="preserve">take boo</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c80c00" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c80c00">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="60">YES</temporary>
+    <temporary score="125">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b1c0" />
-      <child nodeId="node-0x6c9a740" />
+      <child nodeId="node-0x1834440" />
     </children>
   </item>
-  <item nodeId="node-0x6c9a740">
+  <item nodeId="node-0x1834440">
     <command xml:space="preserve">take flute</command>
     <result xml:space="preserve">Taken.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="60">YES</temporary>
+    <temporary score="125">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9a7b0" />
+      <child nodeId="node-0x6cc6ed0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9a7b0">
-    <command xml:space="preserve">play cdefg</command>
-    <result xml:space="preserve">You play a simple scale on your flute.
-You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.
+  <item nodeId="node-0x6cc6ed0">
+    <command xml:space="preserve">read book</command>
+    <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="60">YES</temporary>
+    <temporary score="125">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9a820" />
+      <child nodeId="node-0x1bc3090" />
     </children>
   </item>
-  <item nodeId="node-0x6c9a820">
-    <command xml:space="preserve">u</command>
-    <result xml:space="preserve">(first opening the basement door)
-
-Living Room
+  <item nodeId="node-0x1bc3090">
+    <command xml:space="preserve">read book</command>
+    <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
+You should open the book if you want to read it.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="60">YES</temporary>
+    <temporary score="125">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9a890" />
+      <child nodeId="node-0x7079730" />
     </children>
   </item>
-  <item nodeId="node-0x6c9a890">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Street
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9a900" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9a900">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-School Entrance
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9a970" />
-      <child nodeId="node-0x6c68a60" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c68a60">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c66040" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c66040">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Quad
-The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  The Math, English, Social Studies, and Language buildings are behind the science building, but you don&apos;t have any of those classes today.
-
-You can see a flowers and a hooded man here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0xf154210" />
-    </children>
-  </item>
-  <item nodeId="node-0xf154210">
-    <command xml:space="preserve">x man</command>
-    <result xml:space="preserve">There is a man in a hooded cloak standing about the quad, whistling a strange tune.  The first three notes are similar to your unlocking spell, but then it repeats the last not twice.
-You wonder if you should tell security about this guy.
-Nah, he doesn&apos;t seem to be a threat.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x70c6be0" />
-    </children>
-  </item>
-  <item nodeId="node-0x70c6be0">
-    <command xml:space="preserve">take flowers</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x70da670" />
-    </children>
-  </item>
-  <item nodeId="node-0x70da670">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">You hurry into the computer lab building just as Computer Science starts.  Your crush, Jane, is here.  You have to remember to ask her to the dance before she leaves class.
-&quot;Today, we will be working on our text-based adventure games,&quot; begins the teacher…&quot;
-
-&quot;Remember, games are due next class,&quot; says the teacher as class ends and everyone begins to pack up.  Your heart skips a beat as you realize Jane is leaving, also.  You need to get her to stay a little longer!
-
-Computer Lab
-The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
-
-You can see Jane here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0xbe07d60" />
-    </children>
-  </item>
-  <item nodeId="node-0xbe07d60">
-    <command xml:space="preserve">talk to jane</command>
-    <result xml:space="preserve">She&apos;s leaving in a big hurry.  You need to get her to stop first.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c2c500" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c2c500">
-    <command xml:space="preserve">play cdeee</command>
-    <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
-  A sudden downpour comes down, soaking everyone in the quad.
-
-It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x7525330" />
-    </children>
-  </item>
-  <item nodeId="node-0x7525330">
-    <command xml:space="preserve">talk to jane</command>
-    <result xml:space="preserve">You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  You&apos;ve got to be joking!  It&apos;s too late now.  Jane is already turning around.  You&apos;ll just have to hold it.
-
-&quot;Hi, Jane,&quot; you mutter nervously.  &quot;Crazy weather, huh?&quot;
-&quot;Yeah, it sure is.  Almost magical,&quot; she replies.  &quot;Don&apos;t you just love the rain?&quot;
-</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b9bb80" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b9bb80">
-    <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">&quot;It&apos;s amazing if you think about it,&quot; she continues, &quot;Tons and tons of liquid water rushing down from the sky and flowing down rivers.&quot;
-
-Her words painfully remind you that you have to pee.
-
-&quot;Well, anyway,&quot; you stammer, &quot;I was just… I wanted to…&quot;
-You can&apos;t quite remember your train of thought.  This isn&apos;t good.  You&apos;re looking bad in front of Jane.  You start sweating violently.  Also not good.
-&quot;Is is hot in here, or is it just me?&quot; you ask.
-&quot;I have some water, if you want,&quot; offers Jane.
-</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x70285e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x70285e0">
-    <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">She pulls a water bottle out of her backpack and hands it to you.  You waterfall a sizable gulp, into your mouth, much to your bladder&apos;s protest.
-&quot;So, there&apos;s the dance tonight…&quot; you begin uneasily.
-&quot;Oh, yeah!&quot; Jane says, &quot;Did you know the theme is underwater?
-</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x7027950" />
-    </children>
-  </item>
-  <item nodeId="node-0x7027950">
-    <command xml:space="preserve">no</command>
-    <result xml:space="preserve">&quot;I heard they&apos;re going to have fish tanks and water sound effects and waterfalls,&quot; she explains.
-
-Waterfalls are not fun to think about when you have to pee.
-
-&quot;Do you have a date for that?&quot; you inquire abruptly.
-&quot;Not yet,&quot; answers Jane, &quot;If I don&apos;t get one soon, I&apos;ll probably just skip the dance and go whitewater rafting.  Have you ever been whitewater rafting?&quot;
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b0f190" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b0f190">
-    <command xml:space="preserve">no</command>
-    <result xml:space="preserve">&quot;It&apos;s where you ride down choppy rivers in a raft,&quot; Jane elaborates, &quot;The best part of it, I think, is just the gurgling, rushing, splashing sound the water makes.&quot;
-
-All those sound effects make you think of is the flushing of a toilet.
-
-&quot;Yeah… so, do you want to come to the dance with me?&quot; you blurt out.
-&quot;Oh.  Really?  Well…&quot;
-
-She&apos;s indecisive!  You should give her something to tip the scales.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x70580b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x70580b0">
-    <command xml:space="preserve">give jane flowers</command>
-    <result xml:space="preserve">&quot;Wow, thanks!&quot; Jane exclaims.  &quot;That&apos;s so sweet.  You know what?  I will go to the dance with you.&quot;
-She turns and walks out into the rain, and then sprints off towards the Math building.  Mission accompished: you have the perfect date to the dance.
-
-The rain has stopped.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x1ba02a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1ba02a0">
-    <command xml:space="preserve">wake jane</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x18aaa30" />
-    </children>
-  </item>
-  <item nodeId="node-0x18aaa30">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Computer Lab
-[Previous turn undone.]
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x1309d370" />
-    </children>
-  </item>
-  <item nodeId="node-0x1309d370">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Computer Lab
-The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x1bec960" />
-    </children>
-  </item>
-  <item nodeId="node-0x1bec960">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Computer Lab
-[Previous turn undone.]
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x7077080" />
-    </children>
-  </item>
-  <item nodeId="node-0x7077080">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Computer Lab
-[Previous turn undone.]
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x70ee6e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x70ee6e0">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Computer Lab
-The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
-
-You can see Jane here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x13090260" />
-    </children>
-  </item>
-  <item nodeId="node-0x13090260">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">You bailed on Jane before she could make a decision!  She probably thinks you&apos;re a jerk now.  Nice going, you horrible person.
-
-
-
-    *** You have lost. ***
-
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x708c5c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x708c5c0">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Computer Lab
-[Previous turn undone.]
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x754f110" />
-    </children>
-  </item>
-  <item nodeId="node-0x754f110">
-    <command xml:space="preserve">give jane flowers</command>
-    <result xml:space="preserve">&quot;Wow, thanks!&quot; Jane exclaims.  &quot;That&apos;s so sweet.  You know what?  I will go to the dance with you.&quot;
-She turns and walks out into the rain, and then sprints off towards the Math building.  Mission accompished: you have the perfect date to the dance.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x70af0b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x70af0b0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0xbe07280" />
-    </children>
-  </item>
-  <item nodeId="node-0xbe07280">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-The rain has stopped.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c97f80" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c97f80">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Computer Lab
-The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x1859ed0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1859ed0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Quad
-The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  The Math, English, Social Studies, and Language buildings are behind the science building, but you don&apos;t have any of those classes today.
-
-You can see a hooded man here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x13057810" />
-    </children>
-  </item>
-  <item nodeId="node-0x13057810">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Gym
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x754d430" />
-    </children>
-  </item>
-  <item nodeId="node-0x754d430">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Dance
-You can see Jane here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x752c2b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x752c2b0">
-    <command xml:space="preserve">talk to jane</command>
-    <result xml:space="preserve">&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x70a5fa0" />
-    </children>
-  </item>
-  <item nodeId="node-0x70a5fa0">
-    <command xml:space="preserve">talk to jane</command>
-    <result xml:space="preserve">&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
-    <children>
-      <child nodeId="node-0x1becc60" />
-    </children>
-  </item>
-  <item nodeId="node-0x1becc60">
-    <command xml:space="preserve">say I win!</command>
-    <result xml:space="preserve">(to Jane)
-There is no reply.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="59">YES</temporary>
-  </item>
-  <item nodeId="node-0x6c9a970">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Quad
-The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  The Math, English, Social Studies, and Language buildings are behind the science building, but you don&apos;t have any of those classes today.
-
-You can see a flowers and a hooded man here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9a9e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9a9e0">
-    <command xml:space="preserve">take flowers</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9aa50" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9aa50">
-    <command xml:space="preserve">x hooded man</command>
-    <result xml:space="preserve">There is a man in a hooded cloak standing about the quad, whistling a strange tune.  The first three notes are similar to your unlocking spell, but then it repeats the last not twice.
-You wonder if you should tell security about this guy.
-Nah, he doesn&apos;t seem to be a threat.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9aac0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9aac0">
-    <command xml:space="preserve">write cdeee</command>
-    <result xml:space="preserve">You scribble the word &quot;cdeee&quot; into your spell book, along with the words &quot;From the hooded man&quot;.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9ab30" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9ab30">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">You hurry into the computer lab building just as Computer Science starts.  Your crush, Jane, is here.  You have to remember to ask her to the dance before she leaves class.
-&quot;Today, we will be working on our text-based adventure games,&quot; begins the teacher…rk&quot;
-
-&quot;Remember, games are due next class,&quot; says the teacher as class ends and everyone begins to pack up.  Your heart skips a beat as you realize Jane is leaving, also.  You need to get her to stay a little longer!
-
-Computer Lab
-The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
-
-You can see Jane here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9aba0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9aba0">
-    <command xml:space="preserve">talk to jane</command>
-    <result xml:space="preserve">She&apos;s leaving in a big hurry.  You need to get her to stop first.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9ac10" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9ac10">
-    <command xml:space="preserve">play cdefg</command>
-    <result xml:space="preserve">You play a simple scale on your flute.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9ac80" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9ac80">
-    <command xml:space="preserve">play cdeee</command>
-    <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
-  A sudden downpour comes down, soaking everyone in the quad.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9acf0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9acf0">
-    <command xml:space="preserve">talk jane</command>
-    <result xml:space="preserve">I didn&apos;t understand that sentence.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9ad60" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9ad60">
-    <command xml:space="preserve">talk to jane</command>
-    <result xml:space="preserve">You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  You&apos;ve got to be joking!  It&apos;s too late now.  Jane is already turning around.  You&apos;ll just have to hold it.
-
-&quot;Hi, Jane,&quot; you mutter nervously.  &quot;Crazy weather, huh?&quot;
-&quot;Yeah, it sure is.  Almost magical,&quot; she replies.  &quot;Don&apos;t you just love the rain?&quot;
-</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9add0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9add0">
-    <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">&quot;It&apos;s amazing if you think about it,&quot; she continues, &quot;Tons and tons of liquid water rushing down from the sky and flowing down rivers.&quot;
-
-Her words painfully remind you that you have to pee.
-
-&quot;Well, anyway,&quot; you stammer, &quot;I was just… I wanted to…畮獥‬吢&quot;
-You can&apos;t quite remember your train of thought.  This isn&apos;t good.  You&apos;re looking bad in front of Jane.  You start sweating violently.  Also not good.
-&quot;Is is hot in here, or is it just me?&quot; you ask.
-&quot;I have some water, if you want,&quot; offers Jane.
-</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9ae40" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9ae40">
-    <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">She pulls a water bottle out of her backpack and hands it to you.  You waterfall a sizable gulp, into your mouth, much to your bladder&apos;s protest.
-&quot;So, there&apos;s the dance tonight…&quot; you begin uneasily.
-&quot;Oh, yeah!&quot; Jane says, &quot;Did you know the theme is underwater?
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9aeb0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9aeb0">
-    <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Please answer yes or no.&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9af20" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9af20">
-    <command xml:space="preserve">no</command>
-    <result xml:space="preserve">&quot;I heard they&apos;re going to have fish tanks and water sound effects and waterfalls,&quot; she explains.
-
-Waterfalls are not fun to think about when you have to pee.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9af90" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9af90">
-    <command xml:space="preserve">talk to jane</command>
-    <result xml:space="preserve">You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  You&apos;ve got to be joking!  It&apos;s too late now.  Jane is already turning around.  You&apos;ll just have to hold it.
-
-&quot;Hi, Jane,&quot; you mutter nervously.  &quot;Crazy weather, huh?&quot;
-&quot;Yeah, it sure is.  Almost magical,&quot; she replies.  &quot;Don&apos;t you just love the rain?&quot;
-</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9b000" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9b000">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">Please answer yes or no.&gt; </result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9b070" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9b070">
-    <command xml:space="preserve">no</command>
-    <result xml:space="preserve">&quot;Well, anyway,&quot; you stammer, &quot;I was just… I wanted to…&quot;
-You can&apos;t quite remember your train of thought.  This isn&apos;t good.  You&apos;re looking bad in front of Jane.  You start sweating violently.  Also not good.
-&quot;Is is hot in here, or is it just me?&quot; you ask.
-&quot;I have some water, if you want,&quot; offers Jane.
-</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9b0e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9b0e0">
-    <command xml:space="preserve">no</command>
-    <result xml:space="preserve">&quot;No thank you,&quot; you say.
-&quot;So, there&apos;s the dance tonight…&quot; you begin uneasily.
-&quot;Oh, yeah!&quot; Jane says, &quot;Did you know the theme is underwater?
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="415">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9b150" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9b150">
-    <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">&quot;Seems a little cliché to me,&quot; she adds.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="414">YES</temporary>
-  </item>
-  <item nodeId="node-0x6c9b1c0">
+  <item nodeId="node-0x7079730">
     <command xml:space="preserve">open book</command>
     <result xml:space="preserve">You open the book.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="29">YES</temporary>
+    <temporary score="125">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b230" />
+      <child nodeId="node-0x1b12b60" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b230">
-    <command xml:space="preserve">x book</command>
-    <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.It is open.  The pages inside are mostly covered in blank musical staffs, but the first page has a brief melody recorded with a title.  Somehow, the book seems to eminate pure power.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="29">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9b2a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9b2a0">
+  <item nodeId="node-0x1b12b60">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">The book says:
 
@@ -1545,112 +590,196 @@ cdefg
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="29">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="125">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b310" />
+      <child nodeId="node-0xfe3a5a0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b310">
-    <command xml:space="preserve">take flute</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="29">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9b380" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9b380">
+  <item nodeId="node-0xfe3a5a0">
     <command xml:space="preserve">play cdefg</command>
     <result xml:space="preserve">You play a simple scale on your flute.
 You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="29">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="125">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b3f0" />
+      <child nodeId="node-0x1880e10" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b3f0">
-    <command xml:space="preserve">play Decaf</command>
-    <result xml:space="preserve">You play an odd-sounding melody on the flute.
-*Poof!*
-A donut appears in your hand!
+  <item nodeId="node-0x1880e10">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">(first opening the basement door)
+
+Living Room
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c3e8c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c3e8c0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0xfe5b8c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfe5b8c0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You make it to the bus stop just as the bus pulls up.
+
+Street
+The bus stop is right in front of your house.
+
+You can see a bus sign and a bus here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c42400" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c42400">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c95fe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c95fe0">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">It is a big metal sign with the words &quot;Bus Stop&quot; on it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0xc00e4c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc00e4c0">
+    <command xml:space="preserve">x street</command>
+    <result xml:space="preserve">The street is made of paved asphalt, and full of potholes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b0e730" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b0e730">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">There are none at all available!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0xfe18b40" />
+    </children>
+  </item>
+  <item nodeId="node-0xfe18b40">
+    <command xml:space="preserve">get in bus</command>
+    <result xml:space="preserve">You get on the bus and sit in the back.  Before you know it, you are getting off at the entrance to school.
+
+School Entrance
+The entrance to school is just a parking lot with a sign stating the name of your school.  The quad is just to the north.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="29">YES</temporary>
+    <temporary score="125">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b460" />
+      <child nodeId="node-0xfe1a3d0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b460">
-    <command xml:space="preserve">play decaf</command>
-    <result xml:space="preserve">You play an odd-sounding melody on the flute.
-*Poof!*
-A donut appears in your hand!
+  <item nodeId="node-0xfe1a3d0">
+    <command xml:space="preserve">take poles</command>
+    <result xml:space="preserve">That&apos;s hardly portable.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="125">YES</temporary>
+    <children>
+      <child nodeId="node-0x70d55c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x70d55c0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  The Math, English, Social Studies, and Language buildings are behind the science building, but you don&apos;t have any of those classes today.
+
+You can see a flowers and a hooded man here.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="29">YES</temporary>
+    <temporary score="125">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b4d0" />
+      <child nodeId="node-0xba0fe60" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b4d0">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You&apos;re carrying a flute and a spell book and 2 donuts.  You are wearing a backpack.
+  <item nodeId="node-0xba0fe60">
+    <command xml:space="preserve">talk to hooded man</command>
+    <result xml:space="preserve">You try to get the attention of the hooded man.  He ignores you.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="29">YES</temporary>
+    <temporary score="125">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b540" />
+      <child nodeId="node-0xc0b3570" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b540">
-    <command xml:space="preserve">take off backpack</command>
-    <result xml:space="preserve">You take off the backpack.
+  <item nodeId="node-0xc0b3570">
+    <command xml:space="preserve">x hooded man</command>
+    <result xml:space="preserve">There is a man in a hooded cloak standing about the quad, whistling a strange tune.  The first three notes are similar to your unlocking spell, but then it repeats the last not twice.
+You wonder if you should tell security about this guy.
+Nah, he doesn&apos;t seem to be a threat.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="29">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9b5b0" />
-    </children>
+    <temporary score="124">YES</temporary>
   </item>
-  <item nodeId="node-0x6c9b5b0">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You&apos;re carrying a flute, a spell book and a backpack and 2 donuts.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="28">YES</temporary>
-  </item>
-  <item nodeId="node-0x6c9b620">
+  <item nodeId="node-0x6c74a30">
     <command xml:space="preserve">take flute</command>
     <result xml:space="preserve">Taken.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="291">YES</temporary>
+    <temporary score="51">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9be00" />
-      <child nodeId="node-0x6c9b690" />
+      <child nodeId="node-0x6c74fe0" />
+      <child nodeId="node-0x6c74aa0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b690">
+  <item nodeId="node-0x6c74aa0">
     <command xml:space="preserve">put flute in backpack</command>
     <result xml:space="preserve">The backpack is closed.
 
@@ -1659,10 +788,10 @@ A donut appears in your hand!
     <changed>NO</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b700" />
+      <child nodeId="node-0x6c74b10" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b700">
+  <item nodeId="node-0x6c74b10">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -1671,10 +800,10 @@ A donut appears in your hand!
     <changed>NO</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b770" />
+      <child nodeId="node-0x6c74b80" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b770">
+  <item nodeId="node-0x6c74b80">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">The book says:
 
@@ -1686,10 +815,10 @@ abcde
     <changed>YES</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b7e0" />
+      <child nodeId="node-0x6c74240" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b7e0">
+  <item nodeId="node-0x6c74240">
     <command xml:space="preserve">play flute</command>
     <result xml:space="preserve">You play a charming melody on your flute.  The flute grows warm and seems to vibrate with energy--an energy almost magical.
 
@@ -1698,10 +827,10 @@ abcde
     <changed>NO</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b850" />
+      <child nodeId="node-0x6c742b0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b850">
+  <item nodeId="node-0x6c742b0">
     <command xml:space="preserve">play abcde on flute</command>
     <result xml:space="preserve">You play a simple scale on your flute.
 You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.
@@ -1711,10 +840,10 @@ You hear a click from just above you.  Looking up, you see that the basement doo
     <changed>NO</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b8c0" />
+      <child nodeId="node-0x6c74320" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b8c0">
+  <item nodeId="node-0x6c74320">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">The book says:
 
@@ -1726,10 +855,10 @@ abcde
     <changed>YES</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b930" />
+      <child nodeId="node-0x6c74390" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b930">
+  <item nodeId="node-0x6c74390">
     <command xml:space="preserve">open book</command>
     <result xml:space="preserve">You open the book.
 
@@ -1738,10 +867,10 @@ abcde
     <changed>NO</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9b9a0" />
+      <child nodeId="node-0x6c74400" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b9a0">
+  <item nodeId="node-0x6c74400">
     <command xml:space="preserve">x book</command>
     <result xml:space="preserve">The book says:
 
@@ -1753,10 +882,10 @@ abcde
     <changed>YES</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9ba10" />
+      <child nodeId="node-0x6c74bf0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9ba10">
+  <item nodeId="node-0x6c74bf0">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">The book says:
 
@@ -1768,10 +897,10 @@ abcde
     <changed>YES</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9ba80" />
+      <child nodeId="node-0x6c74c60" />
     </children>
   </item>
-  <item nodeId="node-0x6c9ba80">
+  <item nodeId="node-0x6c74c60">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">You already have that.
 
@@ -1780,10 +909,10 @@ abcde
     <changed>NO</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9baf0" />
+      <child nodeId="node-0x6c74cd0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9baf0">
+  <item nodeId="node-0x6c74cd0">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">The book says:
 
@@ -1795,10 +924,10 @@ abcde
     <changed>YES</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9bb60" />
+      <child nodeId="node-0x6c74d40" />
     </children>
   </item>
-  <item nodeId="node-0x6c9bb60">
+  <item nodeId="node-0x6c74d40">
     <command xml:space="preserve">open book</command>
     <result xml:space="preserve">You open the book.
 
@@ -1807,10 +936,10 @@ abcde
     <changed>NO</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9bbd0" />
+      <child nodeId="node-0x6c74db0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9bbd0">
+  <item nodeId="node-0x6c74db0">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">The book says:
 
@@ -1822,10 +951,10 @@ abcde
     <changed>YES</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9bc40" />
+      <child nodeId="node-0x6c74e20" />
     </children>
   </item>
-  <item nodeId="node-0x6c9bc40">
+  <item nodeId="node-0x6c74e20">
     <command xml:space="preserve">close book</command>
     <result xml:space="preserve">You close the book.
 
@@ -1834,10 +963,10 @@ abcde
     <changed>NO</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9bcb0" />
+      <child nodeId="node-0x6c74e90" />
     </children>
   </item>
-  <item nodeId="node-0x6c9bcb0">
+  <item nodeId="node-0x6c74e90">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">The book says:
 
@@ -1849,10 +978,10 @@ abcde
     <changed>YES</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9bd20" />
+      <child nodeId="node-0x6c74f00" />
     </children>
   </item>
-  <item nodeId="node-0x6c9bd20">
+  <item nodeId="node-0x6c74f00">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a spell book
@@ -1864,10 +993,10 @@ abcde
     <changed>NO</changed>
     <temporary score="183">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9bd90" />
+      <child nodeId="node-0x6c74f70" />
     </children>
   </item>
-  <item nodeId="node-0x6c9bd90">
+  <item nodeId="node-0x6c74f70">
     <command xml:space="preserve">x book</command>
     <result xml:space="preserve">The book says:
 
@@ -1879,20 +1008,20 @@ abcde
     <changed>YES</changed>
     <temporary score="182">YES</temporary>
   </item>
-  <item nodeId="node-0x6c9be00">
+  <item nodeId="node-0x6c74fe0">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="291">YES</temporary>
+    <temporary score="51">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c180" />
-      <child nodeId="node-0x6c9be70" />
+      <child nodeId="node-0x6c75360" />
+      <child nodeId="node-0x6c75050" />
     </children>
   </item>
-  <item nodeId="node-0x6c9be70">
+  <item nodeId="node-0x6c75050">
     <command xml:space="preserve">play abcde</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1901,10 +1030,10 @@ abcde
     <changed>NO</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9bee0" />
+      <child nodeId="node-0x6c750c0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9bee0">
+  <item nodeId="node-0x6c750c0">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">(first opening the basement door)
 It seems to be locked.
@@ -1914,10 +1043,10 @@ It seems to be locked.
     <changed>NO</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9bf50" />
+      <child nodeId="node-0x6c75130" />
     </children>
   </item>
-  <item nodeId="node-0x6c9bf50">
+  <item nodeId="node-0x6c75130">
     <command xml:space="preserve">play abcde</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1926,10 +1055,10 @@ It seems to be locked.
     <changed>NO</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9bfc0" />
+      <child nodeId="node-0x6c751a0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9bfc0">
+  <item nodeId="node-0x6c751a0">
     <command xml:space="preserve">play cdefg</command>
     <result xml:space="preserve">You play a simple scale on your flute.
 You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.
@@ -1939,10 +1068,10 @@ You hear a click from just above you.  Looking up, you see that the basement doo
     <changed>NO</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c030" />
+      <child nodeId="node-0x6c75210" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c030">
+  <item nodeId="node-0x6c75210">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">(first opening the basement door)
 
@@ -1953,10 +1082,10 @@ Living Room
     <changed>NO</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c0a0" />
+      <child nodeId="node-0x6c75280" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c0a0">
+  <item nodeId="node-0x6c75280">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">
 Second Floor
@@ -1966,10 +1095,10 @@ Second Floor
     <changed>NO</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c110" />
+      <child nodeId="node-0x6c752f0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c110">
+  <item nodeId="node-0x6c752f0">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">
 Living Room
@@ -1979,7 +1108,7 @@ Living Room
     <changed>NO</changed>
     <temporary score="81">YES</temporary>
   </item>
-  <item nodeId="node-0x6c9c180">
+  <item nodeId="node-0x6c75360">
     <command xml:space="preserve">play cdefg</command>
     <result xml:space="preserve">You play a simple scale on your flute.
 You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.
@@ -1987,12 +1116,12 @@ You hear a click from just above you.  Looking up, you see that the basement doo
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="291">YES</temporary>
+    <temporary score="51">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c1f0" />
+      <child nodeId="node-0x6c753d0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c1f0">
+  <item nodeId="node-0x6c753d0">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">(first opening the basement door)
 
@@ -2001,12 +1130,12 @@ Living Room
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="291">YES</temporary>
+    <temporary score="51">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c260" />
+      <child nodeId="node-0x6c75440" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c260">
+  <item nodeId="node-0x6c75440">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Street
@@ -2014,12 +1143,12 @@ Street
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="291">YES</temporary>
+    <temporary score="51">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c2d0" />
+      <child nodeId="node-0x6c754b0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c2d0">
+  <item nodeId="node-0x6c754b0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 School Entrance
@@ -2027,14 +1156,15 @@ School Entrance
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="291">YES</temporary>
+    <temporary score="51">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c340" />
+      <child nodeId="node-0x6c75520" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c340">
+  <item nodeId="node-0x6c75520">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
+    <result xml:space="preserve">You don&apos;t have science right now.
+
 Quad
 The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  The Math, English, Social Studies, and Language buildings are behind the science building, but you don&apos;t have any of those classes today.
 
@@ -2042,19 +1172,15 @@ You can see a flowers and a hooded man here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="291">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="51">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c3b0" />
+      <child nodeId="node-0x6c75590" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c3b0">
+  <item nodeId="node-0x6c75590">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">You hurry into the computer lab building just as Computer Science starts.  Your crush, Jane, is here.  You have to remember to ask her to the dance before she leaves class.
-&quot;Today, we will be working on our text-based adventure games,&quot; begins the teacher…rk&quot;
-
-&quot;Remember, games are due next class,&quot; says the teacher as class ends and everyone begins to pack up.  Your heart skips a beat as you realize Jane is leaving, also.  You need to get her to stay a little longer!
-
+    <result xml:space="preserve">
 Computer Lab
 The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
 
@@ -2062,13 +1188,244 @@ You can see Jane here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="291">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="50">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c420" />
+      <child nodeId="node-0x6c75c20" />
+      <child nodeId="node-0x6c75600" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c420">
+  <item nodeId="node-0x6c75600">
+    <command xml:space="preserve">play cdeee</command>
+    <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
+  A sudden downpour comes down, soaking everyone in the quad.
+
+It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
+
+The rain has stopped.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c75670" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c75670">
+    <command xml:space="preserve">play cdeee</command>
+    <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
+  A sudden downpour comes down, soaking everyone in the quad.
+
+It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
+
+The rain has stopped.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c756e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c756e0">
+    <command xml:space="preserve">play cdeee</command>
+    <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
+  A sudden downpour comes down, soaking everyone in the quad.
+
+It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
+
+The rain has stopped.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c75750" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c75750">
+    <command xml:space="preserve">play cdeee</command>
+    <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
+  A sudden downpour comes down, soaking everyone in the quad.
+
+It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c757c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c757c0">
+    <command xml:space="preserve">talk to jane</command>
+    <result xml:space="preserve">You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  You&apos;ve got to be joking!  It&apos;s too late now.  Jane is already turning around.  You&apos;ll just have to hold it.
+
+&quot;Hi, Jane,&quot; you mutter nervously.  &quot;Crazy weather, huh?&quot;
+&quot;Yeah, it sure is.  Almost magical,&quot; she replies.  &quot;Don&apos;t you just love the rain?&quot;
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c75830" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c75830">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">&quot;It&apos;s amazing if you think about it,&quot; she continues, &quot;Tons and tons of liquid water rushing down from the sky and flowing down rivers.&quot;
+
+Her words painfully remind you that you have to pee.
+
+You really need to go to the bathroom.
+
+&quot;Well, anyway,&quot; you stammer, &quot;I was just… I wanted to…瑡牥爠獵&quot;
+You can&apos;t quite remember your train of thought.  This isn&apos;t good.  You&apos;re looking bad in front of Jane.  You start sweating violently.  Also not good.
+&quot;Is is hot in here, or is it just me?&quot; you ask.
+&quot;I have some water, if you want,&quot; offers Jane.
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c758a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c758a0">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">She pulls a water bottle out of her backpack and hands it to you.  You waterfall a sizable gulp, into your mouth, much to your bladder&apos;s protest.
+
+You bounce up and down nervously.  You can&apos;t hold it much longer.
+
+&quot;So, there&apos;s the dance tonight…畯⁲&quot; you begin uneasily.
+&quot;Oh, yeah!&quot; Jane says, &quot;Did you know the theme is underwater?
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c75910" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c75910">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">&quot;Seems a little cliché to me,&quot; she adds.
+
+You bounce up and down nervously.  You can&apos;t hold it much longer.  Jane looks at you funny.
+
+&quot;Do you have a date for that?&quot; you inquire abruptly.
+&quot;Not yet,&quot; answers Jane, &quot;If I don&apos;t get one soon, I&apos;ll probably just skip the dance and go whitewater rafting.  Have you ever been whitewater rafting?&quot;
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c75980" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c75980">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">&quot;It&apos;s where you ride down choppy rivers in a raft,&quot; Jane elaborates, &quot;The best part of it, I think, is just the gurgling, rushing, splashing sound the water makes.&quot;
+
+All those sound effects make you think of is the flushing of a toilet.
+
+You can&apos;t hold it any longer!  You run to the bathroom without hesitation.  How embarrassing.
+
+
+
+    *** You have failed to get a date to the dance. ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c759f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c759f0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Computer Lab
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c75a60" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c75a60">
+    <command xml:space="preserve">talk to jane</command>
+    <result xml:space="preserve">You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  You&apos;ve got to be joking!  It&apos;s too late now.  Jane is already turning around.  You&apos;ll just have to hold it.
+
+&quot;Hi, Jane,&quot; you mutter nervously.  &quot;Crazy weather, huh?&quot;
+&quot;Yeah, it sure is.  Almost magical,&quot; she replies.  &quot;Don&apos;t you just love the rain?&quot;
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c75ad0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c75ad0">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">&quot;It&apos;s amazing if you think about it,&quot; she continues, &quot;Tons and tons of liquid water rushing down from the sky and flowing down rivers.&quot;
+
+Her words painfully remind you that you have to pee.
+
+You really need to go to the bathroom.
+
+&quot;Well, anyway,&quot; you stammer, &quot;I was just… I wanted to…瑡牥爠獵&quot;
+You can&apos;t quite remember your train of thought.  This isn&apos;t good.  You&apos;re looking bad in front of Jane.  You start sweating violently.  Also not good.
+&quot;Is is hot in here, or is it just me?&quot; you ask.
+&quot;I have some water, if you want,&quot; offers Jane.
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c75b40" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c75b40">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">She pulls a water bottle out of her backpack and hands it to you.  You waterfall a sizable gulp, into your mouth, much to your bladder&apos;s protest.
+
+You bounce up and down nervously.  You can&apos;t hold it much longer.
+
+&quot;So, there&apos;s the dance tonight…畯⁲&quot; you begin uneasily.
+&quot;Oh, yeah!&quot; Jane says, &quot;Did you know the theme is underwater?
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="42">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c75bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c75bb0">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">&quot;I heard they&apos;re going to have fish tanks and water sound effects and waterfalls,&quot; she explains.
+
+Waterfalls are not fun to think about when you have to pee.
+
+You can&apos;t hold it any longer!  You run to the bathroom without hesitation.  How embarrassing.
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">YES</temporary>
+  </item>
+  <item nodeId="node-0x6c75c20">
     <command xml:space="preserve">x desk</command>
     <result xml:space="preserve">The desks are made of rectangular pieces of wood, with thin metal legs.
 
@@ -2077,10 +1434,10 @@ You can see Jane here.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c490" />
+      <child nodeId="node-0x6c75c90" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c490">
+  <item nodeId="node-0x6c75c90">
     <command xml:space="preserve">x desks</command>
     <result xml:space="preserve">The desks are made of rectangular pieces of wood, with thin metal legs.
 
@@ -2089,10 +1446,10 @@ You can see Jane here.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c500" />
+      <child nodeId="node-0x6c75d00" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c500">
+  <item nodeId="node-0x6c75d00">
     <command xml:space="preserve">x computers</command>
     <result xml:space="preserve">The computers are fairly new.  They are turned off, but you probably shouldn&apos;t turn them on without the teacher here.  They are all Banana brand computers.
 
@@ -2101,10 +1458,10 @@ You can see Jane here.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c570" />
+      <child nodeId="node-0x6c75d70" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c570">
+  <item nodeId="node-0x6c75d70">
     <command xml:space="preserve">play gfedc</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2113,10 +1470,10 @@ You can see Jane here.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c5e0" />
+      <child nodeId="node-0x6c75de0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c5e0">
+  <item nodeId="node-0x6c75de0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Quad
@@ -2129,10 +1486,10 @@ You can see a flowers and a hooded man here.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c650" />
+      <child nodeId="node-0x6c75e50" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c650">
+  <item nodeId="node-0x6c75e50">
     <command xml:space="preserve">x hooded man</command>
     <result xml:space="preserve">There is a man in a hooded cloak standing about the quad, whistling a strange tune.  The first three notes are similar to your unlocking spell, but then it repeats the last not twice.
 You wonder if you should tell security about this guy.
@@ -2143,10 +1500,10 @@ Nah, he doesn&apos;t seem to be a threat.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c6c0" />
+      <child nodeId="node-0x6c75ec0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c6c0">
+  <item nodeId="node-0x6c75ec0">
     <command xml:space="preserve">x flowers</command>
     <result xml:space="preserve">These roses have a lovely aroma.  They sure seem romantic.  You could give these to Jane.
 
@@ -2155,10 +1512,10 @@ Nah, he doesn&apos;t seem to be a threat.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c730" />
+      <child nodeId="node-0x6c75f30" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c730">
+  <item nodeId="node-0x6c75f30">
     <command xml:space="preserve">put cdeee in book</command>
     <result xml:space="preserve">You scribble the word &quot;cdeee&quot; into your spell book, along with the words &quot;From the hooded man&quot;.
 
@@ -2167,10 +1524,10 @@ Nah, he doesn&apos;t seem to be a threat.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c7a0" />
+      <child nodeId="node-0x6c75fa0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c7a0">
+  <item nodeId="node-0x6c75fa0">
     <command xml:space="preserve">put Decaf in book</command>
     <result xml:space="preserve">You scribble the word &quot;Decaf&quot; into your spell book.
 
@@ -2179,10 +1536,10 @@ Nah, he doesn&apos;t seem to be a threat.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c810" />
+      <child nodeId="node-0x6c76010" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c810">
+  <item nodeId="node-0x6c76010">
     <command xml:space="preserve">take flowers</command>
     <result xml:space="preserve">Taken.
 
@@ -2191,10 +1548,10 @@ Nah, he doesn&apos;t seem to be a threat.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c880" />
+      <child nodeId="node-0x6c76080" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c880">
+  <item nodeId="node-0x6c76080">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   A sudden downpour comes down, soaking everyone in the quad.
@@ -2204,10 +1561,10 @@ Nah, he doesn&apos;t seem to be a threat.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c8f0" />
+      <child nodeId="node-0x6c760f0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c8f0">
+  <item nodeId="node-0x6c760f0">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
 
@@ -2216,10 +1573,10 @@ Nah, he doesn&apos;t seem to be a threat.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c960" />
+      <child nodeId="node-0x6c76160" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c960">
+  <item nodeId="node-0x6c76160">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
 
@@ -2228,10 +1585,10 @@ Nah, he doesn&apos;t seem to be a threat.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9c9d0" />
+      <child nodeId="node-0x6c761d0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9c9d0">
+  <item nodeId="node-0x6c761d0">
     <command xml:space="preserve">open book</command>
     <result xml:space="preserve">You open the book.
 
@@ -2240,10 +1597,10 @@ Nah, he doesn&apos;t seem to be a threat.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9ca40" />
+      <child nodeId="node-0x6c76240" />
     </children>
   </item>
-  <item nodeId="node-0x6c9ca40">
+  <item nodeId="node-0x6c76240">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">The book says:
 
@@ -2260,10 +1617,10 @@ cdeee
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9cab0" />
+      <child nodeId="node-0x6c762b0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9cab0">
+  <item nodeId="node-0x6c762b0">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   Nothing happens.  The rain will probably stop on it&apos;s own.
@@ -2273,10 +1630,10 @@ cdeee
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9cb20" />
+      <child nodeId="node-0x6c76320" />
     </children>
   </item>
-  <item nodeId="node-0x6c9cb20">
+  <item nodeId="node-0x6c76320">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Quad
 The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  The Math, English, Social Studies, and Language buildings are behind the science building, but you don&apos;t have any of those classes today.  It is raining hard.
@@ -2288,10 +1645,10 @@ You can see a hooded man here.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9cb90" />
+      <child nodeId="node-0x6c76390" />
     </children>
   </item>
-  <item nodeId="node-0x6c9cb90">
+  <item nodeId="node-0x6c76390">
     <command xml:space="preserve">talk to hooded man</command>
     <result xml:space="preserve">You try to get the attention of the hooded man.  He ignores you.
 
@@ -2300,10 +1657,10 @@ You can see a hooded man here.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9cc00" />
+      <child nodeId="node-0x6c76400" />
     </children>
   </item>
-  <item nodeId="node-0x6c9cc00">
+  <item nodeId="node-0x6c76400">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Computer Lab
@@ -2316,10 +1673,10 @@ You can see Jane here.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9cc70" />
+      <child nodeId="node-0x6c76470" />
     </children>
   </item>
-  <item nodeId="node-0x6c9cc70">
+  <item nodeId="node-0x6c76470">
     <command xml:space="preserve">talk to jane</command>
     <result xml:space="preserve">You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  Nice timing, bladder!  It&apos;s too late now.  Jane is already turning around.  You&apos;ll just have to hold it.
 
@@ -2331,10 +1688,10 @@ You can see Jane here.
     <changed>YES</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9cce0" />
+      <child nodeId="node-0x6c764e0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9cce0">
+  <item nodeId="node-0x6c764e0">
     <command xml:space="preserve">talk to computers</command>
     <result xml:space="preserve">You strike up a conversation with the computers.  Weirdo.
 
@@ -2343,10 +1700,10 @@ You can see Jane here.
     <changed>NO</changed>
     <temporary score="291">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9cd50" />
+      <child nodeId="node-0x6c76550" />
     </children>
   </item>
-  <item nodeId="node-0x6c9cd50">
+  <item nodeId="node-0x6c76550">
     <command xml:space="preserve">x me</command>
     <result xml:space="preserve">You are a sixteen-year-old with dark hair and dark eyes.  You have a heavy-looking backpack on your back.
 
@@ -2355,50 +1712,7 @@ You can see Jane here.
     <changed>YES</changed>
     <temporary score="290">YES</temporary>
   </item>
-  <item nodeId="node-0x6c9cdc0">
-    <command xml:space="preserve">x basement door</command>
-    <result xml:space="preserve">You see nothing special about the basement door.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="13">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c9ce30" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c9ce30">
-    <command xml:space="preserve">u</command>
-    <result xml:space="preserve">(first opening the basement door)
-It seems to be locked.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="13">YES</temporary>
-  </item>
-  <item nodeId="node-0x6c997e0">
-    <command xml:space="preserve">dust chest</command>
-    <result xml:space="preserve">You achieve nothing by this.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="25">YES</temporary>
-    <children>
-      <child nodeId="node-0x6c99850" />
-    </children>
-  </item>
-  <item nodeId="node-0x6c99850">
-    <command xml:space="preserve">brush the dsut off of the chest</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="24">YES</temporary>
-  </item>
-  <item nodeId="node-0x6c9cf10">
+  <item nodeId="node-0x6c765c0">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">(first opening the basement door)
 It seems to be locked.
@@ -2408,10 +1722,10 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9cf80" />
+      <child nodeId="node-0x6c76630" />
     </children>
   </item>
-  <item nodeId="node-0x6c9cf80">
+  <item nodeId="node-0x6c76630">
     <command xml:space="preserve">open chest</command>
     <result xml:space="preserve">You open the chest, revealing a spell book and a flute.
 
@@ -2420,10 +1734,10 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9cff0" />
+      <child nodeId="node-0x6c766a0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9cff0">
+  <item nodeId="node-0x6c766a0">
     <command xml:space="preserve">take flute</command>
     <result xml:space="preserve">Taken.
 
@@ -2432,10 +1746,10 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d060" />
+      <child nodeId="node-0x6c76710" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d060">
+  <item nodeId="node-0x6c76710">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -2444,10 +1758,10 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d0d0" />
+      <child nodeId="node-0x6c76780" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d0d0">
+  <item nodeId="node-0x6c76780">
     <command xml:space="preserve">open book</command>
     <result xml:space="preserve">You open the book.
 
@@ -2456,10 +1770,10 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d140" />
+      <child nodeId="node-0x6c767f0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d140">
+  <item nodeId="node-0x6c767f0">
     <command xml:space="preserve">x book</command>
     <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.It is open.  The pages inside are mostly covered in blank musical staffs, but the first page has a brief melody recorded with a title.  Somehow, the book seems to eminate pure power.
 &gt;</result>
@@ -2467,10 +1781,10 @@ It seems to be locked.
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d1b0" />
+      <child nodeId="node-0x6c76860" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d1b0">
+  <item nodeId="node-0x6c76860">
     <command xml:space="preserve">read book</command>
     <result xml:space="preserve">The book says:
 
@@ -2482,10 +1796,10 @@ abcde
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d220" />
+      <child nodeId="node-0x6c768d0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d220">
+  <item nodeId="node-0x6c768d0">
     <command xml:space="preserve">play abcde</command>
     <result xml:space="preserve">You play a simple scale on your flute.
 You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.
@@ -2495,10 +1809,10 @@ You hear a click from just above you.  Looking up, you see that the basement doo
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d290" />
+      <child nodeId="node-0x6c76940" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d290">
+  <item nodeId="node-0x6c76940">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">(first opening the basement door)
 
@@ -2510,10 +1824,10 @@ You can see the basement door here.
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d300" />
+      <child nodeId="node-0x6c769b0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d300">
+  <item nodeId="node-0x6c769b0">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">
 Basement
@@ -2526,10 +1840,10 @@ You can see the basement door and a chest (empty) here.
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d370" />
+      <child nodeId="node-0x6c76a20" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d370">
+  <item nodeId="node-0x6c76a20">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Basement
 The basement is a dark and dank area.  It is small; the only things here are an old chest and some wooden stairs leading up to a locked door.
@@ -2541,10 +1855,10 @@ You can see the basement door and a chest (empty) here.
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d3e0" />
+      <child nodeId="node-0x6c76a90" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d3e0">
+  <item nodeId="node-0x6c76a90">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">
 Living Room
@@ -2555,10 +1869,10 @@ You can see the basement door here.
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d450" />
+      <child nodeId="node-0x6c76b00" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d450">
+  <item nodeId="node-0x6c76b00">
     <command xml:space="preserve">ne</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -2567,10 +1881,10 @@ You can see the basement door here.
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d4c0" />
+      <child nodeId="node-0x6c76b70" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d4c0">
+  <item nodeId="node-0x6c76b70">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Kitchen
@@ -2580,10 +1894,10 @@ Kitchen
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d530" />
+      <child nodeId="node-0x6c76be0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d530">
+  <item nodeId="node-0x6c76be0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Living Room
@@ -2594,10 +1908,10 @@ You can see the basement door here.
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d5a0" />
+      <child nodeId="node-0x6c76c50" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d5a0">
+  <item nodeId="node-0x6c76c50">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Street
@@ -2607,10 +1921,10 @@ Street
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d610" />
+      <child nodeId="node-0x6c76cc0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d610">
+  <item nodeId="node-0x6c76cc0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 School Entrance
@@ -2620,10 +1934,10 @@ School Entrance
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d680" />
+      <child nodeId="node-0x6c76d30" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d680">
+  <item nodeId="node-0x6c76d30">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Quad
@@ -2633,10 +1947,10 @@ Quad
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d6f0" />
+      <child nodeId="node-0x6c76da0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d6f0">
+  <item nodeId="node-0x6c76da0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Science Building
@@ -2646,10 +1960,10 @@ Science Building
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d760" />
+      <child nodeId="node-0x6c76e10" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d760">
+  <item nodeId="node-0x6c76e10">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">
 Chemistry Lab
@@ -2659,10 +1973,10 @@ Chemistry Lab
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d7d0" />
+      <child nodeId="node-0x6c76e80" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d7d0">
+  <item nodeId="node-0x6c76e80">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">
 Science Building
@@ -2672,10 +1986,10 @@ Science Building
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d840" />
+      <child nodeId="node-0x6c76ef0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d840">
+  <item nodeId="node-0x6c76ef0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Quad
@@ -2685,10 +1999,10 @@ Quad
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d8b0" />
+      <child nodeId="node-0x6c76f60" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d8b0">
+  <item nodeId="node-0x6c76f60">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Computer Lab
@@ -2698,10 +2012,10 @@ Computer Lab
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d920" />
+      <child nodeId="node-0x6c76fd0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d920">
+  <item nodeId="node-0x6c76fd0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Quad
@@ -2711,10 +2025,10 @@ Quad
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9d990" />
+      <child nodeId="node-0x6c77040" />
     </children>
   </item>
-  <item nodeId="node-0x6c9d990">
+  <item nodeId="node-0x6c77040">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Gym
@@ -2724,10 +2038,10 @@ Gym
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
     <children>
-      <child nodeId="node-0x6c9da00" />
+      <child nodeId="node-0x6c770b0" />
     </children>
   </item>
-  <item nodeId="node-0x6c9da00">
+  <item nodeId="node-0x6c770b0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Dance
@@ -2736,5 +2050,102 @@ Dance
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="26">YES</temporary>
+  </item>
+  <item nodeId="node-0x6c74010">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You&apos;re carrying nothing.  You are wearing a backpack.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c74080" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c74080">
+    <command xml:space="preserve">open chest</command>
+    <result xml:space="preserve">You open the chest, revealing a spell book and a flute.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c740f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c740f0">
+    <command xml:space="preserve">take flute</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c74160" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c74160">
+    <command xml:space="preserve">take book</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c741d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c741d0">
+    <command xml:space="preserve">play Decaf</command>
+    <result xml:space="preserve">You play an odd-sounding melody on the flute.
+*Poof!*
+A donut appears in your hand!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73bf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73bf0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You&apos;re carrying a spell book and a flute and 1 donut.  You are wearing a backpack.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73c60" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73c60">
+    <command xml:space="preserve">play Decaf</command>
+    <result xml:space="preserve">You play an odd-sounding melody on the flute.
+*Poof!*
+A donut appears in your hand!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c73cd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c73cd0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You&apos;re carrying a spell book and a flute and 2 donuts.  You are wearing a backpack.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="98">YES</temporary>
   </item>
 </Skein>
