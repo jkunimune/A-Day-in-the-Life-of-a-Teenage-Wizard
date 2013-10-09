@@ -27,9 +27,56 @@ The school books are things in the backpack.  Understand "schoolbooks" or "text 
 
 The note is a thing in the backpack.  Understand "note from Dad" as note.  The description is "This is the note Dad put on your backpack when he left this morning before you woke up.  It reads:[line break][line break]Hey, sport,[line break]I went down to the coffee shop to get my donut with my Decaf.  I won't see you 'till after school.[line break]-Dad"
 
+The walls are a thing.  They are scenery.  Understand "mold" or "wooden planks" or "termites" as walls.
+
+Instead of examining the walls:
+	if the walls are in the basement, say "The walls are made of wooden planks, and are falling apart with mold and termites.";
+	if the walls are in the living room, say "The walls are painted dull blue.  The only adornment is a painting.";
+	if the walls are in the computer lab, say "The walls here are white and bare.";
+	if the walls are in the science building, say "The walls here have safety posters on them.";
+	if the walls are in the dance, say "The walls are obscured by the darkness and flashing lights.".
+	
+The ceiling is a thing.  It is scenery.
+
+Instead of examining the ceiling:
+	if the ceiling is in the basement, say "The ceiling are made of wooden planks, and has a slight leak, periodically dripping water.";
+	if the ceiling is in the living room, say "The ceiling here is white and bare.";
+	if the ceiling is in the computer lab, say "The ceiling here is white and bare.";
+	if the ceiling is in the science building, say "The ceiling here is white and bare.";
+	if the ceiling is in the dance, say "The ceiling is obscured by the darkness and flashing lights.".
+
+The floor is a thing.  It is scenery.  Understand "carpet" or "tiles" or "tile" as floor.
+
+Instead of examining the floor:
+	if the floor is in the basement, say "The floor is made of wooden planks, and creaks when you move around.";
+	if the floor is in the living room, say "The floor has a carpet on it.";
+	if the floor is in the computer lab, say "The floor is made of cold white tiles.";
+	if the floor is in the science building, say "The ceiling here is white and bare.";
+	if the floor is in the dance, say "The ceiling is obscured by the darkness and flashing lights.".
+
+An every turn rule:
+	if the player is in the basement, move the walls to the basement;
+	if the player is in the living room, move the walls to the living room;
+	if the player is in the computer lab, move the walls to the computer lab;
+	if the player is in the science building, move the walls to the science building;
+	if the player is in the chemistry lab, move the walls to the chemistry lab;
+	if the player is in the dance, move the walls to the dance;
+	if the player is in the basement, move the ceiling to the basement;
+	if the player is in the living room, move the ceiling to the living room;
+	if the player is in the computer lab, move the ceiling to the computer lab;
+	if the player is in the science building, move the ceiling to the science building;
+	if the player is in the chemistry lab, move the ceiling to the chemistry lab;
+	if the player is in the dance, move the ceiling to the dance;
+	if the player is in the basement, move the floor to the basement;
+	if the player is in the living room, move the floor to the living room;
+	if the player is in the computer lab, move the floor to the computer lab;
+	if the player is in the science building, move the floor to the science building;
+	if the player is in the chemistry lab, move the floor to the chemistry lab;
+	if the player is in the dance, move the floor to the dance.
+
 The Basement is a room.  "The basement is a dark and dank area.  It is small; the only things here are an old chest and some wooden stairs leading up to [if basement door is unlocked]a locked[otherwise]an unlocked[end if] door.[if the basement door is locked]  You don't know how you managed to lock yourself in when you came down to get your book, but the important thing is the bus leaves in 10 minutes, so you'd better get out of here soon."
 
-The door called the basement door is above the basement.  Understand "wooden door" as basement door.  It is locked and lockable.  It is scenery.  The description is "It is a white wooden door with a brass handle."
+The door called the basement door is above the basement.  Understand "wooden door" as basement door.  Understand "trapdoor" or "wooden trapdoor" as basement door.  It is locked and lockable.  It is scenery.  The description is "It is a white wooden door with a brass handle."
 
 The handle is a thing in the basement.  It is scenery.  The description is "It is a brass door handle."
 
@@ -108,9 +155,18 @@ Instead of donuting:
 	say "You play an odd-sounding melody on the flute.[line break]*Poof!*[line break]A donut appears in your hand!";
 	increase donutcount by one.
 			
-The Living Room is up from the basement door.
+The Living Room is up from the basement door.  "Your living room is a long room with a small table, a couple of chairs, and a painting.  The basement is below you.  A hallway in the north leads to the kitchen."
+
+The small table is a supporter in the living room.  It is scenery.  The description is "The table is small and made of glass."
+
+The chairs are supporters in the living room.  Understand "seats" or "chair" or "seat" as chairs.  It is scenery.  The description is "These chairs are pretty typical.  Just some hard, uncomfortable seats."
+
+The painting is a thing in the living room.  Understand "Noma Risa" or "replica" as the painting.  It is scenery.  The description is "It is a replica of the Noma Risa, by Michelangelo DeCaprio."
 
 The Kitchen is north of the living room.
+
+Instead of going to the kitchen:
+	say "You're not feeling very hungry right now."
 
 Before going east:
 	if the player is in the living room, say "You make it to the bus stop just as the bus pulls up."
@@ -119,7 +175,7 @@ Before going west:
 	if the player is in the street, say "You decide that you'd rather not go to school, and walk back home.";
 	if the player is in the street, end the story saying "You missed school."
 
-The Street is east of the Living Room.  "The bus stop is right in front of your house."
+The room called the Street is east of the Living Room.  "The bus stop is right in front of your house."
 
 The sign is a thing in the street.  The printed name of the sign is "bus sign".  Understand "signpost" or "bus stop sign" as sign.  It is fixed in place.  The description is "It is a big metal sign with the words 'Bus Stop' on it."
 
@@ -128,6 +184,8 @@ The bus is a thing in the street.  Understand "schoolbus" as bus.  It is fixed i
 The road is a thing in the street.  Understand "street" as road.  Understand "asphalt" as road.  It is scenery.  The description is "The street is made of paved asphalt, and full of potholes."
 
 The potholes are things in the street.  They are scenery.  Understand "pot holes" or "holes" or "pothole" or "pot hole" or "hole" as potholes.  The description is "They should really repave this road soon."
+
+The curb is a thing in the street.  It is scenery.  Understand "sidewalk" as curb.
 
 The classmates are things in the street.  They are scenery.  Understand "students" or "friend" or "Todd" or "lab partner" or "Kyle" or "crush" or "Jane" as classmates.  The description is "From here, you recognize your friend, Todd, your lab partner, Kyle, and Jane, your crush."
 
@@ -260,9 +318,17 @@ Before going east:
 		say "You bailed on Jane before she could make a decision!  She probably thinks you're a jerk now.  Nice going, you horrible person.";
 		end the story saying "You have lost.".
 
-The Science Building is north of the quad.
+The Science Building is north of the quad.  "The science building is a large open area with doors to classrooms all around.  Your class is upstairs in the chemistry lab."
 
-The Chemistry Lab is up from the science building.
+The posters are things in the science building.  Understand "Smily Cyprus" or "Jason Biever" as posters.  They are scenery.  The description is "The posters are mostly of celebrities like Smily Cyprus and Jason Biever telling you to be safe in science."
+
+The classrooms are in the science building.  Understand "doors" as classrooms.  They are scenery.  The description is "The doors are all opaque, so you can't see into any of the classrooms.  You probably don't want to go into any of them and risk disturbing a class."
+
+Instead of opening the classrooms:
+	say "You walk into a physics class just as they are performing a projectile lab.[line break][line break]*POW*[line break][line break]You take a cannonball to the face.";
+	end the game in death.
+
+The Chemistry Lab is up from the science building.  "The chemistry lab is nothing"
 
 The Gym is east of the quad.
 
