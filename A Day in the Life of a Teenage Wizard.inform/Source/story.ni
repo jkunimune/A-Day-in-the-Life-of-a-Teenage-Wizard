@@ -32,6 +32,26 @@ Instead of eating the donut:
 		decrease donutcount by 1;
 	otherwise:
 		say "Hah!  You wish you could eat a donut right now!".
+		
+Instead of giving the donut to Jane:
+	if donutcount is greater than 0:
+		if Jane is in the computer lab:
+			say "You hand a donut to Jane.[line break]'Thanks…' she says.";
+		otherwise:
+			say "You give Jane a donut.[line break]Her friend looks at you.  'Why can't I have a boyfriend who brings donuts?!' she cries angrily.  'Why.  Can't.  I.  Be.  You?!'[line break]She punches Jane in the face and grabs you.  'You're mine, now,' she mutters.  She runs off with you, and no one ever sees you again.";
+			end the game in death;
+		decrease donutcount by 1;
+	otherwise:
+		say "You can't see any such thing.".
+		
+Instead of giving the donut to the Guard:
+	if donutcount is greater than 0:
+		say "You pull out a donut and hand it to him.  His eyes widen.[line break]'You can only have it if you let me in,' you say alluringly.[line break]'Deal!' he exlaims without hesitation.  'They're only paying me fifty bucks, anyway.'[line break][line break]The guard steps aside to let you through.";
+		decrease donutcount by 1;
+		remove the guard from play;
+	otherwise:
+		say "You can't see any such thing.".
+
 
 The backpack is a thing.  Understand "bookbag" or "bag" or "schoolbag" or "school bag" or "book bag" or "pack" or "back pack" as backpack.  It is wearable.  It is a container.  It is closed and openable.  The description is "Your backpack is black and weighed down with all of your school books.[if the player is wearing the backpack]  Your shoulders ache from wearing it."
 

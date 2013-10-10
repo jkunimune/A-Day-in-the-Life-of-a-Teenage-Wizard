@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x185c440" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x6feb520" />
+  <activeNode nodeId="node-0xfaad380" />
   <item nodeId="node-0x185c440">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -22,7 +22,7 @@ You can see a chest (closed) here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">NO</temporary>
+    <temporary score="267">NO</temporary>
     <children>
       <child nodeId="node-0x6f72520" />
       <child nodeId="node-0x6f6f3e0" />
@@ -172,7 +172,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0x1b3d800" />
     </children>
@@ -184,7 +184,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0x1b02e00" />
     </children>
@@ -196,7 +196,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xb62fee0" />
     </children>
@@ -208,7 +208,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0x7076ea0" />
     </children>
@@ -220,7 +220,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xb6119d0" />
     </children>
@@ -232,7 +232,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xbca5c10" />
     </children>
@@ -244,7 +244,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xbc9eb60" />
     </children>
@@ -257,7 +257,7 @@ You hear a click from just above you.  Looking up, you see that the basement doo
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xb621990" />
     </children>
@@ -272,7 +272,7 @@ Your living room is a long room with a small table, a couple of chairs, and a pa
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xbccfd80" />
     </children>
@@ -284,7 +284,7 @@ Your living room is a long room with a small table, a couple of chairs, and a pa
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0x1be1500" />
     </children>
@@ -301,7 +301,7 @@ You can see a bus sign and a bus here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0x6fe6d10" />
     </children>
@@ -316,7 +316,7 @@ The entrance to school is just a parking lot with a sign stating the name of you
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xbccfab0" />
     </children>
@@ -332,7 +332,7 @@ You can see a flowers and a hooded man here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0x180b1d0" />
     </children>
@@ -352,7 +352,7 @@ You can see Jane here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xbca2210" />
     </children>
@@ -364,7 +364,7 @@ You can see Jane here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xbcaf680" />
     </children>
@@ -376,7 +376,7 @@ You can see Jane here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0x1bf0e10" />
     </children>
@@ -388,7 +388,7 @@ You can see Jane here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0x1bea800" />
     </children>
@@ -404,7 +404,7 @@ You can see a flowers and a hooded man here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xb630d60" />
     </children>
@@ -416,7 +416,7 @@ You can see a flowers and a hooded man here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xbd982a0" />
     </children>
@@ -427,12 +427,12 @@ You can see a flowers and a hooded man here.
 Computer Lab
 The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
 
-You can see a donut and Jane here.
+You can see Jane here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="167">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xb61c1a0" />
     </children>
@@ -448,7 +448,7 @@ You can see a flowers and a hooded man here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xb639a40" />
     </children>
@@ -464,7 +464,7 @@ You can see a guard here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0xfa53500" />
     </children>
@@ -477,7 +477,7 @@ Dance
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0x180b180" />
     </children>
@@ -493,19 +493,169 @@ You can see a guard here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="167">YES</temporary>
+    <temporary score="267">YES</temporary>
     <children>
       <child nodeId="node-0x6feb520" />
     </children>
   </item>
   <item nodeId="node-0x6feb520">
     <command xml:space="preserve">give guard donut</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
+    <result xml:space="preserve">(first taking the donut)
+You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="166">YES</temporary>
+    <temporary score="267">YES</temporary>
+    <children>
+      <child nodeId="node-0xbcf4380" />
+    </children>
+  </item>
+  <item nodeId="node-0xbcf4380">
+    <command xml:space="preserve">eat donut</command>
+    <result xml:space="preserve">(first taking the donut)
+Hah!  You wish you could eat a donut right now!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="267">YES</temporary>
+    <children>
+      <child nodeId="node-0xbd95900" />
+    </children>
+  </item>
+  <item nodeId="node-0xbd95900">
+    <command xml:space="preserve">play Decaf</command>
+    <result xml:space="preserve">You play an odd-sounding melody on the flute.
+*Poof!*
+A donut appears in your hand!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="267">YES</temporary>
+    <children>
+      <child nodeId="node-0xfae8c40" />
+    </children>
+  </item>
+  <item nodeId="node-0xfae8c40">
+    <command xml:space="preserve">eat donut</command>
+    <result xml:space="preserve">(first taking the donut)
+You devour the donut in no time.  Delicious!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="267">YES</temporary>
+    <children>
+      <child nodeId="node-0x6fe7ce0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6fe7ce0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  
+
+You can see a flowers and a hooded man here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="267">YES</temporary>
+    <children>
+      <child nodeId="node-0xfa967f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfa967f0">
+    <command xml:space="preserve">give donut to man</command>
+    <result xml:space="preserve">You can only do that to something animate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="267">YES</temporary>
+    <children>
+      <child nodeId="node-0xbcadac0" />
+    </children>
+  </item>
+  <item nodeId="node-0xbcadac0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Gym
+The gym is a large building with high windows.  As you approach it, you can already hear loud music coming out and lights flashing from inside.
+
+You can see a guard here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="267">YES</temporary>
+    <children>
+      <child nodeId="node-0xfaac6a0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfaac6a0">
+    <command xml:space="preserve">play decaf</command>
+    <result xml:space="preserve">You play an odd-sounding melody on the flute.
+*Poof!*
+A donut appears in your hand!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="267">YES</temporary>
+    <children>
+      <child nodeId="node-0xbc950d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xbc950d0">
+    <command xml:space="preserve">give guard donut</command>
+    <result xml:space="preserve">(first taking the donut)
+You hand a donut to Jane.
+&quot;Thanks…&quot; she says.
+You pull out a donut and hand it to him.  His eyes widen.
+&quot;You can only have it if you let me in,&quot; you say alluringly.
+&quot;Deal!&quot; he exlaims without hesitation.  &quot;They&apos;re only paying me fifty bucks, anyway.&quot;
+
+The guard steps aside to let you through.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="267">YES</temporary>
+    <children>
+      <child nodeId="node-0x1bc1510" />
+    </children>
+  </item>
+  <item nodeId="node-0x1bc1510">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Gym
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="267">YES</temporary>
+    <children>
+      <child nodeId="node-0xfaad380" />
+    </children>
+  </item>
+  <item nodeId="node-0xfaad380">
+    <command xml:space="preserve">give donut to guard</command>
+    <result xml:space="preserve">(first taking the donut)
+You hand a donut to Jane.
+&quot;Thanks…&quot; she says.
+You pull out a donut and hand it to him.  His eyes widen.
+&quot;You can only have it if you let me in,&quot; you say alluringly.
+&quot;Deal!&quot; he exlaims without hesitation.  &quot;They&apos;re only paying me fifty bucks, anyway.&quot;
+
+The guard steps aside to let you through.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="266">YES</temporary>
   </item>
   <item nodeId="node-0x185c490">
     <command xml:space="preserve">play</command>

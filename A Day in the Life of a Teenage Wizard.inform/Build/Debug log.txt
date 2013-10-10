@@ -6,7 +6,7 @@ Inform called as: /Applications/Inform.app/Contents/Resources/Compilers/ni -rule
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 5355 words long.
+I've now read your source text, which is 5537 words long.
 
 
 -----------------------------------------------------
