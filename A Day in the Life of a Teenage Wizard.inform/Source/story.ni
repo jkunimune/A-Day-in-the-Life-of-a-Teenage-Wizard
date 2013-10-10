@@ -18,12 +18,27 @@ Instead of taking inventory:
 	
 The description of the player is "You are a sixteen-year-old with dark hair and dark eyes.[if the player is wearing the backpack]  You have a heavy-looking backpack on your back."
 
+The donut is a thing.  Understand "pastry" or "chocolate donut" as donut.
+
+Instead of examining the donut:
+	if donutcount is greater than 0:
+		say "A good-looking chocolate-covered donut.  Yum!";
+	otherwise:
+		say "You can't see any such thing.".
+		
+Instead of eating the donut:
+	if donutcount is greater than 0:
+		say "You devour the donut in no time.  Delicious!";
+		decrease donutcount by 1;
+	otherwise:
+		say "Hah!  You wish you could eat a donut right now!".
+
 The backpack is a thing.  Understand "bookbag" or "bag" or "schoolbag" or "school bag" or "book bag" or "pack" or "back pack" as backpack.  It is wearable.  It is a container.  It is closed and openable.  The description is "Your backpack is black and weighed down with all of your school books.[if the player is wearing the backpack]  Your shoulders ache from wearing it."
 
 When play begins:
 	now the player is wearing the backpack.
 	
-The school books are things in the backpack.  Understand "schoolbooks" or "text books" or "textbooks" as school books.  The description is "Trigonometry, chemistry, Spanish… your backpack is loaded with heavy textbooks."
+The schoolbooks are things in the backpack.  Understand "school books" or "text books" or "textbooks" as schoolbooks.  The description is "Trigonometry, Chemistry, Spanish… your backpack is loaded with heavy textbooks."
 
 The note is a thing in the backpack.  Understand "note from Dad" as note.  The description is "This is the note Dad put on your backpack when he left this morning before you woke up.  It reads:[line break][line break]Hey, sport,[line break]I went down to the coffee shop to get my donut with my Decaf.  I won't see you 'till after school.[line break]-Dad"
 
@@ -72,7 +87,17 @@ An every turn rule:
 	if the player is in the computer lab, move the floor to the computer lab;
 	if the player is in the science building, move the floor to the science building;
 	if the player is in the chemistry lab, move the floor to the chemistry lab;
-	if the player is in the dance, move the floor to the dance.
+	if the player is in the dance, move the floor to the dance;
+	if the player is in the basement, move the donut to the basement;
+	if the player is in the living room, move the donut to the living room;
+	if the player is in the computer lab, move the donut to the computer lab;
+	if the player is in the science building, move the donut to the science building;
+	if the player is in the chemistry lab, move the donut to the chemistry lab;
+	if the player is in the dance, move the donut to the dance;
+	if the player is in the street, move the donut to the street;
+	if the player is in the school entrance, move the donut to the school entrance;
+	if the player is in the quad, move the donut to the quad;
+	if the player is in the gym, move the donut to the gym.
 
 The Basement is a room.  "The basement is a dark and dank area.  It is small; the only things here are an old chest and some wooden stairs leading up to [if basement door is unlocked]a locked[otherwise]an unlocked[end if] door.[if the basement door is locked]  You don't know how you managed to lock yourself in when you came down to get your book, but the important thing is the bus leaves in 10 minutes, so you'd better get out of here soon."
 
@@ -187,19 +212,27 @@ The potholes are things in the street.  They are scenery.  Understand "pot holes
 
 The curb is a thing in the street.  It is scenery.  Understand "sidewalk" as curb.
 
+The house is a thing in the street.  It is scenery.  Understand "home" as house.  The description is "Your small 1-story house sits next to the road."
+
 The classmates are things in the street.  They are scenery.  Understand "students" or "friend" or "Todd" or "lab partner" or "Kyle" or "crush" or "Jane" as classmates.  The description is "From here, you recognize your friend, Todd, your lab partner, Kyle, and Jane, your crush."
 
 Instead of entering the bus:
 	say "You get on the bus and sit in the back.  Before you know it, you are getting off at the entrance to school.";
 	move the player to the school entrance.
 
-The School Entrance is a room.  "The entrance to school is just a parking lot with a sign stating the name of your school.  The quad is just to the north."
+The School Entrance is a room.  "The entrance to school is just a parking lot with a sign stating the name of your school.[if we have not entered the school entrance the second time]  The rest of your classmates are walking to class already.  You see Jane among them.  You have to ask her to the dance tonight before someone else does.[end if]  The quad is just to the north."
+
+After entering the school entrance:
+	move the classmates to the school entrance;
+	move the road to the school entrance.
+
+The thing called the school is a thing in the school entrance.  It is scenery.  Understand "quad" or "academy" or "highschool" as school.  The description is "Your high school is a cluster of buildings sitting atop a low hill to your north."
 
 The schoolsign is a thing in the school entrance.  It is scenery.  Understand "school name" as schoolsign.  The printed name of the schoolsign is "sign".  The description is "The sign is a big colorful rectangle supported by two poles with your school's name printed across."
 
 The poles are things in the school entrance.  They are scenery.  Understand "posts" or "signposts" or "pole" as poles.  The description is "The poles are a couple of inches thick and appear to be made out of cast aluminum."
 
-The Quad is north of the school entrance.  "The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  The Math, English, Social Studies, and Language buildings are behind the science building, but you don't have any of those classes today.[if the flute is rainy]  It is raining hard."
+The Quad is north of the school entrance.  "The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  [if we have not entered the quad the second time]The Math, English, Social Studies, and Language buildings are behind the science building, but you don't have any of those classes today.  You see Jane heading towards the computer lab.  You both have computer science there now.[end if][if the flute is rainy]  It is raining hard."
 
 The flowers are things in the quad.  Understand "flower" as flowers.  Understand "rose" or "roses" as flowers.  The description is "These roses have a lovely aroma.  They sure seem romantic.  You could give these to Jane."
 
@@ -235,6 +268,11 @@ Instead of castraining:
 The Computer Lab is west of the quad.  "The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it."
 
 A thing can be beforecs or aftercs. A thing is usually beforecs.
+
+Before going to the computer lab:
+	if the book is beforecs:
+		say "You step into the computer lab just as class begins.  Jane, your crush, is already sitting down.[line break]'Good morning, class,' the teacher says, 'Today, we will be working on our text-adventure games…'[line break][line break]'Remember, games are due next class,' the teacher concludes.  Everyone begins to pack up their backpacks and leave.  Jane is leaving, too.  You have to stop her so you can ask her to the dance!";
+		change the book to aftercs.
 
 The desks are things in the computer lab.  Understand "desk" as desks.  Understand "table" or "tables" as desks.  They are scenery.  They are supporters.  The description is "The desks are made of rectangular pieces of wood, with thin metal legs."
 
@@ -328,9 +366,18 @@ Instead of opening the classrooms:
 	say "You walk into a physics class just as they are performing a projectile lab.[line break][line break]*POW*[line break][line break]You take a cannonball to the face.";
 	end the game in death.
 
-The Chemistry Lab is up from the science building.  "The chemistry lab is nothing"
+The Chemistry Lab is up from the science building.  
 
-The Gym is east of the quad.
+The Gym is east of the quad.  "The gym is a large building with high windows.  As you approach it, you can already hear loud music coming out and lights flashing from inside.[if we have not entered the gym for the second time]  You try to enter, but a large guard blocks your path."
+
+Holdingdonut is a kind of value.  The holdingdonuts are donutinhand and iwantadonut.  People have holdingdonut.  People are usually iwantadonut.
+
+The guard is a person in the gym.  Understand "senior" as guard.  The description is "A chubby, but tall senior stands in front of the door, blocking your entrance.  He wears a shirt with a donut on it."
+
+Instead of talking the guard:
+	if the guard is iwantadonut, say "Sorry, pal.  You were late to the dance, and it's my job to make sure no one enters or leaves this dance between the hours of five minutes ago and when they tell me to leave.  I'm getting paid to stand here."
+
+The shirt is a thing in the gym.  It is scenery.  Understand "donut shirt" or "shirt with a donut" as shirt.  The description is "The senior's shirt features a chocolate donut with a bite out of it.  He must really like donuts."
 
 The Dance is east of the gym.
 			

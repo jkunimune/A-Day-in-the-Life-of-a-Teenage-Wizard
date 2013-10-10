@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x185c440" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1bf0e10" />
+  <activeNode nodeId="node-0x6feb520" />
   <item nodeId="node-0x185c440">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -22,7 +22,7 @@ You can see a chest (closed) here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="27">NO</temporary>
+    <temporary score="167">NO</temporary>
     <children>
       <child nodeId="node-0x6f72520" />
       <child nodeId="node-0x6f6f3e0" />
@@ -172,7 +172,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="27">YES</temporary>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0x1b3d800" />
     </children>
@@ -184,7 +184,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="27">YES</temporary>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0x1b02e00" />
     </children>
@@ -196,7 +196,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="27">YES</temporary>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0xb62fee0" />
     </children>
@@ -208,7 +208,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="27">YES</temporary>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0x7076ea0" />
     </children>
@@ -220,7 +220,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="27">YES</temporary>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0xb6119d0" />
     </children>
@@ -232,7 +232,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="27">YES</temporary>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0xbca5c10" />
     </children>
@@ -244,7 +244,7 @@ You can&apos;t, since the basement door leads nowhere.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="27">YES</temporary>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0xbc9eb60" />
     </children>
@@ -257,7 +257,7 @@ You hear a click from just above you.  Looking up, you see that the basement doo
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="27">YES</temporary>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0xb621990" />
     </children>
@@ -271,8 +271,8 @@ Your living room is a long room with a small table, a couple of chairs, and a pa
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="27">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0xbccfd80" />
     </children>
@@ -283,8 +283,8 @@ Your living room is a long room with a small table, a couple of chairs, and a pa
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="27">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0x1be1500" />
     </children>
@@ -300,8 +300,8 @@ You can see a bus sign and a bus here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="27">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0x6fe6d10" />
     </children>
@@ -311,12 +311,12 @@ You can see a bus sign and a bus here.
     <result xml:space="preserve">You get on the bus and sit in the back.  Before you know it, you are getting off at the entrance to school.
 
 School Entrance
-The entrance to school is just a parking lot with a sign stating the name of your school.  The quad is just to the north.
+The entrance to school is just a parking lot with a sign stating the name of your school.  The rest of your classmates are walking to class already.  You see Jane among them.  You have to ask her to the dance tonight before someone else does.  The quad is just to the north.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="27">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0xbccfab0" />
     </children>
@@ -325,21 +325,25 @@ The entrance to school is just a parking lot with a sign stating the name of you
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Quad
-The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  The Math, English, Social Studies, and Language buildings are behind the science building, but you don&apos;t have any of those classes today.
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  The Math, English, Social Studies, and Language buildings are behind the science building, but you don&apos;t have any of those classes today.  You see Jane heading towards the computer lab.  You both have computer science there now.
 
 You can see a flowers and a hooded man here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="27">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0x180b1d0" />
     </children>
   </item>
   <item nodeId="node-0x180b1d0">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
+    <result xml:space="preserve">You step into the computer lab just as class begins.  Jane, your crush, is already sitting down.
+&quot;Good morning, class,&quot; the teacher says, &quot;Today, we will be working on our text-adventure games…&quot;
+
+&quot;Remember, games are due next class,&quot; the teacher concludes.  Everyone begins to pack up their backpacks and leave.  Jane is leaving, too.  You have to stop her so you can ask her to the dance!
+
 Computer Lab
 The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
 
@@ -347,8 +351,8 @@ You can see Jane here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="27">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0xbca2210" />
     </children>
@@ -359,8 +363,8 @@ You can see Jane here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="27">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0xbcaf680" />
     </children>
@@ -371,8 +375,8 @@ You can see Jane here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="27">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
     <children>
       <child nodeId="node-0x1bf0e10" />
     </children>
@@ -383,8 +387,125 @@ You can see Jane here.
 
 &gt;</result>
     <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
+    <children>
+      <child nodeId="node-0x1bea800" />
+    </children>
+  </item>
+  <item nodeId="node-0x1bea800">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  
+
+You can see a flowers and a hooded man here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
+    <children>
+      <child nodeId="node-0xb630d60" />
+    </children>
+  </item>
+  <item nodeId="node-0xb630d60">
+    <command xml:space="preserve">x jesus</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
+    <children>
+      <child nodeId="node-0xbd982a0" />
+    </children>
+  </item>
+  <item nodeId="node-0xbd982a0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Computer Lab
+The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
+
+You can see a donut and Jane here.
+
+&gt;</result>
+    <played>YES</played>
     <changed>YES</changed>
-    <temporary score="26">YES</temporary>
+    <temporary score="167">YES</temporary>
+    <children>
+      <child nodeId="node-0xb61c1a0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb61c1a0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  
+
+You can see a flowers and a hooded man here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
+    <children>
+      <child nodeId="node-0xb639a40" />
+    </children>
+  </item>
+  <item nodeId="node-0xb639a40">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Gym
+The gym is a large building with high windows.  As you approach it, you can already hear loud music coming out and lights flashing from inside.  You try to enter, but a large guard blocks your path.
+
+You can see a guard here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
+    <children>
+      <child nodeId="node-0xfa53500" />
+    </children>
+  </item>
+  <item nodeId="node-0xfa53500">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Dance
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
+    <children>
+      <child nodeId="node-0x180b180" />
+    </children>
+  </item>
+  <item nodeId="node-0x180b180">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Gym
+The gym is a large building with high windows.  As you approach it, you can already hear loud music coming out and lights flashing from inside.
+
+You can see a guard here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="167">YES</temporary>
+    <children>
+      <child nodeId="node-0x6feb520" />
+    </children>
+  </item>
+  <item nodeId="node-0x6feb520">
+    <command xml:space="preserve">give guard donut</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="166">YES</temporary>
   </item>
   <item nodeId="node-0x185c490">
     <command xml:space="preserve">play</command>
