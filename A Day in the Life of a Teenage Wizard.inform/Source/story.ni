@@ -275,15 +275,17 @@ After writeraining:
 Castraining is an action applying to nothing.  Understand "play cdeee" or "play cdeee on flute" as castraining.
 
 Things can be rainy or unrainy.  Things are usually unrainy.
-
-Every turn when a random chance of 2 in 5 succeeds:
-	if the flute is rainy:
-		change the flute to unrainy;
-		say "The rain has stopped.".
 		
 Instead of castraining:
 	say "You play the tune you heard the hooded man whistling on your flute.[if the flute is rainy]  Nothing happens.  The rain will probably stop on it's own.[otherwise]  A sudden downpour comes down, soaking everyone in the quad.[end if][if Jane is in the computer lab and the flute is unrainy][line break]It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.";
-	change the flute to rainy.
+	change the flute to rainy;
+	change the book to rainy.
+
+An every turn rule:	
+	if the flute is rainy and the book is unrainy and a random chance of 1 in 4 succeeds:
+		change the flute to unrainy;
+		say "The rain has stopped.";
+	change the book to unrainy.
 
 The Computer Lab is west of the quad.  "The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it."
 
@@ -292,7 +294,10 @@ A thing can be beforecs or aftercs. A thing is usually beforecs.
 Before going to the computer lab:
 	if the book is beforecs:
 		say "You step into the computer lab just as class begins.  Jane, your crush, is already sitting down.[line break]'Good morning, class,' the teacher says, 'Today, we will be working on our text-adventure games…'[line break][line break]'Remember, games are due next class,' the teacher concludes.  Everyone begins to pack up their backpacks and leave.  Jane is leaving, too.  You have to stop her so you can ask her to the dance!";
-		change the book to aftercs.
+		change the book to aftercs;
+	if the flute is rainy:
+		change the flute to unrainy;
+		say "The rain has stopped.".
 
 The desks are things in the computer lab.  Understand "desk" as desks.  Understand "table" or "tables" as desks.  They are scenery.  They are supporters.  The description is "The desks are made of rectangular pieces of wood, with thin metal legs."
 
@@ -309,7 +314,9 @@ Bladderstate is a number variable.  The bladderstate is 0.
 Decisiveness is a kind of value.  The decisivenesses are decisive and indecisive.  People have decisiveness.  People are usually decisive.
 	
 Instead of talking Jane:
-	if Jane is in the dance, end the game in victory;
+	if Jane is in the dance:
+		say "You tap Jane on the shoulder.  She seems glad to see you.  You have the most amazing night of your life, you and Jane have a long happy relationship, and you live happily ever after.";
+		end the game in victory;
 	if Jane is in the computer lab:
 		if the flute is unrainy, say "She's leaving in a big hurry.  You need to get her to stop first.";
 		if the flute is rainy:
@@ -388,6 +395,10 @@ Instead of opening the classrooms:
 
 The Chemistry Lab is up from the science building.  
 
+Instead of entering the gym:
+	if Jane is in the dance, move the player to the gym;
+	if Jane is not in the dance, say "You shouldn't go that way.  They're probably setting up for the dance tonight.".
+
 The Gym is east of the quad.  "The gym is a large building with high windows.  As you approach it, you can already hear loud music coming out and lights flashing from inside.[if we have not entered the gym for the second time]  You try to enter, but a large guard blocks your path."
 
 Holdingdonut is a kind of value.  The holdingdonuts are donutinhand and iwantadonut.  People have holdingdonut.  People are usually iwantadonut.
@@ -395,11 +406,44 @@ Holdingdonut is a kind of value.  The holdingdonuts are donutinhand and iwantado
 The guard is a person in the gym.  Understand "senior" as guard.  The description is "A chubby, but tall senior stands in front of the door, blocking your entrance.  He wears a shirt with a donut on it."
 
 Instead of talking the guard:
-	if the guard is iwantadonut, say "Sorry, pal.  You were late to the dance, and it's my job to make sure no one enters or leaves this dance between the hours of five minutes ago and when they tell me to leave.  I'm getting paid to stand here."
+	if the guard is iwantadonut, say "'Sorry, pal.  You were late to the dance, and it's my job to make sure no one enters or leaves this dance between the hours of five minutes ago and when they tell me to leave.  I'm getting paid to stand here.'"
 
 The shirt is a thing in the gym.  It is scenery.  Understand "donut shirt" or "shirt with a donut" as shirt.  The description is "The senior's shirt features a chocolate donut with a bite out of it.  He must really like donuts."
 
-The Dance is east of the gym.
+The Dance is east of the gym.  "Loud music fills your ears as you walk into the dance.  Through the thick mass of bodies and dim light, you can see Jane socializing with her friend."
+
+Instead of going to the dance:
+	if the guard is in the gym, say "The guard steps in front of you.[line break]'No can do, buddy,' he says, 'I'm afraid you're late.  The dance has already started.'";
+	if the guard is not in the gym, move the player to the dance.
+	
+The music is a thing in the dance.  Understand "dubstep" or "ballad" or "song" as music.  It is scenery.  The description is "The DJ is blasting the music so hard it hurts your ears."
+
+The DJ is a person in the dance.  Understand "Mr Relgned" or "Teacher" as DJ.  It is scenery.  The description is "The DJ is a middle-aged guy in sunglasses and headphones.  Wait, is that Mr. Relgned?"
+
+Instead of talking the DJ, say "You say 'Hi' to the DJ.  He doesn't hear you.[line break]You shout at the DJ over the music.  He doesn't hear you.".
+
+Instead of giving the donut to the DJ:
+	if donutcount is greater than 0:
+		say "You hand a donut to the DJ.[line break]He throws it into the crowd.  The dancers go crazy.  In five seconds, the donut is completely gone.";
+		decrease donutcount by 1;
+	otherwise:
+		say "You can't see any such thing.".
+		
+The bodies are things in the dance.  Understand "crowd" or "dancers" as bodies.  The description is "These people are bouncing to and fro as a single entity.  It is as if they are one single dancing organism.  They are no longer human in their minds."
+
+The friend is a person in the dance.  Understand "Jane's friend" or "Janes friend" or "blonde" as friend.  It is scenery.  The description is "Jane's friend is tall and blonde.  She and Jane are talking to each other."
+
+Instead of talking the friend:
+	say "You tap Jane's friend on the shoulder.[line break]'Hi, how are you?  Are you friends with Jane?' you ask loudly.[line break]'What?' she replies, 'what do you mean, my gargoyles are spitting?'[line break]'Why, no, I don't want a purple monkey grinder,' you say back.[line break]'Don't you think people would notice a giant singing organ?' points out Jane's friend.[line break]'Why are we talking about poisonous holes in the uniforms?'[line break]'What?'[line break]'Never mind.'[line break]'What?'[line break]'What?'[line break]'Okay.'[line break]'Fine, then.'".
+	
+Instead of giving the friend a donut:
+	if donutcount is greater than 0:
+		say "You hold a donut in front of Jane's friend's nose.  She sniffs it, and then looks at you.[line break]'A donut!' she exclaims, 'Yay, I love you, new boyfriend.  She picks you up and carries you into the sunset.";
+		end the game in death;
+		decrease donutcount by 1;
+	otherwise:
+		say "You can't see any such thing.".
+		
 			
 		
 
