@@ -16,6 +16,10 @@ To say exit list:
 Instead of taking inventory:
 	say "You're carrying [a list of things carried by the player][if donutcount is one] and 1 donut[end if][if donutcount is greater than one] and [donutcount] donuts[end if][if the player wears something].  You are also wearing [a list of things worn by the player][end if]."
 	
+[Instead of taking all, say "What do you want to take, specifically?"]
+	
+Understand "pick [something]" as taking.
+	
 The description of the player is "You are a sixteen-year-old with dark hair and dark eyes.[if the player is wearing the backpack]  You have a heavy-looking backpack on your back."
 
 The donut is a thing.  Understand "pastry" or "chocolate donut" as donut.
@@ -132,6 +136,13 @@ The chest is a thing in the basement.  Understand "box" as chest.  It is a conta
 Dusting is an action applying to one thing.  Understand "dust [something]" or "undust [something]" or "clean [something]" or "brush the dust off of [something]" or "wipe the dust off [something]" as dusting.
 
 Instead of dusting:
+	if the dustiness of the noun is dusty:
+		say "You clear the dust off of the surface of the [noun].";
+		change the dustiness of the noun to polished;
+	otherwise:
+		say "That's already clean.".
+		
+Instead of rubbing:
 	if the dustiness of the noun is dusty:
 		say "You clear the dust off of the surface of the [noun].";
 		change the dustiness of the noun to polished;
@@ -436,7 +447,7 @@ The friend is a person in the dance.  Understand "Jane's friend" or "Janes frien
 Instead of talking the friend:
 	say "You tap Jane's friend on the shoulder.[line break]'Hi, how are you?  Are you friends with Jane?' you ask loudly.[line break]'What?' she replies, 'what do you mean, my gargoyles are spitting?'[line break]'Why, no, I don't want a purple monkey grinder,' you say back.[line break]'Don't you think people would notice a giant singing organ?' points out Jane's friend.[line break]'Why are we talking about poisonous holes in the uniforms?'[line break]'What?'[line break]'Never mind.'[line break]'What?'[line break]'What?'[line break]'Okay.'[line break]'Fine, then.'".
 	
-Instead of giving the friend a donut:
+Instead of giving the donut to the friend:
 	if donutcount is greater than 0:
 		say "You hold a donut in front of Jane's friend's nose.  She sniffs it, and then looks at you.[line break]'A donut!' she exclaims, 'Yay, I love you, new boyfriend.  She picks you up and carries you into the sunset.";
 		end the game in death;
@@ -444,6 +455,39 @@ Instead of giving the friend a donut:
 	otherwise:
 		say "You can't see any such thing.".
 		
+Instead of taking the friend:
+	say "You grab Jane's friend and kiss her on the lips.  She kisses you back.  You two dance the night away, ignoring Jane's protests, threats, and physical attacks.  You and Jane's friend get married, discover oil under your house, and become the richest couple in the world.";
+	end the game in victory.
+	
+Before taking Jane:
+	if Jane is in the dance:
+		say "You sweep Jane off of her feet and kiss her.  Taken by surprise, she pushes you away, kicks you in the face (who knew she was a blackbelt in three martial arts?), and sprays you with mace.[line break]Her eyes widen as she recognizes who you are.[line break]This is awkward.";
+		end the story saying "You are humiliated.".
+		
+Instead of kissing the friend:
+	say "You spin Jane's friend around and kiss her.  Jane notices, yanks you two apart, and yells at you.  You can't hear what she's saying over the loud music, but she gets very animated.  You decide to ignore her and continue kissing her friend.[line break]Then, a boy comes over, pushes you apart, and yells at you.  You can't hear him, either, but it seems to be something along the lines of 'That's my girlfriend.'[line break]Suddenly, you recognize him as the guy who won the world boxing championships last year.  Uh-oh.";
+	end the game in death.
+	
+Before kissing Jane:
+	if Jane is in the dance:
+		say "You step in front of Jane and kiss her.  You live happily ever after.  Until senior year, anyway, when you break up, and then end up getting married to someone else, and then divorcing, and then winning the lottery, retitiring early, adopting a kid, and passing on your fortune to him as you pass away.";
+		end the game in victory.
+	
+Instead of attacking the friend:
+	say "Jane's friend's face annoys you.  You punch it.[line break]'Dude!' says Jane, 'She wasn't actually my friend.  She was an alien trying to take over the world, and I was negotiating with her.  Now the armada is coming to end humanity!'[line break]Oops.";
+	end the story saying "Aliens have destroyed the world.".
+	
+Instead of attacking Jane:
+	say "You push Jane to the ground and launch your fists at her face.  Before your knuckles land, though, she rolls to the side, jabs you in the stomach, twists your arm behind your back, and throws you out of a window.";
+	end the game in death.
+	
+Worldovertaking is an action applying to nothing.  Understand "take over the world" as worldovertaking.
+
+Instead of worldovertaking:
+	say "You use your magic flute to take over the world, claiming Jane as your empress.[line break]MUAHAHAHAHAHAHAHA!";
+	end the story saying "You now rule the world.".
+		
+
 			
 		
 
