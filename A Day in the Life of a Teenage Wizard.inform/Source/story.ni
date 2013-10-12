@@ -149,6 +149,8 @@ Instead of rubbing:
 	otherwise:
 		say "That's already clean.".
 		
+The metal is a thing in the basement.  It is scenery.  Understand "silver" or "silver metal" as metal.  The description is "You don't know what this is, but it hasn't rusted after all the years it's been down here."
+		
 Bookiness is a kind of value.  The bookinesses are booky and bookless.  Things have bookiness.  Things are usually bookless.
 
 Donutspell is a kind of value.  The donutspells are donutfalse and donuttrue.  Things have donutspell.  Things are usually donutfalse.
@@ -211,7 +213,9 @@ Instead of donuting:
 	say "You play an odd-sounding melody on the flute.[line break]*Poof!*[line break]A donut appears in your hand!";
 	increase donutcount by one.
 			
-The Living Room is up from the basement door.  "Your living room is a long room with a small table, a couple of chairs, and a painting.  The basement is below you.  A hallway in the north leads to the kitchen."
+The Living Room is up from the basement door.  "Your living room is a long room with a small table, a couple of chairs, and a painting.  The basement is below you.  A hallway in the north leads to the kitchen.  The front door is open on the east side of the room."
+
+The thing called the front door is in the living room.  It is scenery.  The description is "It is open, and through it you can see the bus stop in front of your house."
 
 The small table is a supporter in the living room.  It is scenery.  The description is "The table is small and made of glass."
 
@@ -404,7 +408,23 @@ Instead of opening the classrooms:
 	say "You walk into a physics class just as they are performing a projectile lab.[line break][line break]*POW*[line break][line break]You take a cannonball to the face.";
 	end the game in death.
 
-The Chemistry Lab is up from the science building.  
+The Chemistry Lab is up from the science building.  "The chemistry lab is a large room full of beakers and test tubes on racks.  There is a whiteboard on one side of the room and a large window on the other.  The teacher isn't here, yet."
+
+The chemicals are things in the chemistry lab.  Understand "beakers" or "beaker" or "test tubes" or "test tube" or "tube" or "tubes" or "chemical" as chemicals.  They are scenery.  The description is "The test tubes and beakers are of all different shapes and sizes, and all kinds of chemicals sit inside them."
+
+Instead of taking the chemicals:
+	say "You pick up a test tube and drink it's contents.  You take a beaker of powder and consume that, too.[line break]You don't feel so well…";
+	end the story saying "You have exploded".
+	
+The racks are things in the chemistry lab.  They are scenery.  The description is "The racks are made of wood and have holes for chemicals in them."
+
+The whiteboard is a thing in the chemistry lab.  It is scenery.  Understand "white board" or "chalkboard" or "blackboard" or "chalk board" or "black board" or "SMART board" or "board" as whiteboard.  The description is "The whiteboard is covered in diagrams and equations.  You don't understand any of it."
+
+The window is a thing in the chemistry lab.  It is scenery.  Understand "through window" or "through the window" as window.  The description is "Through the window, you can see your chemistry teacher, Mr. Lacimec, walking toward the building."
+
+Mr Lacimec is a thing in the chemistry lab.  He is scenery.  Understand "teacher" or "chemistry teacher" as Mr Lacimec.
+
+Vicinity is a number variable.  The vicinity is 1.
 
 Instead of entering the gym:
 	if Jane is in the dance, move the player to the gym;
