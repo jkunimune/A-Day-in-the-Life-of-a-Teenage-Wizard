@@ -197,7 +197,14 @@ Instead of magicing:
 		say "You play a simple scale on your flute.";
 		if the player is in the basement and the basement door is locked:
 			say "You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.";
-			change the basement door to unlocked.
+			change the basement door to unlocked;
+		if the player is in the chemistry lab and the teacher is jolly:
+			say "Through the window, you notice Mr Lacimec's briefcase magicly unlatch itself and fall open.  Papers from within the briefcase go flying everywhere.";
+			change the teacher to livid;
+			if the flute is rainy:
+				say "The test paper immediately get soaked by the rain.  When Mr Lacimec gets to the classroom, he is not happy.  The entire class spends the rest of class sitting in the corner.  At least you're not failing.[line break]By the time class is over, the sun is beginning to set, and it is late in the day.  It's time to go to the dance with Jane.  She should be waiting at the gym right now.";
+				change the player to untestable;
+				move the player to the quad.
 			
 Writingdonuting is an action applying to nothing.  Understand "write Decaf" or "write Decaf down" or "write Decaf in book" or "write Decaf in the book" or "write Decaf on the book" or "write Decaf on book" or "write Decaf on the spell book" or "write Decaf in the spellbook" or "write Decaf on the spellbook" or "write Decaf on spellbook" or "write Decaf in spellbook" or "write Decaf on spell book" or "write Decaf in spell book" or "record Decaf" or "put Decaf in book" or "put Decaf in the book" or "put Decaf on the book" or "put Decaf on book" or "put Decaf on the spell book" or "put Decaf in the spellbook" or "put Decaf on the spellbook" or "put Decaf on spellbook" or "put Decaf in spellbook" or "put Decaf on spell book" or "put Decaf in spell book" as writingdonuting.
 
@@ -273,13 +280,16 @@ The flowers are things in the quad.  Understand "flower" as flowers.  Understand
 
 The tune is a thing in the quad.  Understand "melody" or "song" or "whistle" as tune.  It is scenery.  The description is "The tune starts off like your unlocking spell, but the third note repeats twice."
 
-The hooded man is a thing in the quad.  Understand "hood" or "cloak" or "hooded cloak" or "cloaked man" or "man in a hooded cloak" or "figure" as hooded man.  The description is "There is a man in a hooded cloak standing about the quad, whistling a strange tune.  The first three notes are similar to your unlocking spell, but then it repeats the last not twice.[line break]You wonder if you should tell security about this guy.[line break]Nah, he doesn't seem to be a threat."
+The hooded man is a person in the quad.  Understand "hood" or "cloak" or "hooded cloak" or "cloaked man" or "man in a hooded cloak" or "figure" as hooded man.  The description is "There is a man in a hooded cloak standing about the quad, whistling a strange tune.  The first three notes are similar to your unlocking spell, but then it repeats the last not twice.[line break]You wonder if you should tell security about this guy.[line break]Nah, he doesn't seem to be a threat."
 
 Talking is an action applying to one thing.  Understand "talk to [something]" as talking.
 
 Instead of talking:
-	if the noun is not the hooded man and the noun is not Jane, say "You strike up a conversation with the [noun].  Weirdo.";
+	if the noun is not the hooded man and the noun is not Jane and the noun is not the guard and the noun is not Kyle, say "You strike up a conversation with the [noun].  Weirdo.";
 	if the noun is the hooded man, say "You try to get the attention of the hooded man.  He ignores you and continues whistling.".
+	
+Instead of asking the hooded man about something:
+	say "There is no reply.  He simply continues to whistle."
 	
 Writeraining is an action applying to nothing.  Understand "write cdeee" or "write cdeee down" or "write cdeee in book" or "write cdeee in the book" or "write cdeee on the book" or "write cdeee on book" or "write cdeee on the spell book" or "write cdeee in the spellbook" or "write cdeee on the spellbook" or "write cdeee on spellbook" or "write cdeee in spellbook" or "write cdeee on spell book" or "write cdeee in spell book" or "record cdeee" or "put cdeee in book" or "put cdeee in the book" or "put cdeee on the book" or "put cdeee on book" or "put cdeee on the spell book" or "put cdeee in the spellbook" or "put cdeee on the spellbook" or "put cdeee on spellbook" or "put cdeee in spellbook" or "put cdeee on spell book" or "put cdeee in spell book" as writeraining.
 
@@ -294,7 +304,11 @@ Things can be rainy or unrainy.  Things are usually unrainy.
 Instead of castraining:
 	say "You play the tune you heard the hooded man whistling on your flute.[if the flute is rainy]  Nothing happens.  The rain will probably stop on it's own.[otherwise]  A sudden downpour comes down, soaking everyone in the quad.[end if][if Jane is in the computer lab and the flute is unrainy][line break]It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.";
 	change the flute to rainy;
-	change the book to rainy.
+	change the book to rainy;
+	if the player is in the chemistry lab and the teacher is livid:
+		say "The rain soaks all of Mr Lacimec's papers.  You did it!  You destroyed the tests![line break]When Mr Lacimec walks into the classroom, he is not happy.  He has everyone sit in the corner for the rest of class.  At least you're not failing![line break]By the time you get out of class, the sun is touching the horizon in the west.  It's time for the dance!  Jane should be at the gym right about now.";
+		change the player to untestable;
+		move the player to the quad.
 
 An every turn rule:	
 	if the flute is rainy and the book is unrainy and a random chance of 1 in 4 succeeds:
@@ -327,6 +341,62 @@ Jane is a person in the computer lab.  Understand "Janet" or "girl" or "crush" o
 Bladderstate is a number variable.  The bladderstate is 0.
 
 Decisiveness is a kind of value.  The decisivenesses are decisive and indecisive.  People have decisiveness.  People are usually decisive.
+
+Instead of asking Jane about "dance":
+	if Jane is in the dance:
+		say "You tap Jane on the shoulder.  She seems glad to see you.  You have the most amazing night of your life, you and Jane have a long happy relationship, and you live happily ever after.";
+		end the game in victory;
+	if Jane is in the computer lab:
+		if the flute is unrainy, say "She's leaving in a big hurry.  You need to get her to stop first.";
+		if the flute is rainy:
+			change bladderstate to 1;
+			say "You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  You've got to be joking!  It's too late now.  Jane is already turning around.  You'll just have to hold it.[line break][line break]'Hi, Jane,' you mutter nervously.  'Crazy weather, huh?'[line break]'Yeah, it sure is.  Almost magical,' she replies.  'Don't you just love the rain?'";
+			if player consents:
+				say "'It's amazing if you think about it,' she continues, 'Tons and tons of liquid water rushing down from the sky and flowing down rivers.'[line break][line break]Her words painfully remind you that you have to pee.[line break]";
+				increase bladderstate by 1;
+				say "[line break]You really need to go to the bathroom.[line break]";
+			otherwise:
+				say "[line break]You have to go to the bathroom…[line break]";
+			say "[line break]'Well, anyway,' you stammer, 'I was just… I wanted to…'[line break]You can't quite remember your train of thought.  This isn't good.  You're looking bad in front of Jane.  You start sweating violently.  Also not good.[line break]'Is is hot in here, or is it just me?' you ask.[line break]'I have some water, if you want,' offers Jane.";
+			if player consents:
+				say "She pulls a water bottle out of her backpack and hands it to you.  You waterfall a sizable gulp, into your mouth, much to your bladder's protest.[line break]";
+				increase bladderstate by 1;
+				if the bladderstate is 2, say "[line break]You really need to go to the bathroom.[line break]";
+				if the bladderstate is 3, say "[line break]You bounce up and down nervously.  You can't hold it much longer.[line break]";
+			otherwise:
+				say "'No thank you,' you say.";
+				if the bladderstate is 1, say "[line break]You have to go to the bathroom…[line break]";
+				if the bladderstate is 2, say "[line break]You really need to go to the bathroom.[line break]";
+			say "[line break]'So, there's the dance tonight…' you begin uneasily.[line break]'Oh, yeah!' Jane says, 'Did you know the theme is underwater?";
+			if player consents:
+				say "'Seems a little cliché to me,' she adds.";
+				if the bladderstate is 1, say "[line break]You have to go to the bathroom…[line break]";
+				if the bladderstate is 2, say "[line break]You really need to go to the bathroom.[line break]";
+				if the bladderstate is 3, say "[line break]You bounce up and down nervously.  You can't hold it much longer.  Jane looks at you funny.[line break]";
+			otherwise:
+				say "'I heard they're going to have fish tanks and water sound effects and waterfalls,' she explains.[line break][line break]Waterfalls are not fun to think about when you have to pee.[line break]";
+				increase bladderstate by 1;
+				if the bladderstate is 2, say "[line break]You really need to go to the bathroom.[line break]";
+				if the bladderstate is 3, say "[line break]You bounce up and down nervously.  You can't hold it much longer.  Jane looks at you funny.[line break]";
+				if the bladderstate is 4, say "[line break]You can't hold it any longer!  You run to the bathroom without hesitation.  How embarrassing.";
+				if the bladderstate is 4, end the story saying "You have failed to get a date to the dance.";
+			if bladderstate is less than 4, say "[line break]'Do you have a date for that?' you inquire abruptly.[line break]'Not yet,' answers Jane, 'If I don't get one soon, I'll probably just skip the dance and go whitewater rafting.  Have you ever been whitewater rafting?'";
+			if player consents:
+				say "'Pretty fun, huh?' says Jane.";
+				if the bladderstate is 1, say "[line break]You have to go to the bathroom…[line break]";
+				if the bladderstate is 2, say "[line break]You really need to go to the bathroom.[line break]";
+				if the bladderstate is 3, say "[line break]You bounce up and down nervously.  You can't hold it much longer.  Jane looks at you funny.[line break]";
+				if the bladderstate is 4, say "[line break]You can't hold it any longer!  You run to the bathroom without hesitation.  How embarrassing.";
+				if the bladderstate is 4, end the story saying "You have failed to get a date to the dance.";
+			otherwise:
+				say "'It's where you ride down choppy rivers in a raft,' Jane elaborates, 'The best part of it, I think, is just the gurgling, rushing, splashing sound the water makes.'[line break][line break]All those sound effects make you think of is the flushing of a toilet.[line break]";
+				increase bladderstate by 1;
+				if the bladderstate is 2, say "[line break]You really need to go to the bathroom.[line break]";
+				if the bladderstate is 3, say "[line break]You bounce up and down nervously.  You can't hold it much longer.  Jane looks at you funny.[line break]";
+				if the bladderstate is 4, say "[line break]You can't hold it any longer!  You run to the bathroom without hesitation.  How embarrassing.";
+				if the bladderstate is 4, end the story saying "You have failed to get a date to the dance.";
+			if bladderstate is less than 4, say "[line break]'Yeah… so, do you want to come to the dance with me?' you blurt out.[line break]'Oh.  Really?  Well…'[line break][line break]She's indecisive!  You should give her something to tip the scales.";
+			change Jane to indecisive.
 	
 Instead of talking Jane:
 	if Jane is in the dance:
@@ -388,7 +458,7 @@ Instead of giving the flowers to Jane:
 	if Jane is decisive:
 		say "Shouldn't you talk to her first?";
 	otherwise:
-		say "'Wow, thanks!' Jane exclaims.  'That's so sweet.  You know what?  I will go to the dance with you.'[line break]She turns and walks out into the rain, and then sprints off towards the Math building.  Mission accompished: you have the perfect date to the dance.";
+		say "'Wow, thanks!' Jane exclaims.  'That's so sweet.  You know what?  I will go to the dance with you.  I'll meet you at the gym around seven.'[line break]She turns and walks out into the rain, and then sprints off towards the Math building.  Mission accompished: you have the perfect date to the dance.";
 		remove the flowers from play;
 		change the decisiveness of Jane to decisive;
 		move Jane to the dance.
@@ -420,12 +490,74 @@ The racks are things in the chemistry lab.  They are scenery.  The description i
 
 The whiteboard is a thing in the chemistry lab.  It is scenery.  Understand "white board" or "chalkboard" or "blackboard" or "chalk board" or "black board" or "SMART board" or "board" as whiteboard.  The description is "The whiteboard is covered in diagrams and equations.  You don't understand any of it."
 
-The window is a thing in the chemistry lab.  It is scenery.  Understand "through window" or "through the window" as window.  The description is "Through the window, you can see your chemistry teacher, Mr. Lacimec, walking toward the building."
+The window is a thing in the chemistry lab.  It is scenery.  Understand "through window" or "through the window" as window.  The description is "Through the window, you can see your chemistry teacher, Mr Lacimec.[if the flute is rainy]  It is raining on him."
 
-Mr Lacimec is a thing in the chemistry lab.  He is scenery.  Understand "teacher" or "chemistry teacher" as Mr Lacimec.
+Kyle is a person in the chemistry lab.  Understand "lab partner" as Kyle.  The description is "Kyle has black hair, is slight of build, and looks very stressed."
 
-Vicinity is a number variable.  The vicinity is 1.
+Instead of talking Kyle:
+	if vicinity is 0:
+		say "Kyle looks stressed.  You ask him what's wrong.[line break]'What, you don't remember?' he asks.  'Our quarter exam is today!'  As he says it, he is pulling out his book and trying to cram.[line break]Oh, no!  You completely forgot!  You can't afford to flunk this test.  You need to stop it from happening…[line break]";
+		change vicinity to 1;
+		change the player to testable;
+	otherwise:
+		say "Kyle looks busy with his textbook, and anyway, you should be figuring out how to stop this test.".
+		
+Instead of asking Kyle about "dance":
+	say "Hah!  Kyle having a date to the dance?  As if!"
+	
+Instead of asking Kyle about "Jane":
+	say "Kyle looks busy with his textbook, and anyway, you should be figuring out how to stop this test."
+	
+Instead of asking Kyle about "test":
+	say "Kyle looks busy with his textbook, and anyway, you should be figuring out how to stop this test."
+	
+Studying is an action applying to one thing.  Understand "study [something]" as studying.
 
+Instead of studying:
+	say "I'm afraid it's too late for that."
+
+The teacher is a thing in the chemistry lab.  He is scenery.  Understand "Mr Lacimec" or "chemistry teacher" as the teacher.  The teacher can be jolly or livid.  The teacher is jolly.  The description is "[if the teacher is jolly and the flute is unrainy]Mr Lacimec is walking towards the science building with his waterproof breifcase in one hand and his coasters in his pocket.  He is smiling.  Or is that an evil grin?[end if][if the teacher is jolly and the flute is rainy]Mr Lacimec is walking through the rain with his waterproof briefcase in one hand and his coasters in his pocket.  He is undeterred by the rain.[end if][if the teacher is livid and the flute is unrainy]Mr Lacimec has stopped to collect his scattered papers.  He looks mad.[end if][if the teacher is livid and the flute is rainy]Mr Lacimec is now sitting and crying.  His papers are all scattered around him and getting soaked by the rain.[end if]"
+
+The waterproof briefcase is a thing in the chemistry lab.  It is scenery.  Understand "suitcase" or "case" as waterproof briefcase.  The description is "The briefcase is small, silver, and rectangular.[if the teacher is livid]  The latch on top is unlocked, and papers from inside the case are scattered around Mr Lacimec's feet.[otherwise]  The big bronze latch on top is in the locked position."
+
+The latch is a thing in the chemistry lab.  It is scenery.  The description is "The latch on Mr Lacimec's briefcase is currently in the[if the teacher is livid] unlocked[otherwise] locked[end if] position."
+
+The coasters are things in the chemistry lab.  They are scenery.  The description is "Mr Lacimec always carries coasters with him.  You know how he hates paper getting wet."
+
+Vicinity is a number variable.  The vicinity is 0.
+
+An every turn rule:
+	if vicinity is greater than 0 and the teacher is jolly, increase vicinity by 1;
+	if vicinity is 12:
+		say "You can hear Mr Lacimec in the science building.";
+	if vicinity is greater than 12:
+		say "Mr Lacimec steps into the room.  He pulls the tests out of his suitcase and begins handing them out.  You are doomed.";
+		end the story saying "You have flunked chemistry.".
+		
+After examining the window:
+	if the teacher is jolly:
+		if vicinity is 2, say "Mr Lacimec is making his way towards the building.";
+		if vicinity is 3, say "Mr Lacimec is making his way towards the building.";
+		if vicinity is 4, say "Mr Lacimec is making his way towards the building.";
+		if vicinity is 5, say "Mr Lacimec is making his way towards the building.";
+		if vicinity is 6, say "Mr Lacimec is approaching the building.";
+		if vicinity is 7, say "Mr Lacimec is approaching the building.";
+		if vicinity is 8, say "Mr Lacimec is approaching the building.";
+		if vicinity is 9, say "Mr Lacimec is almost at the building.";
+		if vicinity is 10, say "Mr Lacimec is almost at the building.";
+		if vicinity is 11, say "Mr Lacimec is right underneath the window.";
+		if vicinity is 12, say "You can no longer see Mr Lacimec.";
+	otherwise:
+		say "Mr Lacimec has stopped to collect his papers.".
+	
+Testability is a kind of value.  Things have testability.  The testabilities are testable and untestable.  Things are usually testable.
+
+Instead of going to the science building:
+	if the player is in the chemistry lab and the player is testable:
+		say "You can't leave now!  You have chemistry.";
+	otherwise:
+		move the player to the science building.
+		
 Instead of entering the gym:
 	if Jane is in the dance, move the player to the gym;
 	if Jane is not in the dance, say "You shouldn't go that way.  They're probably setting up for the dance tonight.".

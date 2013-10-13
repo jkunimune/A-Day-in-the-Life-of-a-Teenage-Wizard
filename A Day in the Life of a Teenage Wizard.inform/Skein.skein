@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x18078e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x1b96c10" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0xf247a40" />
-  <item nodeId="node-0x18078e0">
+  <activeNode nodeId="node-0xee741e0" />
+  <item nodeId="node-0x1b96c10">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -12,7 +12,7 @@ You&apos;re practically ripping out your hair from stress.  Today is the date of
 
 A Day in the Life of a Teenage Wizard
 Ordinary Problems, Magical Solutions by Justin Kunimune
-Release 1 / Serial number 131011 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 131013 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Basement
 The basement is a dark and dank area.  It is small; the only things here are an old chest and some wooden stairs leading up to an unlocked door.  You don&apos;t know how you managed to lock yourself in when you came down to get your book, but the important thing is the bus leaves in 10 minutes, so you&apos;d better get out of here soon.
@@ -22,19 +22,19 @@ You can see a chest (closed) here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="40">NO</temporary>
+    <temporary score="66">NO</temporary>
     <children>
-      <child nodeId="node-0x707f2b0" />
-      <child nodeId="node-0x707f160" />
-      <child nodeId="node-0x707d090" />
-      <child nodeId="node-0x707cd10" />
-      <child nodeId="node-0xf2528d0" />
-      <child nodeId="node-0x7079350" />
-      <child nodeId="node-0x7077a20" />
-      <child nodeId="node-0x1807f10" />
+      <child nodeId="node-0x6d92db0" />
+      <child nodeId="node-0x6d92c60" />
+      <child nodeId="node-0x6d90b90" />
+      <child nodeId="node-0x6d90810" />
+      <child nodeId="node-0x6d8dda0" />
+      <child nodeId="node-0x6d8dcc0" />
+      <child nodeId="node-0x6d8c390" />
+      <child nodeId="node-0x1b96ca0" />
     </children>
   </item>
-  <item nodeId="node-0x1807f10">
+  <item nodeId="node-0x1b96ca0">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -43,10 +43,10 @@ You can see a chest (closed) here.
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x1807f60" />
+      <child nodeId="node-0x1b96d10" />
     </children>
   </item>
-  <item nodeId="node-0x1807f60">
+  <item nodeId="node-0x1b96d10">
     <command xml:space="preserve">open chest</command>
     <result xml:space="preserve">You open the chest, revealing a spell book and a flute.
 
@@ -55,10 +55,10 @@ You can see a chest (closed) here.
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x1807fb0" />
+      <child nodeId="node-0x1b96d60" />
     </children>
   </item>
-  <item nodeId="node-0x1807fb0">
+  <item nodeId="node-0x1b96d60">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -67,10 +67,10 @@ You can see a chest (closed) here.
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x18079d0" />
+      <child nodeId="node-0x1b96e10" />
     </children>
   </item>
-  <item nodeId="node-0x18079d0">
+  <item nodeId="node-0x1b96e10">
     <command xml:space="preserve">x book</command>
     <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
 &gt;</result>
@@ -78,10 +78,10 @@ You can see a chest (closed) here.
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x1807a40" />
+      <child nodeId="node-0x1b96e80" />
     </children>
   </item>
-  <item nodeId="node-0x1807a40">
+  <item nodeId="node-0x1b96e80">
     <command xml:space="preserve">x book</command>
     <result xml:space="preserve">It is a mystic-looking leather-bound hand-sized book.The cover is embroidered with strange symbols that you don&apos;t understand.  Somehow, the book seems to eminate pure power.
 &gt;</result>
@@ -89,10 +89,10 @@ You can see a chest (closed) here.
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x1807a90" />
+      <child nodeId="node-0x1b96ed0" />
     </children>
   </item>
-  <item nodeId="node-0x1807a90">
+  <item nodeId="node-0x1b96ed0">
     <command xml:space="preserve">open book</command>
     <result xml:space="preserve">You open the book.
 
@@ -101,10 +101,10 @@ You can see a chest (closed) here.
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x1807b80" />
+      <child nodeId="node-0x6d8c100" />
     </children>
   </item>
-  <item nodeId="node-0x1807b80">
+  <item nodeId="node-0x6d8c100">
     <command xml:space="preserve">x book</command>
     <result xml:space="preserve">The book says:
 
@@ -116,10 +116,10 @@ abcde
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x1807bd0" />
+      <child nodeId="node-0x6d8c150" />
     </children>
   </item>
-  <item nodeId="node-0x1807bd0">
+  <item nodeId="node-0x6d8c150">
     <command xml:space="preserve">take flute</command>
     <result xml:space="preserve">Taken.
 
@@ -128,10 +128,10 @@ abcde
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x1807c20" />
+      <child nodeId="node-0x6d8c1a0" />
     </children>
   </item>
-  <item nodeId="node-0x1807c20">
+  <item nodeId="node-0x6d8c1a0">
     <command xml:space="preserve">play abcde</command>
     <result xml:space="preserve">You play a simple scale on your flute.
 You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.
@@ -141,10 +141,10 @@ You hear a click from just above you.  Looking up, you see that the basement doo
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x1807c90" />
+      <child nodeId="node-0x6d8c1f0" />
     </children>
   </item>
-  <item nodeId="node-0x1807c90">
+  <item nodeId="node-0x6d8c1f0">
     <command xml:space="preserve">play abcde</command>
     <result xml:space="preserve">You play a simple scale on your flute.
 
@@ -153,10 +153,10 @@ You hear a click from just above you.  Looking up, you see that the basement doo
     <changed>YES</changed>
     <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x1807d00" />
+      <child nodeId="node-0x6d8c260" />
     </children>
   </item>
-  <item nodeId="node-0x1807d00">
+  <item nodeId="node-0x6d8c260">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">(first opening the basement door)
 You can&apos;t, since the basement door leads nowhere.
@@ -166,7 +166,7 @@ You can&apos;t, since the basement door leads nowhere.
     <changed>YES</changed>
     <temporary score="198">YES</temporary>
   </item>
-  <item nodeId="node-0x7077a20">
+  <item nodeId="node-0x6d8c390">
     <command xml:space="preserve">x ceiling</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -175,10 +175,10 @@ You can&apos;t, since the basement door leads nowhere.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x1807b20" />
+      <child nodeId="node-0x1b96f60" />
     </children>
   </item>
-  <item nodeId="node-0x1807b20">
+  <item nodeId="node-0x1b96f60">
     <command xml:space="preserve">x ceiling</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -187,10 +187,10 @@ You can&apos;t, since the basement door leads nowhere.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077a90" />
+      <child nodeId="node-0x6d8c400" />
     </children>
   </item>
-  <item nodeId="node-0x7077a90">
+  <item nodeId="node-0x6d8c400">
     <command xml:space="preserve">x walls</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -199,10 +199,10 @@ You can&apos;t, since the basement door leads nowhere.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077b00" />
+      <child nodeId="node-0x6d8c470" />
     </children>
   </item>
-  <item nodeId="node-0x7077b00">
+  <item nodeId="node-0x6d8c470">
     <command xml:space="preserve">x floor</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -211,10 +211,10 @@ You can&apos;t, since the basement door leads nowhere.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077b70" />
+      <child nodeId="node-0x6d8c4e0" />
     </children>
   </item>
-  <item nodeId="node-0x7077b70">
+  <item nodeId="node-0x6d8c4e0">
     <command xml:space="preserve">open chest</command>
     <result xml:space="preserve">You open the chest, revealing a spell book and a flute.
 
@@ -223,10 +223,10 @@ You can&apos;t, since the basement door leads nowhere.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077be0" />
+      <child nodeId="node-0x6d8c550" />
     </children>
   </item>
-  <item nodeId="node-0x7077be0">
+  <item nodeId="node-0x6d8c550">
     <command xml:space="preserve">take flute</command>
     <result xml:space="preserve">Taken.
 
@@ -235,10 +235,10 @@ You can&apos;t, since the basement door leads nowhere.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077c50" />
+      <child nodeId="node-0x6d8c5c0" />
     </children>
   </item>
-  <item nodeId="node-0x7077c50">
+  <item nodeId="node-0x6d8c5c0">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -247,10 +247,10 @@ You can&apos;t, since the basement door leads nowhere.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077cc0" />
+      <child nodeId="node-0x6d8c630" />
     </children>
   </item>
-  <item nodeId="node-0x7077cc0">
+  <item nodeId="node-0x6d8c630">
     <command xml:space="preserve">play cdefg</command>
     <result xml:space="preserve">You play a simple scale on your flute.
 You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.
@@ -260,10 +260,10 @@ You hear a click from just above you.  Looking up, you see that the basement doo
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077960" />
+      <child nodeId="node-0x6d8c2d0" />
     </children>
   </item>
-  <item nodeId="node-0x7077960">
+  <item nodeId="node-0x6d8c2d0">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">(first opening the basement door)
 
@@ -275,10 +275,10 @@ Your living room is a long room with a small table, a couple of chairs, and a pa
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70779b0" />
+      <child nodeId="node-0x6d8c320" />
     </children>
   </item>
-  <item nodeId="node-0x70779b0">
+  <item nodeId="node-0x6d8c320">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You&apos;re not feeling very hungry right now.
 
@@ -287,10 +287,10 @@ Your living room is a long room with a small table, a couple of chairs, and a pa
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077eb0" />
+      <child nodeId="node-0x6d8c820" />
     </children>
   </item>
-  <item nodeId="node-0x7077eb0">
+  <item nodeId="node-0x6d8c820">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You make it to the bus stop just as the bus pulls up.
 
@@ -304,10 +304,10 @@ You can see a bus sign and a bus here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077f20" />
+      <child nodeId="node-0x6d8c890" />
     </children>
   </item>
-  <item nodeId="node-0x7077f20">
+  <item nodeId="node-0x6d8c890">
     <command xml:space="preserve">get in bus</command>
     <result xml:space="preserve">You get on the bus and sit in the back.  Before you know it, you are getting off at the entrance to school.
 
@@ -319,10 +319,10 @@ The entrance to school is just a parking lot with a sign stating the name of you
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077f90" />
+      <child nodeId="node-0x6d8c900" />
     </children>
   </item>
-  <item nodeId="node-0x7077f90">
+  <item nodeId="node-0x6d8c900">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Quad
@@ -335,10 +335,10 @@ You can see a flowers and a hooded man here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078000" />
+      <child nodeId="node-0x6d8c970" />
     </children>
   </item>
-  <item nodeId="node-0x7078000">
+  <item nodeId="node-0x6d8c970">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You step into the computer lab just as class begins.  Jane, your crush, is already sitting down.
 &quot;Good morning, class,&quot; the teacher says, &quot;Today, we will be working on our text-adventure games…&quot;
@@ -355,10 +355,10 @@ You can see Jane here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078070" />
+      <child nodeId="node-0x6d8c9e0" />
     </children>
   </item>
-  <item nodeId="node-0x7078070">
+  <item nodeId="node-0x6d8c9e0">
     <command xml:space="preserve">x ceiling</command>
     <result xml:space="preserve">The ceiling here is white and bare.
 
@@ -367,10 +367,10 @@ You can see Jane here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70780e0" />
+      <child nodeId="node-0x6d8ca50" />
     </children>
   </item>
-  <item nodeId="node-0x70780e0">
+  <item nodeId="node-0x6d8ca50">
     <command xml:space="preserve">x floor</command>
     <result xml:space="preserve">The floor is made of cold white tiles.
 
@@ -379,10 +379,10 @@ You can see Jane here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078150" />
+      <child nodeId="node-0x6d8cac0" />
     </children>
   </item>
-  <item nodeId="node-0x7078150">
+  <item nodeId="node-0x6d8cac0">
     <command xml:space="preserve">x walls</command>
     <result xml:space="preserve">The walls here are white and bare.
 
@@ -391,10 +391,10 @@ You can see Jane here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70781c0" />
+      <child nodeId="node-0x6d8cb30" />
     </children>
   </item>
-  <item nodeId="node-0x70781c0">
+  <item nodeId="node-0x6d8cb30">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Quad
@@ -407,10 +407,10 @@ You can see a flowers and a hooded man here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078230" />
+      <child nodeId="node-0x6d8cba0" />
     </children>
   </item>
-  <item nodeId="node-0x7078230">
+  <item nodeId="node-0x6d8cba0">
     <command xml:space="preserve">x jesus</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -419,10 +419,10 @@ You can see a flowers and a hooded man here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70782a0" />
+      <child nodeId="node-0x6d8cc10" />
     </children>
   </item>
-  <item nodeId="node-0x70782a0">
+  <item nodeId="node-0x6d8cc10">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Computer Lab
@@ -435,10 +435,10 @@ You can see Jane here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078310" />
+      <child nodeId="node-0x6d8cc80" />
     </children>
   </item>
-  <item nodeId="node-0x7078310">
+  <item nodeId="node-0x6d8cc80">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Quad
@@ -451,10 +451,10 @@ You can see a flowers and a hooded man here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077d30" />
+      <child nodeId="node-0x6d8c6a0" />
     </children>
   </item>
-  <item nodeId="node-0x7077d30">
+  <item nodeId="node-0x6d8c6a0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Gym
@@ -467,10 +467,10 @@ You can see a guard here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077da0" />
+      <child nodeId="node-0x6d8c710" />
     </children>
   </item>
-  <item nodeId="node-0x7077da0">
+  <item nodeId="node-0x6d8c710">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Dance
@@ -480,10 +480,10 @@ Dance
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7077e10" />
+      <child nodeId="node-0x6d8c780" />
     </children>
   </item>
-  <item nodeId="node-0x7077e10">
+  <item nodeId="node-0x6d8c780">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Gym
@@ -496,10 +496,10 @@ You can see a guard here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70785c0" />
+      <child nodeId="node-0x6d8cf30" />
     </children>
   </item>
-  <item nodeId="node-0x70785c0">
+  <item nodeId="node-0x6d8cf30">
     <command xml:space="preserve">give guard donut</command>
     <result xml:space="preserve">(first taking the donut)
 You can&apos;t see any such thing.
@@ -509,10 +509,10 @@ You can&apos;t see any such thing.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078630" />
+      <child nodeId="node-0x6d8cfa0" />
     </children>
   </item>
-  <item nodeId="node-0x7078630">
+  <item nodeId="node-0x6d8cfa0">
     <command xml:space="preserve">eat donut</command>
     <result xml:space="preserve">(first taking the donut)
 Hah!  You wish you could eat a donut right now!
@@ -522,10 +522,10 @@ Hah!  You wish you could eat a donut right now!
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70786a0" />
+      <child nodeId="node-0x6d8d010" />
     </children>
   </item>
-  <item nodeId="node-0x70786a0">
+  <item nodeId="node-0x6d8d010">
     <command xml:space="preserve">play Decaf</command>
     <result xml:space="preserve">You play an odd-sounding melody on the flute.
 *Poof!*
@@ -536,10 +536,10 @@ A donut appears in your hand!
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078710" />
+      <child nodeId="node-0x6d8d080" />
     </children>
   </item>
-  <item nodeId="node-0x7078710">
+  <item nodeId="node-0x6d8d080">
     <command xml:space="preserve">eat donut</command>
     <result xml:space="preserve">(first taking the donut)
 You devour the donut in no time.  Delicious!
@@ -549,10 +549,10 @@ You devour the donut in no time.  Delicious!
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078780" />
+      <child nodeId="node-0x6d8d0f0" />
     </children>
   </item>
-  <item nodeId="node-0x7078780">
+  <item nodeId="node-0x6d8d0f0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Quad
@@ -565,10 +565,10 @@ You can see a flowers and a hooded man here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70787f0" />
+      <child nodeId="node-0x6d8d160" />
     </children>
   </item>
-  <item nodeId="node-0x70787f0">
+  <item nodeId="node-0x6d8d160">
     <command xml:space="preserve">give donut to man</command>
     <result xml:space="preserve">You can only do that to something animate.
 
@@ -577,10 +577,10 @@ You can see a flowers and a hooded man here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078860" />
+      <child nodeId="node-0x6d8d1d0" />
     </children>
   </item>
-  <item nodeId="node-0x7078860">
+  <item nodeId="node-0x6d8d1d0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Gym
@@ -593,10 +593,10 @@ You can see a guard here.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70788d0" />
+      <child nodeId="node-0x6d8d240" />
     </children>
   </item>
-  <item nodeId="node-0x70788d0">
+  <item nodeId="node-0x6d8d240">
     <command xml:space="preserve">play decaf</command>
     <result xml:space="preserve">You play an odd-sounding melody on the flute.
 *Poof!*
@@ -607,10 +607,10 @@ A donut appears in your hand!
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078940" />
+      <child nodeId="node-0x6d8d2b0" />
     </children>
   </item>
-  <item nodeId="node-0x7078940">
+  <item nodeId="node-0x6d8d2b0">
     <command xml:space="preserve">give guard donut</command>
     <result xml:space="preserve">(first taking the donut)
 You pull out a donut and hand it to him.  His eyes widen.
@@ -624,10 +624,10 @@ The guard steps aside to let you through.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70789b0" />
+      <child nodeId="node-0x6d8d320" />
     </children>
   </item>
-  <item nodeId="node-0x70789b0">
+  <item nodeId="node-0x6d8d320">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Gym
 [Previous turn undone.]
@@ -637,10 +637,10 @@ The guard steps aside to let you through.
     <changed>NO</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078a20" />
+      <child nodeId="node-0x6d8d390" />
     </children>
   </item>
-  <item nodeId="node-0x7078a20">
+  <item nodeId="node-0x6d8d390">
     <command xml:space="preserve">give donut to guard</command>
     <result xml:space="preserve">(first taking the donut)
 You pull out a donut and hand it to him.  His eyes widen.
@@ -654,10 +654,10 @@ The guard steps aside to let you through.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078a90" />
+      <child nodeId="node-0x6d8d400" />
     </children>
   </item>
-  <item nodeId="node-0x7078a90">
+  <item nodeId="node-0x6d8d400">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Dance
@@ -667,10 +667,10 @@ Dance
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078b00" />
+      <child nodeId="node-0x6d8d470" />
     </children>
   </item>
-  <item nodeId="node-0x7078b00">
+  <item nodeId="node-0x6d8d470">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Gym
@@ -681,10 +681,10 @@ The gym is a large building with high windows.  As you approach it, you can alre
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078b70" />
+      <child nodeId="node-0x6d8d4e0" />
     </children>
   </item>
-  <item nodeId="node-0x7078b70">
+  <item nodeId="node-0x6d8d4e0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Quad
@@ -697,10 +697,10 @@ You can see a flowers and a hooded man here.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078be0" />
+      <child nodeId="node-0x6d8d550" />
     </children>
   </item>
-  <item nodeId="node-0x7078be0">
+  <item nodeId="node-0x6d8d550">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Computer Lab
@@ -713,10 +713,10 @@ You can see Jane here.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078c50" />
+      <child nodeId="node-0x6d8d5c0" />
     </children>
   </item>
-  <item nodeId="node-0x7078c50">
+  <item nodeId="node-0x6d8d5c0">
     <command xml:space="preserve">talk to jane</command>
     <result xml:space="preserve">She&apos;s leaving in a big hurry.  You need to get her to stop first.
 
@@ -725,10 +725,10 @@ You can see Jane here.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078cc0" />
+      <child nodeId="node-0x6d8d630" />
     </children>
   </item>
-  <item nodeId="node-0x7078cc0">
+  <item nodeId="node-0x6d8d630">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   A sudden downpour comes down, soaking everyone in the quad.
@@ -742,10 +742,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078380" />
+      <child nodeId="node-0x6d8ccf0" />
     </children>
   </item>
-  <item nodeId="node-0x7078380">
+  <item nodeId="node-0x6d8ccf0">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   A sudden downpour comes down, soaking everyone in the quad.
@@ -757,10 +757,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70783f0" />
+      <child nodeId="node-0x6d8cd60" />
     </children>
   </item>
-  <item nodeId="node-0x70783f0">
+  <item nodeId="node-0x6d8cd60">
     <command xml:space="preserve">talk to jane</command>
     <result xml:space="preserve">You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  You&apos;ve got to be joking!  It&apos;s too late now.  Jane is already turning around.  You&apos;ll just have to hold it.
 
@@ -771,15 +771,17 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078460" />
+      <child nodeId="node-0x6d8cdd0" />
     </children>
   </item>
-  <item nodeId="node-0x7078460">
+  <item nodeId="node-0x6d8cdd0">
     <command xml:space="preserve">no</command>
     <result xml:space="preserve">
 You have to go to the bathroom…
 
 &quot;Well, anyway,&quot; you stammer, &quot;I was just… I wanted to…
+
+&quot;W
 
 &quot;W
 
@@ -796,10 +798,10 @@ You can&apos;t quite remember your train of thought.  This isn&apos;t good.  You
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70784d0" />
+      <child nodeId="node-0x6d8ce40" />
     </children>
   </item>
-  <item nodeId="node-0x70784d0">
+  <item nodeId="node-0x6d8ce40">
     <command xml:space="preserve">no</command>
     <result xml:space="preserve">&quot;No thank you,&quot; you say.
 
@@ -812,10 +814,10 @@ You have to go to the bathroom…
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078540" />
+      <child nodeId="node-0x6d8ceb0" />
     </children>
   </item>
-  <item nodeId="node-0x7078540">
+  <item nodeId="node-0x6d8ceb0">
     <command xml:space="preserve">yes</command>
     <result xml:space="preserve">&quot;Seems a little cliché to me,&quot; she adds.
 
@@ -828,10 +830,10 @@ You have to go to the bathroom…걡
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078d30" />
+      <child nodeId="node-0x6d8d6a0" />
     </children>
   </item>
-  <item nodeId="node-0x7078d30">
+  <item nodeId="node-0x6d8d6a0">
     <command xml:space="preserve">yes</command>
     <result xml:space="preserve">&quot;Pretty fun, huh?&quot; says Jane.
 
@@ -849,10 +851,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078da0" />
+      <child nodeId="node-0x6d8d710" />
     </children>
   </item>
-  <item nodeId="node-0x7078da0">
+  <item nodeId="node-0x6d8d710">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -861,10 +863,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078e10" />
+      <child nodeId="node-0x6d8d780" />
     </children>
   </item>
-  <item nodeId="node-0x7078e10">
+  <item nodeId="node-0x6d8d780">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You bailed on Jane before she could make a decision!  She probably thinks you&apos;re a jerk now.  Nice going, you horrible person.
 
@@ -880,10 +882,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078e80" />
+      <child nodeId="node-0x6d8d7f0" />
     </children>
   </item>
-  <item nodeId="node-0x7078e80">
+  <item nodeId="node-0x6d8d7f0">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Computer Lab
 [Previous turn undone.]
@@ -893,10 +895,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078ef0" />
+      <child nodeId="node-0x6d8d860" />
     </children>
   </item>
-  <item nodeId="node-0x7078ef0">
+  <item nodeId="node-0x6d8d860">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Computer Lab
 [Previous turn undone.]
@@ -906,10 +908,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078f60" />
+      <child nodeId="node-0x6d8d8d0" />
     </children>
   </item>
-  <item nodeId="node-0x7078f60">
+  <item nodeId="node-0x6d8d8d0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You bailed on Jane before she could make a decision!  She probably thinks you&apos;re a jerk now.  Nice going, you horrible person.
 
@@ -925,10 +927,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7078fd0" />
+      <child nodeId="node-0x6d8d940" />
     </children>
   </item>
-  <item nodeId="node-0x7078fd0">
+  <item nodeId="node-0x6d8d940">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Computer Lab
 [Previous turn undone.]
@@ -938,10 +940,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7079040" />
+      <child nodeId="node-0x6d8d9b0" />
     </children>
   </item>
-  <item nodeId="node-0x7079040">
+  <item nodeId="node-0x6d8d9b0">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Computer Lab
 [Previous turn undone.]
@@ -951,10 +953,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70790b0" />
+      <child nodeId="node-0x6d8da20" />
     </children>
   </item>
-  <item nodeId="node-0x70790b0">
+  <item nodeId="node-0x6d8da20">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Computer Lab
 [Previous turn undone.]
@@ -964,10 +966,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7079120" />
+      <child nodeId="node-0x6d8da90" />
     </children>
   </item>
-  <item nodeId="node-0x7079120">
+  <item nodeId="node-0x6d8da90">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Quad
@@ -980,10 +982,10 @@ You can see a flowers and a hooded man here.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7079190" />
+      <child nodeId="node-0x6d8db00" />
     </children>
   </item>
-  <item nodeId="node-0x7079190">
+  <item nodeId="node-0x6d8db00">
     <command xml:space="preserve">take flowers</command>
     <result xml:space="preserve">Taken.
 
@@ -992,10 +994,10 @@ You can see a flowers and a hooded man here.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7079200" />
+      <child nodeId="node-0x6d8db70" />
     </children>
   </item>
-  <item nodeId="node-0x7079200">
+  <item nodeId="node-0x6d8db70">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Computer Lab
@@ -1008,10 +1010,10 @@ You can see Jane here.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x7079270" />
+      <child nodeId="node-0x6d8dbe0" />
     </children>
   </item>
-  <item nodeId="node-0x7079270">
+  <item nodeId="node-0x6d8dbe0">
     <command xml:space="preserve">talk to jane</command>
     <result xml:space="preserve">She&apos;s leaving in a big hurry.  You need to get her to stop first.
 
@@ -1020,10 +1022,10 @@ You can see Jane here.
     <changed>YES</changed>
     <temporary score="327">YES</temporary>
     <children>
-      <child nodeId="node-0x70792e0" />
+      <child nodeId="node-0x6d8dc50" />
     </children>
   </item>
-  <item nodeId="node-0x70792e0">
+  <item nodeId="node-0x6d8dc50">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   A sudden downpour comes down, soaking everyone in the quad.
@@ -1037,7 +1039,7 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="326">YES</temporary>
   </item>
-  <item nodeId="node-0x7079350">
+  <item nodeId="node-0x6d8dcc0">
     <command xml:space="preserve">dust chest</command>
     <result xml:space="preserve">You clear the dust off of the surface of the chest.
 
@@ -1046,10 +1048,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="648">YES</temporary>
     <children>
-      <child nodeId="node-0x70793c0" />
+      <child nodeId="node-0x6d8dd30" />
     </children>
   </item>
-  <item nodeId="node-0x70793c0">
+  <item nodeId="node-0x6d8dd30">
     <command xml:space="preserve">x chest</command>
     <result xml:space="preserve">The chest is incredibly old-looking.  Now that the dust is gone, you can see that it is made primarily of some silver metal.
 
@@ -1058,56 +1060,70 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="647">YES</temporary>
   </item>
-  <item nodeId="node-0xf2528d0">
+  <item nodeId="node-0x6d8dda0">
     <command xml:space="preserve">open chest</command>
     <result xml:space="preserve">You open the chest, revealing a spell book and a flute.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="66">YES</temporary>
     <children>
-      <child nodeId="node-0x706ef20" />
+      <child nodeId="node-0x6d8e430" />
+      <child nodeId="node-0x6d8de10" />
     </children>
   </item>
-  <item nodeId="node-0x706ef20">
-    <command xml:space="preserve">take book</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
-    <children>
-      <child nodeId="node-0x6f0d690" />
-    </children>
-  </item>
-  <item nodeId="node-0x6f0d690">
+  <item nodeId="node-0x6d8de10">
     <command xml:space="preserve">take flute</command>
     <result xml:space="preserve">Taken.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="347">YES</temporary>
     <children>
-      <child nodeId="node-0xf29c350" />
+      <child nodeId="node-0x6d8de80" />
     </children>
   </item>
-  <item nodeId="node-0xf29c350">
+  <item nodeId="node-0x6d8de80">
+    <command xml:space="preserve">take book</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="347">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8def0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8def0">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">(first opening the basement door)
+It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="347">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8df60" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8df60">
     <command xml:space="preserve">play cdefg</command>
     <result xml:space="preserve">You play a simple scale on your flute.
 You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="347">YES</temporary>
     <children>
-      <child nodeId="node-0x7037e30" />
+      <child nodeId="node-0x6d8dfd0" />
     </children>
   </item>
-  <item nodeId="node-0x7037e30">
+  <item nodeId="node-0x6d8dfd0">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">(first opening the basement door)
 
@@ -1116,13 +1132,13 @@ Your living room is a long room with a small table, a couple of chairs, and a pa
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="347">YES</temporary>
     <children>
-      <child nodeId="node-0x18aaea0" />
+      <child nodeId="node-0x6d8e040" />
     </children>
   </item>
-  <item nodeId="node-0x18aaea0">
+  <item nodeId="node-0x6d8e040">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You make it to the bus stop just as the bus pulls up.
 
@@ -1133,13 +1149,13 @@ You can see a bus sign and a bus here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="347">YES</temporary>
     <children>
-      <child nodeId="node-0xf264110" />
+      <child nodeId="node-0x6d8e0b0" />
     </children>
   </item>
-  <item nodeId="node-0xf264110">
+  <item nodeId="node-0x6d8e0b0">
     <command xml:space="preserve">get in bus</command>
     <result xml:space="preserve">You get on the bus and sit in the back.  Before you know it, you are getting off at the entrance to school.
 
@@ -1148,13 +1164,13 @@ The entrance to school is just a parking lot with a sign stating the name of you
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="347">YES</temporary>
     <children>
-      <child nodeId="node-0x1800770" />
+      <child nodeId="node-0x6d8e120" />
     </children>
   </item>
-  <item nodeId="node-0x1800770">
+  <item nodeId="node-0x6d8e120">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Quad
@@ -1164,25 +1180,1765 @@ You can see a flowers and a hooded man here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="347">YES</temporary>
     <children>
-      <child nodeId="node-0x70250c0" />
+      <child nodeId="node-0x6d8e190" />
     </children>
   </item>
-  <item nodeId="node-0x70250c0">
+  <item nodeId="node-0x6d8e190">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Science Building
+The science building is a large open area with doors to classrooms all around.  Your class is upstairs in the chemistry lab.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="347">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e200" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e200">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="347">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e270" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e270">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+Chemistry Lab
+The chemistry lab is a large room full of beakers and test tubes on racks.  There is a whiteboard on one side of the room and a large window on the other.  The teacher isn&apos;t here, yet.
+
+You can see Kyle here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="347">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e2e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e2e0">
+    <command xml:space="preserve">talk to kyle</command>
+    <result xml:space="preserve">You ask Kyle what&apos;s wrong.
+&quot;What, you don&apos;t remember?&quot; he asks.  &quot;Our quarter exam is today!&quot;  As he says it, he is pulling out his book and trying to cram.
+Oh, no!  You completely forgot!  You can&apos;t afford to flunk this test.  You need to stop it from happening…ry
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="347">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e350" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e350">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can&apos;t leave now!  You have chemistry.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="347">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e3c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e3c0">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">Through the window, you can see your chemistry teacher, Mr Lacimec.
+
+Mr Lacimec is making his way towards the building.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="346">YES</temporary>
+  </item>
+  <item nodeId="node-0x6d8e430">
+    <command xml:space="preserve">take book</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e4a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e4a0">
+    <command xml:space="preserve">take flute</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e510" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e510">
+    <command xml:space="preserve">play cdefg</command>
+    <result xml:space="preserve">You play a simple scale on your flute.
+You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e580" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e580">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">(first opening the basement door)
+
+Living Room
+Your living room is a long room with a small table, a couple of chairs, and a painting.  The basement is below you.  A hallway in the north leads to the kitchen.  The front door is open on the east side of the room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e5f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e5f0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You make it to the bus stop just as the bus pulls up.
+
+Street
+The bus stop is right in front of your house.
+
+You can see a bus sign and a bus here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e660" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e660">
+    <command xml:space="preserve">get in bus</command>
+    <result xml:space="preserve">You get on the bus and sit in the back.  Before you know it, you are getting off at the entrance to school.
+
+School Entrance
+The entrance to school is just a parking lot with a sign stating the name of your school.  The rest of your classmates are walking to class already.  You see Jane among them.  You have to ask her to the dance tonight before someone else does.  The quad is just to the north.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e6d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e6d0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  The Math, English, Social Studies, and Language buildings are behind the science building, but you don&apos;t have any of those classes today.  You see Jane heading towards the computer lab.  You both have computer science there now.
+
+You can see a flowers and a hooded man here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d90110" />
+      <child nodeId="node-0x1bf08c0" />
+      <child nodeId="node-0x6d8e740" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e740">
+    <command xml:space="preserve">ask man about song</command>
+    <result xml:space="preserve">There is no reply.  He simply continues to whistle.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e7b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e7b0">
+    <command xml:space="preserve">take man</command>
+    <result xml:space="preserve">I don&apos;t suppose the hooded man would care for that.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e820" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e820">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You step into the computer lab just as class begins.  Jane, your crush, is already sitting down.
+&quot;Good morning, class,&quot; the teacher says, &quot;Today, we will be working on our text-adventure games…&quot;
+
+&quot;Remember, games are due next class,&quot; the teacher concludes.  Everyone begins to pack up their backpacks and leave.  Jane is leaving, too.  You have to stop her so you can ask her to the dance!
+
+Computer Lab
+The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
+
+You can see Jane here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e890" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e890">
+    <command xml:space="preserve">take jan</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e900" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e900">
+    <command xml:space="preserve">take jane</command>
+    <result xml:space="preserve">I don&apos;t suppose Jane would care for that.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e970" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e970">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  
+
+You can see a flowers and a hooded man here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8e9e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8e9e0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  
+
+You can see a donut, a flowers and a hooded man here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8ea50" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8ea50">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8eac0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8eac0">
+    <command xml:space="preserve">ask kyle about test</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8eb30" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8eb30">
+    <command xml:space="preserve">climb kyle</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8eba0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8eba0">
+    <command xml:space="preserve">study kyle</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8ec10" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8ec10">
+    <command xml:space="preserve">x mr. lacimec</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8ec80" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8ec80">
+    <command xml:space="preserve">x mr lacimec</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8ecf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8ecf0">
+    <command xml:space="preserve">x teacher</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8ed60" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8ed60">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8edd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8edd0">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8ee40" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8ee40">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8eeb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8eeb0">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8ef20" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8ef20">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8ef90" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8ef90">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f000" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f000">
+    <command xml:space="preserve">x mr. lacimec</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f070" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f070">
+    <command xml:space="preserve">x mr lacimec</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f0e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f0e0">
+    <command xml:space="preserve">talk to kyle</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f150" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f150">
+    <command xml:space="preserve">x mr lacimec</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f1c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f1c0">
+    <command xml:space="preserve">x mr lacimec</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f230" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f230">
+    <command xml:space="preserve">x mr lacimec</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f2a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f2a0">
+    <command xml:space="preserve">x mr lacimec</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f310" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f310">
+    <command xml:space="preserve">talk to kyle</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f380" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f380">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f3f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f3f0">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f460" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f460">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f4d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f4d0">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f540" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f540">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f5b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f5b0">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f620" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f620">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Quad
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f690" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f690">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Quad
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f700" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f700">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Quad
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f770" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f770">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Quad
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f7e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f7e0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Quad
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f850" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f850">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">&quot;Undo&quot; failed.  [Not all interpreters provide it.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f8c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f8c0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Computer Lab
+The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
+
+You can see Jane here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f930" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f930">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  
+
+You can see a flowers and a hooded man here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8f9a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8f9a0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Computer Lab
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8fa10" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8fa10">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8fa80" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8fa80">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  
+
+You can see a flowers and a hooded man here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8faf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8faf0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Computer Lab
+The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
+
+You can see Jane here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8fb60" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8fb60">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8fbd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8fbd0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Computer Lab
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8fc40" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8fc40">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Quad
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8fcb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8fcb0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+School Entrance
+The entrance to school is just a parking lot with a sign stating the name of your school.  The quad is just to the north.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8fd20" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8fd20">
+    <command xml:space="preserve">play flowers</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8fd90" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8fd90">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">School Entrance
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8fe00" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8fe00">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Quad
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8fe70" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8fe70">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Computer Lab
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8fee0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8fee0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Computer Lab
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8ff50" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8ff50">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Quad
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d8ffc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d8ffc0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">&quot;Undo&quot; failed.  [Not all interpreters provide it.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d90030" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d90030">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="321">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d900a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d900a0">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="320">YES</temporary>
+  </item>
+  <item nodeId="node-0x1bf08c0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You step into the computer lab just as class begins.  Jane, your crush, is already sitting down.
+&quot;Good morning, class,&quot; the teacher says, &quot;Today, we will be working on our text-adventure games…&quot;
+
+&quot;Remember, games are due next class,&quot; the teacher concludes.  Everyone begins to pack up their backpacks and leave.  Jane is leaving, too.  You have to stop her so you can ask her to the dance!
+
+Computer Lab
+The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
+
+You can see Jane here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b3b3f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b3b3f0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbb9a650" />
+    </children>
+  </item>
+  <item nodeId="node-0xbb9a650">
+    <command xml:space="preserve">talk jane</command>
+    <result xml:space="preserve">I didn&apos;t understand that sentence.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b24650" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b24650">
+    <command xml:space="preserve">talk to jane</command>
+    <result xml:space="preserve">She&apos;s leaving in a big hurry.  You need to get her to stop first.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b2b0b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b2b0b0">
+    <command xml:space="preserve">play cdeee</command>
+    <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
+  A sudden downpour comes down, soaking everyone in the quad.
+
+It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xb951900" />
+    </children>
+  </item>
+  <item nodeId="node-0xb951900">
+    <command xml:space="preserve">talk to jane</command>
+    <result xml:space="preserve">You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  You&apos;ve got to be joking!  It&apos;s too late now.  Jane is already turning around.  You&apos;ll just have to hold it.
+
+&quot;Hi, Jane,&quot; you mutter nervously.  &quot;Crazy weather, huh?&quot;
+&quot;Yeah, it sure is.  Almost magical,&quot; she replies.  &quot;Don&apos;t you just love the rain?&quot;
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6db99b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6db99b0">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">&quot;It&apos;s amazing if you think about it,&quot; she continues, &quot;Tons and tons of liquid water rushing down from the sky and flowing down rivers.&quot;
+
+Her words painfully remind you that you have to pee.
+
+You really need to go to the bathroom.
+
+&quot;Well, anyway,&quot; you stammer, &quot;I was just… I wanted to…&quot;
+You can&apos;t quite remember your train of thought.  This isn&apos;t good.  You&apos;re looking bad in front of Jane.  You start sweating violently.  Also not good.
+&quot;Is is hot in here, or is it just me?&quot; you ask.
+&quot;I have some water, if you want,&quot; offers Jane.
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbbd10c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xbbd10c0">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">&quot;No thank you,&quot; you say.
+
+You really need to go to the bathroom.
+
+&quot;So, there&apos;s the dance tonight…&quot; you begin uneasily.
+&quot;Oh, yeah!&quot; Jane says, &quot;Did you know the theme is underwater?
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d0a350" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d0a350">
+    <command xml:space="preserve">no\</command>
+    <result xml:space="preserve">Please answer yes or no.&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d2c620" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d2c620">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">&quot;I heard they&apos;re going to have fish tanks and water sound effects and waterfalls,&quot; she explains.
+
+Waterfalls are not fun to think about when you have to pee.
+
+You bounce up and down nervously.  You can&apos;t hold it much longer.  Jane looks at you funny.
+
+&quot;Do you have a date for that?&quot; you inquire abruptly.
+&quot;Not yet,&quot; answers Jane, &quot;If I don&apos;t get one soon, I&apos;ll probably just skip the dance and go whitewater rafting.  Have you ever been whitewater rafting?&quot;
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6dc24e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6dc24e0">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">&quot;Pretty fun, huh?&quot; says Jane.
+
+You bounce up and down nervously.  You can&apos;t hold it much longer.  Jane looks at you funny.
+
+&quot;Yeah… so, do you want to come to the dance with me?&quot; you blurt out.
+&quot;Oh.  Really?  Well…&quot;
+
+She&apos;s indecisive!  You should give her something to tip the scales.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d84130" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d84130">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+The rain has stopped.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6de02c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6de02c0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You bailed on Jane before she could make a decision!  She probably thinks you&apos;re a jerk now.  Nice going, you horrible person.
+
+
+
+    *** You have lost. ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d443d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d443d0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Computer Lab
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6c57330" />
+    </children>
+  </item>
+  <item nodeId="node-0x6c57330">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Computer Lab
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbbf1380" />
+    </children>
+  </item>
+  <item nodeId="node-0xbbf1380">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Computer Lab
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6da8420" />
+    </children>
+  </item>
+  <item nodeId="node-0x6da8420">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.    It is raining hard.
+
+You can see a flowers and a hooded man here.
+
+The rain has stopped.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b44520" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b44520">
     <command xml:space="preserve">take flowers</command>
     <result xml:space="preserve">Taken.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <temporary score="66">YES</temporary>
     <children>
-      <child nodeId="node-0x6f778a0" />
+      <child nodeId="node-0x1bfa4c0" />
     </children>
   </item>
-  <item nodeId="node-0x6f778a0">
+  <item nodeId="node-0x1bfa4c0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Computer Lab
+The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
+
+You can see Jane here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xba0bfd0" />
+    </children>
+  </item>
+  <item nodeId="node-0xba0bfd0">
+    <command xml:space="preserve">play cdeee</command>
+    <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
+  A sudden downpour comes down, soaking everyone in the quad.
+
+It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbbbf990" />
+    </children>
+  </item>
+  <item nodeId="node-0xbbbf990">
+    <command xml:space="preserve">talk to jane</command>
+    <result xml:space="preserve">You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  You&apos;ve got to be joking!  It&apos;s too late now.  Jane is already turning around.  You&apos;ll just have to hold it.
+
+&quot;Hi, Jane,&quot; you mutter nervously.  &quot;Crazy weather, huh?&quot;
+&quot;Yeah, it sure is.  Almost magical,&quot; she replies.  &quot;Don&apos;t you just love the rain?&quot;
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6de53d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6de53d0">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">
+You have to go to the bathroom…
+
+&quot;Well, anyway,&quot; you stammer, &quot;I was just… I wanted to…&quot;
+You can&apos;t quite remember your train of thought.  This isn&apos;t good.  You&apos;re looking bad in front of Jane.  You start sweating violently.  Also not good.
+&quot;Is is hot in here, or is it just me?&quot; you ask.
+&quot;I have some water, if you want,&quot; offers Jane.
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbbabce0" />
+    </children>
+  </item>
+  <item nodeId="node-0xbbabce0">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">&quot;No thank you,&quot; you say.
+
+You have to go to the bathroom…
+
+&quot;So, there&apos;s the dance tonight…&quot; you begin uneasily.
+&quot;Oh, yeah!&quot; Jane says, &quot;Did you know the theme is underwater?
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b2ac50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b2ac50">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">&quot;Seems a little cliché to me,&quot; she adds.
+
+You have to go to the bathroom…
+
+&quot;Do you have a date for that?&quot; you inquire abruptly.
+&quot;Not yet,&quot; answers Jane, &quot;If I don&apos;t get one soon, I&apos;ll probably just skip the dance and go whitewater rafting.  Have you ever been whitewater rafting?&quot;
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6de5f30" />
+    </children>
+  </item>
+  <item nodeId="node-0x6de5f30">
+    <command xml:space="preserve">yes</command>
+    <result xml:space="preserve">&quot;Pretty fun, huh?&quot; says Jane.
+
+You have to go to the bathroom…
+
+&quot;Yeah… so, do you want to come to the dance with me?&quot; you blurt out.
+&quot;Oh.  Really?  Well…&quot;
+
+She&apos;s indecisive!  You should give her something to tip the scales.
+
+The rain has stopped.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6ded810" />
+    </children>
+  </item>
+  <item nodeId="node-0x6ded810">
+    <command xml:space="preserve">give jane flowers</command>
+    <result xml:space="preserve">&quot;Wow, thanks!&quot; Jane exclaims.  &quot;That&apos;s so sweet.  You know what?  I will go to the dance with you.  I&apos;ll meet you at the gym around seven.&quot;
+She turns and walks out into the rain, and then sprints off towards the Math building.  Mission accompished: you have the perfect date to the dance.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6db3cf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6db3cf0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  
+
+You can see a hooded man here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6ddab60" />
+    </children>
+  </item>
+  <item nodeId="node-0x6ddab60">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Gym
+The gym is a large building with high windows.  As you approach it, you can already hear loud music coming out and lights flashing from inside.  You try to enter, but a large guard blocks your path.
+
+You can see a guard here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6dd4fb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6dd4fb0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  
+
+You can see a hooded man here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6dcfa40" />
+    </children>
+  </item>
+  <item nodeId="node-0x6dcfa40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Science Building
+The science building is a large open area with doors to classrooms all around.  Your class is upstairs in the chemistry lab.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6de0bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6de0bb0">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+Chemistry Lab
+The chemistry lab is a large room full of beakers and test tubes on racks.  There is a whiteboard on one side of the room and a large window on the other.  The teacher isn&apos;t here, yet.
+
+You can see Kyle here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6daf150" />
+    </children>
+  </item>
+  <item nodeId="node-0x6daf150">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">Through the window, you can see your chemistry teacher, Mr Lacimec.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x1be7050" />
+    </children>
+  </item>
+  <item nodeId="node-0x1be7050">
+    <command xml:space="preserve">talk to kyle</command>
+    <result xml:space="preserve">You ask Kyle what&apos;s wrong.
+&quot;What, you don&apos;t remember?&quot; he asks.  &quot;Our quarter exam is today!&quot;  As he says it, he is pulling out his book and trying to cram.
+Oh, no!  You completely forgot!  You can&apos;t afford to flunk this test.  You need to stop it from happening…
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d3be10" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d3be10">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">Through the window, you can see your chemistry teacher, Mr Lacimec.
+
+Mr Lacimec is making his way towards the building.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d43160" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d43160">
+    <command xml:space="preserve">x mr lacimec</command>
+    <result xml:space="preserve">Mr Lacimec is walking towards the science building with his waterproof breifcase in one hand and his coasters in his pocket.  He is smiling.  Or is that an evil grin?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6df09e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6df09e0">
+    <command xml:space="preserve">x briefcase</command>
+    <result xml:space="preserve">The briefcase is small, silver, and rectangular.  The big bronze latch on top is in the locked position.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbbb58d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xbbb58d0">
+    <command xml:space="preserve">play cdefg</command>
+    <result xml:space="preserve">You play a simple scale on your flute.
+Through the window, you notice Mr Lacimec&apos;s briefcase magicly unlatch itself and fall open.  Papers from within the briefcase go flying everywhere.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d41860" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d41860">
+    <command xml:space="preserve">x coasters</command>
+    <result xml:space="preserve">Mr Lacimec always carries coasters with him.  You know how he hates paper getting wet.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xee78d60" />
+    </children>
+  </item>
+  <item nodeId="node-0xee78d60">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">Through the window, you can see your chemistry teacher, Mr Lacimec.
+
+Mr Lacimec is making his way towards the building.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xee78ca0" />
+    </children>
+  </item>
+  <item nodeId="node-0xee78ca0">
+    <command xml:space="preserve">play cdeee</command>
+    <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
+  A sudden downpour comes down, soaking everyone in the quad.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbbf7b80" />
+    </children>
+  </item>
+  <item nodeId="node-0xbbf7b80">
+    <command xml:space="preserve">x mr lacimec</command>
+    <result xml:space="preserve">Mr Lacimec is now sitting and crying.  His papers are all scattered around him and getting soaked by the rain.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbba7760" />
+    </children>
+  </item>
+  <item nodeId="node-0xbba7760">
+    <command xml:space="preserve">play cdeee</command>
+    <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
+  Nothing happens.  The rain will probably stop on it&apos;s own.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbb86410" />
+    </children>
+  </item>
+  <item nodeId="node-0xbb86410">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xba1f200" />
+    </children>
+  </item>
+  <item nodeId="node-0xba1f200">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The rain has stopped.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xba20ef0" />
+    </children>
+  </item>
+  <item nodeId="node-0xba20ef0">
+    <command xml:space="preserve">play cdeee</command>
+    <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
+  A sudden downpour comes down, soaking everyone in the quad.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d351e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d351e0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xba172c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xba172c0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6df73e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6df73e0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xee70f30" />
+    </children>
+  </item>
+  <item nodeId="node-0xee70f30">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0x6df1430" />
+    </children>
+  </item>
+  <item nodeId="node-0x6df1430">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The rain has stopped.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbb2eae0" />
+    </children>
+  </item>
+  <item nodeId="node-0xbb2eae0">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">Through the window, you can see your chemistry teacher, Mr Lacimec.
+
+Mr Lacimec is making his way towards the building.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbbe7b80" />
+    </children>
+  </item>
+  <item nodeId="node-0xbbe7b80">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">Through the window, you can see your chemistry teacher, Mr Lacimec.
+
+Mr Lacimec is making his way towards the building.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbb870e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xbb870e0">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">Through the window, you can see your chemistry teacher, Mr Lacimec.
+
+Mr Lacimec is making his way towards the building.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbbf1e60" />
+    </children>
+  </item>
+  <item nodeId="node-0xbbf1e60">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">Through the window, you can see your chemistry teacher, Mr Lacimec.
+
+Mr Lacimec is making his way towards the building.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xba1d890" />
+    </children>
+  </item>
+  <item nodeId="node-0xba1d890">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">Through the window, you can see your chemistry teacher, Mr Lacimec.
+
+Mr Lacimec is making his way towards the building.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xbbc5ed0" />
+    </children>
+  </item>
+  <item nodeId="node-0xbbc5ed0">
+    <command xml:space="preserve">x mr lacimec</command>
+    <result xml:space="preserve">Mr Lacimec has stopped to collect his scattered papers.  He looks mad.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="66">YES</temporary>
+    <children>
+      <child nodeId="node-0xee741e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xee741e0">
+    <command xml:space="preserve">play cdeee</command>
+    <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
+  A sudden downpour comes down, soaking everyone in the quad.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="65">YES</temporary>
+  </item>
+  <item nodeId="node-0x6d90110">
+    <command xml:space="preserve">take flowers</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d90180" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d90180">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Science Building
@@ -1191,48 +2947,48 @@ The science building is a large open area with doors to classrooms all around.  
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <temporary score="47">YES</temporary>
     <children>
-      <child nodeId="node-0x6fc5360" />
+      <child nodeId="node-0x6d901f0" />
     </children>
   </item>
-  <item nodeId="node-0x6fc5360">
+  <item nodeId="node-0x6d901f0">
     <command xml:space="preserve">x walls</command>
     <result xml:space="preserve">The walls here have safety posters on them.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <temporary score="47">YES</temporary>
     <children>
-      <child nodeId="node-0x6f6e340" />
+      <child nodeId="node-0x6d90260" />
     </children>
   </item>
-  <item nodeId="node-0x6f6e340">
+  <item nodeId="node-0x6d90260">
     <command xml:space="preserve">x posters</command>
     <result xml:space="preserve">The posters are mostly of celebrities like Smily Cyprus and Jason Biever telling you to be safe in science.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <temporary score="47">YES</temporary>
     <children>
-      <child nodeId="node-0x6f36790" />
+      <child nodeId="node-0x6d902d0" />
     </children>
   </item>
-  <item nodeId="node-0x6f36790">
+  <item nodeId="node-0x6d902d0">
     <command xml:space="preserve">kill jason biever</command>
     <result xml:space="preserve">Violence isn&apos;t the answer to this one.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <temporary score="47">YES</temporary>
     <children>
-      <child nodeId="node-0xf23db30" />
+      <child nodeId="node-0x6d90340" />
     </children>
   </item>
-  <item nodeId="node-0xf23db30">
+  <item nodeId="node-0x6d90340">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">
 Chemistry Lab
@@ -1241,27 +2997,27 @@ The chemistry lab is a large room full of beakers and test tubes on racks.  Ther
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <temporary score="47">YES</temporary>
     <children>
-      <child nodeId="node-0xc00b410" />
+      <child nodeId="node-0x6d903b0" />
     </children>
   </item>
-  <item nodeId="node-0xc00b410">
+  <item nodeId="node-0x6d903b0">
     <command xml:space="preserve">look through window</command>
     <result xml:space="preserve">through the window, you can see your chemistry teacher, Mr. Lacimec, walking toward the building.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <temporary score="47">YES</temporary>
     <children>
-      <child nodeId="node-0xf25a110" />
+      <child nodeId="node-0x6d90420" />
     </children>
   </item>
-  <item nodeId="node-0xf25a110">
+  <item nodeId="node-0x6d90420">
     <command xml:space="preserve">take chemicals</command>
     <result xml:space="preserve">You pick up a test tube and drink it&apos;s contents.  You take a beaker of powder and consume that, too.
-You don&apos;t feel so well…
+You don&apos;t feel so well…u 
 
 
     *** You have exploded ***
@@ -1272,12 +3028,12 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="40">YES</temporary>
+    <temporary score="47">YES</temporary>
     <children>
-      <child nodeId="node-0xf247a40" />
+      <child nodeId="node-0x6d90490" />
     </children>
   </item>
-  <item nodeId="node-0xf247a40">
+  <item nodeId="node-0x6d90490">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Chemistry Lab
 [Previous turn undone.]
@@ -1285,9 +3041,113 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="39">YES</temporary>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d90500" />
+    </children>
   </item>
-  <item nodeId="node-0x707cd10">
+  <item nodeId="node-0x6d90500">
+    <command xml:space="preserve">talk to chemicals</command>
+    <result xml:space="preserve">You strike up a conversation with the chemicals.  Weirdo.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d90570" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d90570">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d905e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d905e0">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">
+Science Building
+The science building is a large open area with doors to classrooms all around.  Your class is upstairs in the chemistry lab.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d90650" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d90650">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  
+
+You can see a hooded man here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d906c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d906c0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You step into the computer lab just as class begins.  Jane, your crush, is already sitting down.
+&quot;Good morning, class,&quot; the teacher says, &quot;Today, we will be working on our text-adventure games…&quot;
+
+&quot;Remember, games are due next class,&quot; the teacher concludes.  Everyone begins to pack up their backpacks and leave.  Jane is leaving, too.  You have to stop her so you can ask her to the dance!
+
+Computer Lab
+The computer lab is a small, square-shaped room with rows of desks facing the northern wall.  Each desk has a computer on it.
+
+You can see Jane here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d90730" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d90730">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Quad
+The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  
+
+You can see a hooded man here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="47">YES</temporary>
+    <children>
+      <child nodeId="node-0x6d907a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6d907a0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Science Building
+The science building is a large open area with doors to classrooms all around.  Your class is upstairs in the chemistry lab.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="46">YES</temporary>
+  </item>
+  <item nodeId="node-0x6d90810">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You&apos;re carrying nothing.  You are wearing a backpack.
 
@@ -1296,10 +3156,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>NO</changed>
     <temporary score="99">YES</temporary>
     <children>
-      <child nodeId="node-0x707cd80" />
+      <child nodeId="node-0x6d90880" />
     </children>
   </item>
-  <item nodeId="node-0x707cd80">
+  <item nodeId="node-0x6d90880">
     <command xml:space="preserve">open chest</command>
     <result xml:space="preserve">You open the chest, revealing a spell book and a flute.
 
@@ -1308,10 +3168,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>NO</changed>
     <temporary score="99">YES</temporary>
     <children>
-      <child nodeId="node-0x707cdf0" />
+      <child nodeId="node-0x6d908f0" />
     </children>
   </item>
-  <item nodeId="node-0x707cdf0">
+  <item nodeId="node-0x6d908f0">
     <command xml:space="preserve">take flute</command>
     <result xml:space="preserve">Taken.
 
@@ -1320,10 +3180,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>NO</changed>
     <temporary score="99">YES</temporary>
     <children>
-      <child nodeId="node-0x707ce60" />
+      <child nodeId="node-0x6d90960" />
     </children>
   </item>
-  <item nodeId="node-0x707ce60">
+  <item nodeId="node-0x6d90960">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -1332,10 +3192,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>NO</changed>
     <temporary score="99">YES</temporary>
     <children>
-      <child nodeId="node-0x707ced0" />
+      <child nodeId="node-0x6d909d0" />
     </children>
   </item>
-  <item nodeId="node-0x707ced0">
+  <item nodeId="node-0x6d909d0">
     <command xml:space="preserve">play Decaf</command>
     <result xml:space="preserve">You play an odd-sounding melody on the flute.
 *Poof!*
@@ -1346,10 +3206,10 @@ A donut appears in your hand!
     <changed>YES</changed>
     <temporary score="99">YES</temporary>
     <children>
-      <child nodeId="node-0x707cf40" />
+      <child nodeId="node-0x6d90a40" />
     </children>
   </item>
-  <item nodeId="node-0x707cf40">
+  <item nodeId="node-0x6d90a40">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You&apos;re carrying a spell book and a flute and 1 donut.  You are wearing a backpack.
 
@@ -1358,10 +3218,10 @@ A donut appears in your hand!
     <changed>YES</changed>
     <temporary score="99">YES</temporary>
     <children>
-      <child nodeId="node-0x707cfb0" />
+      <child nodeId="node-0x6d90ab0" />
     </children>
   </item>
-  <item nodeId="node-0x707cfb0">
+  <item nodeId="node-0x6d90ab0">
     <command xml:space="preserve">play Decaf</command>
     <result xml:space="preserve">You play an odd-sounding melody on the flute.
 *Poof!*
@@ -1372,10 +3232,10 @@ A donut appears in your hand!
     <changed>YES</changed>
     <temporary score="99">YES</temporary>
     <children>
-      <child nodeId="node-0x707d020" />
+      <child nodeId="node-0x6d90b20" />
     </children>
   </item>
-  <item nodeId="node-0x707d020">
+  <item nodeId="node-0x6d90b20">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You&apos;re carrying a spell book and a flute and 2 donuts.  You are wearing a backpack.
 
@@ -1384,7 +3244,7 @@ A donut appears in your hand!
     <changed>YES</changed>
     <temporary score="98">YES</temporary>
   </item>
-  <item nodeId="node-0x707d090">
+  <item nodeId="node-0x6d90b90">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   A sudden downpour comes down, soaking everyone in the quad.
@@ -1396,11 +3256,11 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>NO</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707d6b0" />
-      <child nodeId="node-0x707d100" />
+      <child nodeId="node-0x6d911b0" />
+      <child nodeId="node-0x6d90c00" />
     </children>
   </item>
-  <item nodeId="node-0x707d100">
+  <item nodeId="node-0x6d90c00">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   Nothing happens.  The rain will probably stop on it&apos;s own.
@@ -1410,10 +3270,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="398">YES</temporary>
     <children>
-      <child nodeId="node-0x707d170" />
+      <child nodeId="node-0x6d90c70" />
     </children>
   </item>
-  <item nodeId="node-0x707d170">
+  <item nodeId="node-0x6d90c70">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1422,10 +3282,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="398">YES</temporary>
     <children>
-      <child nodeId="node-0x707d1e0" />
+      <child nodeId="node-0x6d90ce0" />
     </children>
   </item>
-  <item nodeId="node-0x707d1e0">
+  <item nodeId="node-0x6d90ce0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1434,10 +3294,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="398">YES</temporary>
     <children>
-      <child nodeId="node-0x707d250" />
+      <child nodeId="node-0x6d90d50" />
     </children>
   </item>
-  <item nodeId="node-0x707d250">
+  <item nodeId="node-0x6d90d50">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1448,10 +3308,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="398">YES</temporary>
     <children>
-      <child nodeId="node-0x707d2c0" />
+      <child nodeId="node-0x6d90dc0" />
     </children>
   </item>
-  <item nodeId="node-0x707d2c0">
+  <item nodeId="node-0x6d90dc0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1460,10 +3320,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="398">YES</temporary>
     <children>
-      <child nodeId="node-0x707d330" />
+      <child nodeId="node-0x6d90e30" />
     </children>
   </item>
-  <item nodeId="node-0x707d330">
+  <item nodeId="node-0x6d90e30">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   A sudden downpour comes down, soaking everyone in the quad.
@@ -1475,10 +3335,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="398">YES</temporary>
     <children>
-      <child nodeId="node-0x707d3a0" />
+      <child nodeId="node-0x6d90ea0" />
     </children>
   </item>
-  <item nodeId="node-0x707d3a0">
+  <item nodeId="node-0x6d90ea0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1489,10 +3349,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="398">YES</temporary>
     <children>
-      <child nodeId="node-0x707d410" />
+      <child nodeId="node-0x6d90f10" />
     </children>
   </item>
-  <item nodeId="node-0x707d410">
+  <item nodeId="node-0x6d90f10">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1501,10 +3361,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="398">YES</temporary>
     <children>
-      <child nodeId="node-0x707d480" />
+      <child nodeId="node-0x6d90f80" />
     </children>
   </item>
-  <item nodeId="node-0x707d480">
+  <item nodeId="node-0x6d90f80">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   A sudden downpour comes down, soaking everyone in the quad.
@@ -1518,10 +3378,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="398">YES</temporary>
     <children>
-      <child nodeId="node-0x707d4f0" />
+      <child nodeId="node-0x6d90ff0" />
     </children>
   </item>
-  <item nodeId="node-0x707d4f0">
+  <item nodeId="node-0x6d90ff0">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   A sudden downpour comes down, soaking everyone in the quad.
@@ -1533,10 +3393,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="398">YES</temporary>
     <children>
-      <child nodeId="node-0x707d560" />
+      <child nodeId="node-0x6d91060" />
     </children>
   </item>
-  <item nodeId="node-0x707d560">
+  <item nodeId="node-0x6d91060">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1545,10 +3405,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="398">YES</temporary>
     <children>
-      <child nodeId="node-0x707d5d0" />
+      <child nodeId="node-0x6d910d0" />
     </children>
   </item>
-  <item nodeId="node-0x707d5d0">
+  <item nodeId="node-0x6d910d0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1557,10 +3417,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="398">YES</temporary>
     <children>
-      <child nodeId="node-0x707d640" />
+      <child nodeId="node-0x6d91140" />
     </children>
   </item>
-  <item nodeId="node-0x707d640">
+  <item nodeId="node-0x6d91140">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1571,7 +3431,7 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="397">YES</temporary>
   </item>
-  <item nodeId="node-0x707d6b0">
+  <item nodeId="node-0x6d911b0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1582,11 +3442,11 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707e280" />
-      <child nodeId="node-0x707d720" />
+      <child nodeId="node-0x6d91d80" />
+      <child nodeId="node-0x6d91220" />
     </children>
   </item>
-  <item nodeId="node-0x707d720">
+  <item nodeId="node-0x6d91220">
     <command xml:space="preserve">open chest</command>
     <result xml:space="preserve">You open the chest, revealing a spell book and a flute.
 
@@ -1595,10 +3455,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707d790" />
+      <child nodeId="node-0x6d91290" />
     </children>
   </item>
-  <item nodeId="node-0x707d790">
+  <item nodeId="node-0x6d91290">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
@@ -1607,10 +3467,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707d800" />
+      <child nodeId="node-0x6d91300" />
     </children>
   </item>
-  <item nodeId="node-0x707d800">
+  <item nodeId="node-0x6d91300">
     <command xml:space="preserve">take flute</command>
     <result xml:space="preserve">Taken.
 
@@ -1619,10 +3479,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707d870" />
+      <child nodeId="node-0x6d91370" />
     </children>
   </item>
-  <item nodeId="node-0x707d870">
+  <item nodeId="node-0x6d91370">
     <command xml:space="preserve">play cdefg</command>
     <result xml:space="preserve">You play a simple scale on your flute.
 You hear a click from just above you.  Looking up, you see that the basement door has somehow come unlocked.
@@ -1632,10 +3492,10 @@ You hear a click from just above you.  Looking up, you see that the basement doo
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707d8e0" />
+      <child nodeId="node-0x6d913e0" />
     </children>
   </item>
-  <item nodeId="node-0x707d8e0">
+  <item nodeId="node-0x6d913e0">
     <command xml:space="preserve">u</command>
     <result xml:space="preserve">(first opening the basement door)
 
@@ -1647,10 +3507,10 @@ Your living room is a long room with a small table, a couple of chairs, and a pa
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707d950" />
+      <child nodeId="node-0x6d91450" />
     </children>
   </item>
-  <item nodeId="node-0x707d950">
+  <item nodeId="node-0x6d91450">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You make it to the bus stop just as the bus pulls up.
 
@@ -1664,10 +3524,10 @@ You can see a bus sign and a bus here.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707d9c0" />
+      <child nodeId="node-0x6d914c0" />
     </children>
   </item>
-  <item nodeId="node-0x707d9c0">
+  <item nodeId="node-0x6d914c0">
     <command xml:space="preserve">get in bus</command>
     <result xml:space="preserve">You get on the bus and sit in the back.  Before you know it, you are getting off at the entrance to school.
 
@@ -1679,10 +3539,10 @@ The entrance to school is just a parking lot with a sign stating the name of you
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707da30" />
+      <child nodeId="node-0x6d91530" />
     </children>
   </item>
-  <item nodeId="node-0x707da30">
+  <item nodeId="node-0x6d91530">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Quad
@@ -1695,10 +3555,10 @@ You can see a flowers and a hooded man here.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707daa0" />
+      <child nodeId="node-0x6d915a0" />
     </children>
   </item>
-  <item nodeId="node-0x707daa0">
+  <item nodeId="node-0x6d915a0">
     <command xml:space="preserve">take flower</command>
     <result xml:space="preserve">Taken.
 
@@ -1707,10 +3567,10 @@ You can see a flowers and a hooded man here.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707db10" />
+      <child nodeId="node-0x6d91610" />
     </children>
   </item>
-  <item nodeId="node-0x707db10">
+  <item nodeId="node-0x6d91610">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You step into the computer lab just as class begins.  Jane, your crush, is already sitting down.
 &quot;Good morning, class,&quot; the teacher says, &quot;Today, we will be working on our text-adventure games…&quot;
@@ -1727,10 +3587,10 @@ You can see Jane here.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707db80" />
+      <child nodeId="node-0x6d91680" />
     </children>
   </item>
-  <item nodeId="node-0x707db80">
+  <item nodeId="node-0x6d91680">
     <command xml:space="preserve">talk to jane</command>
     <result xml:space="preserve">She&apos;s leaving in a big hurry.  You need to get her to stop first.
 
@@ -1739,10 +3599,10 @@ You can see Jane here.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707dbf0" />
+      <child nodeId="node-0x6d916f0" />
     </children>
   </item>
-  <item nodeId="node-0x707dbf0">
+  <item nodeId="node-0x6d916f0">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   A sudden downpour comes down, soaking everyone in the quad.
@@ -1754,10 +3614,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707dc60" />
+      <child nodeId="node-0x6d91760" />
     </children>
   </item>
-  <item nodeId="node-0x707dc60">
+  <item nodeId="node-0x6d91760">
     <command xml:space="preserve">talk to jane</command>
     <result xml:space="preserve">You approach her cautiously and tap her on the shoulder.  As you do so, you realize that you need to go to the bathroom.  You&apos;ve got to be joking!  It&apos;s too late now.  Jane is already turning around.  You&apos;ll just have to hold it.
 
@@ -1768,10 +3628,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707dcd0" />
+      <child nodeId="node-0x6d917d0" />
     </children>
   </item>
-  <item nodeId="node-0x707dcd0">
+  <item nodeId="node-0x6d917d0">
     <command xml:space="preserve">no</command>
     <result xml:space="preserve">
 You have to go to the bathroom…
@@ -1785,10 +3645,10 @@ You can&apos;t quite remember your train of thought.  This isn&apos;t good.  You
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707dd40" />
+      <child nodeId="node-0x6d91840" />
     </children>
   </item>
-  <item nodeId="node-0x707dd40">
+  <item nodeId="node-0x6d91840">
     <command xml:space="preserve">no</command>
     <result xml:space="preserve">&quot;No thank you,&quot; you say.
 
@@ -1801,10 +3661,10 @@ You have to go to the bathroom…饨
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707ddb0" />
+      <child nodeId="node-0x6d918b0" />
     </children>
   </item>
-  <item nodeId="node-0x707ddb0">
+  <item nodeId="node-0x6d918b0">
     <command xml:space="preserve">yes</command>
     <result xml:space="preserve">&quot;Seems a little cliché to me,&quot; she adds.
 
@@ -1817,10 +3677,10 @@ You have to go to the bathroom…⁥楌
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707de20" />
+      <child nodeId="node-0x6d91920" />
     </children>
   </item>
-  <item nodeId="node-0x707de20">
+  <item nodeId="node-0x6d91920">
     <command xml:space="preserve">yes</command>
     <result xml:space="preserve">&quot;Pretty fun, huh?&quot; says Jane.
 
@@ -1828,6 +3688,8 @@ You have to go to the bathroom…
 
 &quot;Yeah… so, do you want to come to the dance with me?he湡⹥ਊthroom…&quot; you blurt out.
 &quot;Oh.  Really?  Well…耀ays Jane.
+
+Yo
 
 Y&quot;
 
@@ -1840,10 +3702,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707de90" />
+      <child nodeId="node-0x6d91990" />
     </children>
   </item>
-  <item nodeId="node-0x707de90">
+  <item nodeId="node-0x6d91990">
     <command xml:space="preserve">give jane flowers</command>
     <result xml:space="preserve">&quot;Wow, thanks!&quot; Jane exclaims.  &quot;That&apos;s so sweet.  You know what?  I will go to the dance with you.&quot;
 She turns and walks out into the rain, and then sprints off towards the Math building.  Mission accompished: you have the perfect date to the dance.
@@ -1853,10 +3715,10 @@ She turns and walks out into the rain, and then sprints off towards the Math bui
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707df00" />
+      <child nodeId="node-0x6d91a00" />
     </children>
   </item>
-  <item nodeId="node-0x707df00">
+  <item nodeId="node-0x6d91a00">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Quad
@@ -1869,10 +3731,10 @@ You can see a hooded man here.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707df70" />
+      <child nodeId="node-0x6d91a70" />
     </children>
   </item>
-  <item nodeId="node-0x707df70">
+  <item nodeId="node-0x6d91a70">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Gym
@@ -1885,10 +3747,10 @@ You can see a guard here.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707dfe0" />
+      <child nodeId="node-0x6d91ae0" />
     </children>
   </item>
-  <item nodeId="node-0x707dfe0">
+  <item nodeId="node-0x6d91ae0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Quad
@@ -1901,10 +3763,10 @@ You can see a hooded man here.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707e050" />
+      <child nodeId="node-0x6d91b50" />
     </children>
   </item>
-  <item nodeId="node-0x707e050">
+  <item nodeId="node-0x6d91b50">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Gym
@@ -1917,10 +3779,10 @@ You can see a guard here.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707e0c0" />
+      <child nodeId="node-0x6d91bc0" />
     </children>
   </item>
-  <item nodeId="node-0x707e0c0">
+  <item nodeId="node-0x6d91bc0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Quad
@@ -1933,10 +3795,10 @@ You can see a hooded man here.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707e130" />
+      <child nodeId="node-0x6d91c30" />
     </children>
   </item>
-  <item nodeId="node-0x707e130">
+  <item nodeId="node-0x6d91c30">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Gym
@@ -1949,10 +3811,10 @@ You can see a guard here.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707e1a0" />
+      <child nodeId="node-0x6d91ca0" />
     </children>
   </item>
-  <item nodeId="node-0x707e1a0">
+  <item nodeId="node-0x6d91ca0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Dance
@@ -1963,10 +3825,10 @@ You can see Jane here.
     <changed>YES</changed>
     <temporary score="473">YES</temporary>
     <children>
-      <child nodeId="node-0x707e210" />
+      <child nodeId="node-0x6d91d10" />
     </children>
   </item>
-  <item nodeId="node-0x707e210">
+  <item nodeId="node-0x6d91d10">
     <command xml:space="preserve">talk to jane</command>
     <result xml:space="preserve">
 
@@ -1981,7 +3843,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="472">YES</temporary>
   </item>
-  <item nodeId="node-0x707e280">
+  <item nodeId="node-0x6d91d80">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1990,11 +3852,11 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>NO</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e360" />
-      <child nodeId="node-0x707e2f0" />
+      <child nodeId="node-0x6d91e60" />
+      <child nodeId="node-0x6d91df0" />
     </children>
   </item>
-  <item nodeId="node-0x707e2f0">
+  <item nodeId="node-0x6d91df0">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   Nothing happens.  The rain will probably stop on it&apos;s own.
@@ -2004,7 +3866,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="405">YES</temporary>
   </item>
-  <item nodeId="node-0x707e360">
+  <item nodeId="node-0x6d91e60">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2015,11 +3877,11 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e910" />
-      <child nodeId="node-0x707e3d0" />
+      <child nodeId="node-0x6d92410" />
+      <child nodeId="node-0x6d91ed0" />
     </children>
   </item>
-  <item nodeId="node-0x707e3d0">
+  <item nodeId="node-0x6d91ed0">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   A sudden downpour comes down, soaking everyone in the quad.
@@ -2031,10 +3893,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e440" />
+      <child nodeId="node-0x6d91f40" />
     </children>
   </item>
-  <item nodeId="node-0x707e440">
+  <item nodeId="node-0x6d91f40">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2043,10 +3905,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e4b0" />
+      <child nodeId="node-0x6d91fb0" />
     </children>
   </item>
-  <item nodeId="node-0x707e4b0">
+  <item nodeId="node-0x6d91fb0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2055,10 +3917,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e520" />
+      <child nodeId="node-0x6d92020" />
     </children>
   </item>
-  <item nodeId="node-0x707e520">
+  <item nodeId="node-0x6d92020">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2069,10 +3931,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e590" />
+      <child nodeId="node-0x6d92090" />
     </children>
   </item>
-  <item nodeId="node-0x707e590">
+  <item nodeId="node-0x6d92090">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   A sudden downpour comes down, soaking everyone in the quad.
@@ -2084,10 +3946,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e600" />
+      <child nodeId="node-0x6d92100" />
     </children>
   </item>
-  <item nodeId="node-0x707e600">
+  <item nodeId="node-0x6d92100">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2096,10 +3958,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e670" />
+      <child nodeId="node-0x6d92170" />
     </children>
   </item>
-  <item nodeId="node-0x707e670">
+  <item nodeId="node-0x6d92170">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2108,10 +3970,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e6e0" />
+      <child nodeId="node-0x6d921e0" />
     </children>
   </item>
-  <item nodeId="node-0x707e6e0">
+  <item nodeId="node-0x6d921e0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2120,10 +3982,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e750" />
+      <child nodeId="node-0x6d92250" />
     </children>
   </item>
-  <item nodeId="node-0x707e750">
+  <item nodeId="node-0x6d92250">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2134,10 +3996,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e7c0" />
+      <child nodeId="node-0x6d922c0" />
     </children>
   </item>
-  <item nodeId="node-0x707e7c0">
+  <item nodeId="node-0x6d922c0">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   A sudden downpour comes down, soaking everyone in the quad.
@@ -2149,10 +4011,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e830" />
+      <child nodeId="node-0x6d92330" />
     </children>
   </item>
-  <item nodeId="node-0x707e830">
+  <item nodeId="node-0x6d92330">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2161,10 +4023,10 @@ It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.
     <changed>YES</changed>
     <temporary score="445">YES</temporary>
     <children>
-      <child nodeId="node-0x707e8a0" />
+      <child nodeId="node-0x6d923a0" />
     </children>
   </item>
-  <item nodeId="node-0x707e8a0">
+  <item nodeId="node-0x6d923a0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2175,7 +4037,7 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="444">YES</temporary>
   </item>
-  <item nodeId="node-0x707e910">
+  <item nodeId="node-0x6d92410">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2184,10 +4046,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707e980" />
+      <child nodeId="node-0x6d92480" />
     </children>
   </item>
-  <item nodeId="node-0x707e980">
+  <item nodeId="node-0x6d92480">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2196,10 +4058,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707e9f0" />
+      <child nodeId="node-0x6d924f0" />
     </children>
   </item>
-  <item nodeId="node-0x707e9f0">
+  <item nodeId="node-0x6d924f0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2208,10 +4070,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707ea60" />
+      <child nodeId="node-0x6d92560" />
     </children>
   </item>
-  <item nodeId="node-0x707ea60">
+  <item nodeId="node-0x6d92560">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2220,10 +4082,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707ead0" />
+      <child nodeId="node-0x6d925d0" />
     </children>
   </item>
-  <item nodeId="node-0x707ead0">
+  <item nodeId="node-0x6d925d0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2232,10 +4094,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707eb40" />
+      <child nodeId="node-0x6d92640" />
     </children>
   </item>
-  <item nodeId="node-0x707eb40">
+  <item nodeId="node-0x6d92640">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2244,10 +4106,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707ebb0" />
+      <child nodeId="node-0x6d926b0" />
     </children>
   </item>
-  <item nodeId="node-0x707ebb0">
+  <item nodeId="node-0x6d926b0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2256,10 +4118,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707ec20" />
+      <child nodeId="node-0x6d92720" />
     </children>
   </item>
-  <item nodeId="node-0x707ec20">
+  <item nodeId="node-0x6d92720">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2268,10 +4130,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707ec90" />
+      <child nodeId="node-0x6d92790" />
     </children>
   </item>
-  <item nodeId="node-0x707ec90">
+  <item nodeId="node-0x6d92790">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2280,10 +4142,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707ed00" />
+      <child nodeId="node-0x6d92800" />
     </children>
   </item>
-  <item nodeId="node-0x707ed00">
+  <item nodeId="node-0x6d92800">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2292,10 +4154,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707ed70" />
+      <child nodeId="node-0x6d92870" />
     </children>
   </item>
-  <item nodeId="node-0x707ed70">
+  <item nodeId="node-0x6d92870">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2304,10 +4166,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707ede0" />
+      <child nodeId="node-0x6d928e0" />
     </children>
   </item>
-  <item nodeId="node-0x707ede0">
+  <item nodeId="node-0x6d928e0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2316,10 +4178,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707ee50" />
+      <child nodeId="node-0x6d92950" />
     </children>
   </item>
-  <item nodeId="node-0x707ee50">
+  <item nodeId="node-0x6d92950">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2328,10 +4190,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707eec0" />
+      <child nodeId="node-0x6d929c0" />
     </children>
   </item>
-  <item nodeId="node-0x707eec0">
+  <item nodeId="node-0x6d929c0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2340,10 +4202,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707ef30" />
+      <child nodeId="node-0x6d92a30" />
     </children>
   </item>
-  <item nodeId="node-0x707ef30">
+  <item nodeId="node-0x6d92a30">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2352,10 +4214,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707efa0" />
+      <child nodeId="node-0x6d92aa0" />
     </children>
   </item>
-  <item nodeId="node-0x707efa0">
+  <item nodeId="node-0x6d92aa0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2364,10 +4226,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707f010" />
+      <child nodeId="node-0x6d92b10" />
     </children>
   </item>
-  <item nodeId="node-0x707f010">
+  <item nodeId="node-0x6d92b10">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2376,10 +4238,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707f080" />
+      <child nodeId="node-0x6d92b80" />
     </children>
   </item>
-  <item nodeId="node-0x707f080">
+  <item nodeId="node-0x6d92b80">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -2388,10 +4250,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="429">YES</temporary>
     <children>
-      <child nodeId="node-0x707f0f0" />
+      <child nodeId="node-0x6d92bf0" />
     </children>
   </item>
-  <item nodeId="node-0x707f0f0">
+  <item nodeId="node-0x6d92bf0">
     <command xml:space="preserve">play cdeee</command>
     <result xml:space="preserve">You play the tune you heard the hooded man whistling on your flute.
   Nothing happens.  The rain will probably stop on it&apos;s own.
@@ -2401,7 +4263,7 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="428">YES</temporary>
   </item>
-  <item nodeId="node-0x707f160">
+  <item nodeId="node-0x6d92c60">
     <command xml:space="preserve">kiss chest</command>
     <result xml:space="preserve">You can only do that to something animate.
 
@@ -2410,10 +4272,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="646">YES</temporary>
     <children>
-      <child nodeId="node-0x707f1d0" />
+      <child nodeId="node-0x6d92cd0" />
     </children>
   </item>
-  <item nodeId="node-0x707f1d0">
+  <item nodeId="node-0x6d92cd0">
     <command xml:space="preserve">dust chest</command>
     <result xml:space="preserve">You achieve nothing by this.
 
@@ -2422,10 +4284,10 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="646">YES</temporary>
     <children>
-      <child nodeId="node-0x707f240" />
+      <child nodeId="node-0x6d92d40" />
     </children>
   </item>
-  <item nodeId="node-0x707f240">
+  <item nodeId="node-0x6d92d40">
     <command xml:space="preserve">clean chest</command>
     <result xml:space="preserve">You achieve nothing by this.
 
@@ -2434,7 +4296,7 @@ The rain has stopped.
     <changed>YES</changed>
     <temporary score="645">YES</temporary>
   </item>
-  <item nodeId="node-0x707f2b0">
+  <item nodeId="node-0x6d92db0">
     <command xml:space="preserve">take friend</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
