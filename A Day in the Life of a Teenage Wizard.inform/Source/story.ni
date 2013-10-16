@@ -22,7 +22,7 @@ Understand "pick [something]" as taking.
 	
 The description of the player is "You are a sixteen-year-old with dark hair and dark eyes.[if the player is wearing the backpack]  You have a heavy-looking backpack on your back."
 
-The donut is a thing.  Understand "pastry" or "chocolate donut" as donut.
+The donut is a thing.  It is scenery.  Understand "pastry" or "chocolate donut" as donut.
 
 Instead of examining the donut:
 	if donutcount is greater than 0:
@@ -30,6 +30,12 @@ Instead of examining the donut:
 	otherwise:
 		say "You can't see any such thing.".
 		
+Instead of taking the donut:
+	if donutcount is not greater than 0:
+		say "You can't see any such thing.";
+	otherwise:
+		move the donut to the player.
+
 Instead of eating the donut:
 	if donutcount is greater than 0:
 		say "You devour the donut in no time.  Delicious!";
@@ -57,14 +63,17 @@ Instead of giving the donut to the Guard:
 		say "You can't see any such thing.".
 
 
-The backpack is a thing.  Understand "bookbag" or "bag" or "schoolbag" or "school bag" or "book bag" or "pack" or "back pack" as backpack.  It is wearable.  It is a container.  It is closed and openable.  The description is "Your backpack is black and weighed down with all of your school books.[if the player is wearing the backpack]  Your shoulders ache from wearing it."
+The backpack is a thing.  Understand "bookbag" or "bag" or "schoolbag" or "school bag" or "book bag" or "pack" or "back pack" as backpack.  It is wearable.  It is a container.  It is closed and openable.  The description is "Your backpack is black and weighed down with all of your school books.[if the player is wearing the backpack]  Your shoulders ache from wearing it.[end if][line break]It is [if the backpack is open]open[otherwise]closed[end if]."
 
 When play begins:
 	now the player is wearing the backpack.
 	
-The schoolbooks are things in the backpack.  Understand "school books" or "text books" or "textbooks" as schoolbooks.  The description is "Trigonometry, Chemistry, Spanish… your backpack is loaded with heavy textbooks."
+The schoolbooks are things in the backpack.  Understand "school books" or "text books" or "textbooks" or "books" as schoolbooks.  The description is "Trigonometry, Chemistry, Spanish… your backpack is loaded with heavy textbooks."
 
-The note is a thing in the backpack.  Understand "note from Dad" as note.  The description is "This is the note Dad put on your backpack when he left this morning before you woke up.  It reads:[line break][line break]Hey, sport,[line break]I went down to the coffee shop to get my donut with my Decaf.  I won't see you 'till after school.[line break]-Dad"
+Instead of opening the schoolbooks:
+	say "Those aren't going to help you right now.".
+
+The note is a thing in the backpack.  Understand "note from Dad" as note.  The description is "This is the note Dad put on your backpack when he left this morning before you woke up.  It reads:[line break][line break]Hey, sport,[line break]I went down to the coffee shop to get my donut with my Decaf.  I won't see you untill after school.[line break]Don't forget your flute![line break]-Dad"
 
 The walls are a thing.  They are scenery.  Understand "mold" or "wooden planks" or "termites" as walls.
 
@@ -128,6 +137,8 @@ The Basement is a room.  "The basement is a dark and dank area.  It is small; th
 The door called the basement door is above the basement.  Understand "wooden door" as basement door.  Understand "trapdoor" or "wooden trapdoor" as basement door.  It is locked and lockable.  It is scenery.  The description is "It is a white wooden door with a brass handle."
 
 The handle is a thing in the basement.  It is scenery.  The description is "It is a brass door handle."
+
+The stairs are a thing in the basement.  It is scenery.  Understand "wooden stairs" or "wood stairs" or "stair" or "steps" or "step" or "staircase" as stairs.  The description is "These stairs are moldy and squeaky.  You really need to spiff up your basement."
 
 Dustiness is a kind of value.  The dustinesses are dusty and polished.  Things have dustiness.  Things are usually polished.
 
@@ -206,7 +217,7 @@ Instead of magicing:
 				change the player to untestable;
 				move the player to the quad.
 			
-Writingdonuting is an action applying to nothing.  Understand "write Decaf" or "write Decaf down" or "write Decaf in book" or "write Decaf in the book" or "write Decaf on the book" or "write Decaf on book" or "write Decaf on the spell book" or "write Decaf in the spellbook" or "write Decaf on the spellbook" or "write Decaf on spellbook" or "write Decaf in spellbook" or "write Decaf on spell book" or "write Decaf in spell book" or "record Decaf" or "put Decaf in book" or "put Decaf in the book" or "put Decaf on the book" or "put Decaf on book" or "put Decaf on the spell book" or "put Decaf in the spellbook" or "put Decaf on the spellbook" or "put Decaf on spellbook" or "put Decaf in spellbook" or "put Decaf on spell book" or "put Decaf in spell book" as writingdonuting.
+Writingdonuting is an action applying to nothing.  Understand "write down Decaf" or "put down Decaf" or "write Decaf" or "write Decaf down" or "write Decaf in book" or "write Decaf in the book" or "write Decaf on the book" or "write Decaf on book" or "write Decaf on the spell book" or "write Decaf in the spellbook" or "write Decaf on the spellbook" or "write Decaf on spellbook" or "write Decaf in spellbook" or "write Decaf on spell book" or "write Decaf in spell book" or "record Decaf" or "put Decaf in book" or "put Decaf in the book" or "put Decaf on the book" or "put Decaf on book" or "put Decaf on the spell book" or "put Decaf in the spellbook" or "put Decaf on the spellbook" or "put Decaf on spellbook" or "put Decaf in spellbook" or "put Decaf on spell book" or "put Decaf in spell book" as writingdonuting.
 
 After writingdonuting:
 	say "You scribble the word 'Decaf' into your spell book.";
@@ -260,38 +271,46 @@ The classmates are things in the street.  They are scenery.  Understand "student
 
 Instead of entering the bus:
 	say "You get on the bus and sit in the back.  Before you know it, you are getting off at the entrance to school.";
+	move the classmates to the school entrance;
+	move the road to the school entrance;
 	move the player to the school entrance.
 
-The School Entrance is a room.  "The entrance to school is just a parking lot with a sign stating the name of your school.[if we have not entered the school entrance the second time]  The rest of your classmates are walking to class already.  You see Jane among them.  You have to ask her to the dance tonight before someone else does.[end if]  The quad is just to the north."
+The School Entrance is a room.  "The entrance to school is just a parking lot with a sign stating the name of your school.[if we have not entered the school entrance the second time]  The rest of your classmates are walking to the quad already.  You see Jane among them.  You have to ask her to the dance tonight before someone else does.[end if]  The quad is just to the north."
 
 After entering the school entrance:
 	move the classmates to the school entrance;
 	move the road to the school entrance.
+	
+The cars are a thing in the school entrance.  They are scenery.  Understand "parking lot" or "car" as cars.  The description is "The parking lot is empty."
 
-The thing called the school is a thing in the school entrance.  It is scenery.  Understand "quad" or "academy" or "highschool" as school.  The description is "Your high school is a cluster of buildings sitting atop a low hill to your north."
+The thing called the school is a thing in the school entrance.  It is scenery.  Understand "quad" or "academy" or "highschool" or "buildings" as school.  The description is "Your high school is a cluster of buildings sitting atop a low hill to your north."
 
 The schoolsign is a thing in the school entrance.  It is scenery.  Understand "school name" as schoolsign.  The printed name of the schoolsign is "sign".  The description is "The sign is a big colorful rectangle supported by two poles with your school's name printed across."
 
 The poles are things in the school entrance.  They are scenery.  Understand "posts" or "signposts" or "pole" as poles.  The description is "The poles are a couple of inches thick and appear to be made out of cast aluminum."
 
-The Quad is north of the school entrance.  "The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  [if we have not entered the quad the second time]The Math, English, Social Studies, and Language buildings are behind the science building, but you don't have any of those classes today.  You see Jane heading towards the computer lab.  You both have computer science there now.[end if][if the flute is rainy]  It is raining hard."
+The Quad is north of the school entrance.  "The quad is a great grassy square with the computer lab to the west, the science building to the north, the school gym to the east, and the road to the south.  Students are bustling all over the place.[if we have not entered the quad the second time]  The Math, English, Social Studies, and Language buildings are behind the science building, but you don't have any of those classes today.  You see Jane walking into the computer lab.  You both have computer science there in ten minutes.[end if][if the flute is rainy]  It is raining hard."
+
+The students are a thing in the quad.  Understand "classmates" or "people" as students.  It is scenery.  The description is "Students are bustling to and fro all over the quad."
 
 The flowers are things in the quad.  Understand "flower" as flowers.  Understand "rose" or "roses" as flowers.  The description is "These roses have a lovely aroma.  They sure seem romantic.  You could give these to Jane."
 
 The tune is a thing in the quad.  Understand "melody" or "song" or "whistle" as tune.  It is scenery.  The description is "The tune starts off like your unlocking spell, but the third note repeats twice."
 
-The hooded man is a person in the quad.  Understand "hood" or "cloak" or "hooded cloak" or "cloaked man" or "man in a hooded cloak" or "figure" as hooded man.  The description is "There is a man in a hooded cloak standing about the quad, whistling a strange tune.  The first three notes are similar to your unlocking spell, but then it repeats the last not twice.[line break]You wonder if you should tell security about this guy.[line break]Nah, he doesn't seem to be a threat."
+The hooded man is a person in the quad.  Understand "hood" or "cloak" or "hooded cloak" or "cloaked man" or "man in a hooded cloak" or "figure" as hooded man.  The description is "There is a man in a hooded cloak standing about the quad, whistling a strange tune.  The first three notes are similar to your unlocking spell, but then it repeats the last note twice.[if we have not examined the hooded man][line break]You wonder if you should tell security about this guy.[line break]Nah, he doesn't seem to be a threat."
 
 Talking is an action applying to one thing.  Understand "talk to [something]" as talking.
 
 Instead of talking:
-	if the noun is not the hooded man and the noun is not Jane and the noun is not the guard and the noun is not Kyle, say "You strike up a conversation with the [noun].  Weirdo.";
-	if the noun is the hooded man, say "You try to get the attention of the hooded man.  He ignores you and continues whistling.".
+	if the noun is not the hooded man and the noun is not Jane and the noun is not the guard and the noun is not Kyle and the noun is not the DJ and the noun is not the friend and the noun is not the classmates, say "You strike up a conversation with the [noun].  Weirdo.";
+	if the noun is the hooded man, say "You try to get the attention of the hooded man.  He ignores you and continues whistling.";
+	if the noun is the classmates, say "Everyone is rushing off to class.  You should be, too.";
+	if the noun is the students, say "People are bustling to and fro all over the place.  No one seems to have time to talk.".
 	
 Instead of asking the hooded man about something:
 	say "There is no reply.  He simply continues to whistle."
 	
-Writeraining is an action applying to nothing.  Understand "write cdeee" or "write cdeee down" or "write cdeee in book" or "write cdeee in the book" or "write cdeee on the book" or "write cdeee on book" or "write cdeee on the spell book" or "write cdeee in the spellbook" or "write cdeee on the spellbook" or "write cdeee on spellbook" or "write cdeee in spellbook" or "write cdeee on spell book" or "write cdeee in spell book" or "record cdeee" or "put cdeee in book" or "put cdeee in the book" or "put cdeee on the book" or "put cdeee on book" or "put cdeee on the spell book" or "put cdeee in the spellbook" or "put cdeee on the spellbook" or "put cdeee on spellbook" or "put cdeee in spellbook" or "put cdeee on spell book" or "put cdeee in spell book" as writeraining.
+Writeraining is an action applying to nothing.  Understand "write down cdeee" or "put down cdeee" or "write cdeee" or "write cdeee down" or "write cdeee in book" or "write cdeee in the book" or "write cdeee on the book" or "write cdeee on book" or "write cdeee on the spell book" or "write cdeee in the spellbook" or "write cdeee on the spellbook" or "write cdeee on spellbook" or "write cdeee in spellbook" or "write cdeee on spell book" or "write cdeee in spell book" or "record cdeee" or "put cdeee in book" or "put cdeee in the book" or "put cdeee on the book" or "put cdeee on book" or "put cdeee on the spell book" or "put cdeee in the spellbook" or "put cdeee on the spellbook" or "put cdeee on spellbook" or "put cdeee in spellbook" or "put cdeee on spell book" or "put cdeee in spell book" as writeraining.
 
 After writeraining:
 	say "You scribble the word 'cdeee' into your spell book, along with the words 'From the hooded man'.";
@@ -302,13 +321,15 @@ Castraining is an action applying to nothing.  Understand "play cdeee" or "play 
 Things can be rainy or unrainy.  Things are usually unrainy.
 		
 Instead of castraining:
-	say "You play the tune you heard the hooded man whistling on your flute.[if the flute is rainy]  Nothing happens.  The rain will probably stop on it's own.[otherwise]  A sudden downpour comes down, soaking everyone in the quad.[end if][if Jane is in the computer lab and the flute is unrainy][line break]It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.";
+	say "You play the tune you heard the hooded man whistling on your flute.[if the flute is rainy]  Nothing happens.  The rain will probably stop on it's own.[otherwise]  A sudden downpour comes down, soaking everyone in the quad.[end if][if Jane is in the computer lab and the flute is unrainy and the player is in the computer lab][line break]It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.";
 	change the flute to rainy;
 	change the book to rainy;
 	if the player is in the chemistry lab and the teacher is livid:
 		say "The rain soaks all of Mr Lacimec's papers.  You did it!  You destroyed the tests![line break]When Mr Lacimec walks into the classroom, he is not happy.  He has everyone sit in the corner for the rest of class.  At least you're not failing![line break]By the time you get out of class, the sun is touching the horizon in the west.  It's time for the dance!  Jane should be at the gym right about now.";
 		change the player to untestable;
-		move the player to the quad.
+		move the player to the quad;
+	if the player is in the chemistry lab and the teacher is jolly:
+		say "Through the window, you notice Mr Lacimec continue walking seemingly undeterred by the rain.".
 
 An every turn rule:	
 	if the flute is rainy and the book is unrainy and a random chance of 1 in 4 succeeds:
@@ -320,13 +341,17 @@ The Computer Lab is west of the quad.  "The computer lab is a small, square-shap
 
 A thing can be beforecs or aftercs. A thing is usually beforecs.
 
-Before going to the computer lab:
-	if the book is beforecs:
-		say "You step into the computer lab just as class begins.  Jane, your crush, is already sitting down.[line break]'Good morning, class,' the teacher says, 'Today, we will be working on our text-adventure games…'[line break][line break]'Remember, games are due next class,' the teacher concludes.  Everyone begins to pack up their backpacks and leave.  Jane is leaving, too.  You have to stop her so you can ask her to the dance!";
-		change the book to aftercs;
-	if the flute is rainy:
-		change the flute to unrainy;
-		say "The rain has stopped.".
+Instead of going to the computer lab:
+	if the player is holding the flowers and the rainspell of the book is raintrue:
+		if the book is beforecs:
+			say "You step into the computer lab just as class begins.  Jane, your crush, is already sitting down.[line break]'Good morning, class,' the teacher says, 'Today, we will be working on our text-adventure games…'[line break][line break]'Remember, games are due next class,' the teacher concludes.  Everyone begins to pack up their backpacks and leave.  Jane is leaving, too.  You have to stop her so you can ask her to the dance!";
+			change the book to aftercs;
+		if the flute is rainy:
+			change the flute to unrainy;
+			say "The rain has stopped.";
+		move the player to the computer lab;
+	otherwise:
+		say "You have some time to kill.".
 
 The desks are things in the computer lab.  Understand "desk" as desks.  Understand "table" or "tables" as desks.  They are scenery.  They are supporters.  The description is "The desks are made of rectangular pieces of wood, with thin metal legs."
 
@@ -334,7 +359,7 @@ The legs are things in the computer lab.  They are scenery.  The description is 
 
 The rust is a thing in the computer lab.  It is scenery.
 
-The computers are things on the desks.  They are scenery.  The description is "The computers are fairly new.  They are turned off, but you probably shouldn't turn them on without the teacher here.  They are all Banana brand computers."
+The computers are things on the desks.  They are scenery.  Understand "computer" as computers.  The description is "The computers are fairly new.  They are turned off, but you probably shouldn't turn them on without the teacher here.  They are all Banana brand computers."
 
 Jane is a person in the computer lab.  Understand "Janet" or "girl" or "crush" or "date" as Jane.  The description is "Jane is by far the prettiest girl in school, she gets straight A's, and she has a ton of friends.  She's way out of your league, but that won't stop you from trying."
 
@@ -400,7 +425,7 @@ Instead of asking Jane about "dance":
 	
 Instead of talking Jane:
 	if Jane is in the dance:
-		say "You tap Jane on the shoulder.  She seems glad to see you.  You have the most amazing night of your life, you and Jane have a long happy relationship, and you live happily ever after.";
+		say "You tap Jane on the shoulder.  She seems glad to see you.  You have the most amazing night of your life, you and Jane have a long happy relationship, and you live happily ever after.[line break]Just another day in the life of a teenage wizard.";
 		end the game in victory;
 	if Jane is in the computer lab:
 		if the flute is unrainy, say "She's leaving in a big hurry.  You need to get her to stop first.";
@@ -458,7 +483,7 @@ Instead of giving the flowers to Jane:
 	if Jane is decisive:
 		say "Shouldn't you talk to her first?";
 	otherwise:
-		say "'Wow, thanks!' Jane exclaims.  'That's so sweet.  You know what?  I will go to the dance with you.  I'll meet you at the gym around seven.'[line break]She turns and walks out into the rain, and then sprints off towards the Math building.  Mission accompished: you have the perfect date to the dance.";
+		say "'Wow, thanks!' Jane exclaims.  'That's so sweet.  You know what?  I will go to the dance with you.  I'll meet you at the gym around seven.'[line break]She turns and walks out into the rain, and then sprints off towards the Math building.  Mission accompished: you have the perfect date to the dance.[line break][line break]Your next class is Chemistry.";
 		remove the flowers from play;
 		change the decisiveness of Jane to decisive;
 		move Jane to the dance.
@@ -484,11 +509,11 @@ The chemicals are things in the chemistry lab.  Understand "beakers" or "beaker"
 
 Instead of taking the chemicals:
 	say "You pick up a test tube and drink it's contents.  You take a beaker of powder and consume that, too.[line break]You don't feel so well…";
-	end the story saying "You have exploded".
+	end the story saying "You have exploded.".
 	
 The racks are things in the chemistry lab.  They are scenery.  The description is "The racks are made of wood and have holes for chemicals in them."
 
-The whiteboard is a thing in the chemistry lab.  It is scenery.  Understand "white board" or "chalkboard" or "blackboard" or "chalk board" or "black board" or "SMART board" or "board" as whiteboard.  The description is "The whiteboard is covered in diagrams and equations.  You don't understand any of it."
+The whiteboard is a thing in the chemistry lab.  It is scenery.  Understand "white board" or "chalkboard" or "blackboard" or "chalk board" or "black board" or "SMART board" or "board" or "diagrams" or "equations" as whiteboard.  The description is "The whiteboard is covered in diagrams and equations.  You don't understand any of it."
 
 The window is a thing in the chemistry lab.  It is scenery.  Understand "through window" or "through the window" as window.  The description is "Through the window, you can see your chemistry teacher, Mr Lacimec.[if the flute is rainy]  It is raining on him."
 
@@ -518,6 +543,8 @@ Instead of studying:
 
 The teacher is a thing in the chemistry lab.  He is scenery.  Understand "Mr Lacimec" or "chemistry teacher" as the teacher.  The teacher can be jolly or livid.  The teacher is jolly.  The description is "[if the teacher is jolly and the flute is unrainy]Mr Lacimec is walking towards the science building with his waterproof breifcase in one hand and his coasters in his pocket.  He is smiling.  Or is that an evil grin?[end if][if the teacher is jolly and the flute is rainy]Mr Lacimec is walking through the rain with his waterproof briefcase in one hand and his coasters in his pocket.  He is undeterred by the rain.[end if][if the teacher is livid and the flute is unrainy]Mr Lacimec has stopped to collect his scattered papers.  He looks mad.[end if][if the teacher is livid and the flute is rainy]Mr Lacimec is now sitting and crying.  His papers are all scattered around him and getting soaked by the rain.[end if]"
 
+The papers are a thing in the chemistry lab.  Understand "paper" or "tests" as papers.  It is scenery.  The description is "The papers at Mr Lacimec's feet appear to be the tests."
+
 The waterproof briefcase is a thing in the chemistry lab.  It is scenery.  Understand "suitcase" or "case" as waterproof briefcase.  The description is "The briefcase is small, silver, and rectangular.[if the teacher is livid]  The latch on top is unlocked, and papers from inside the case are scattered around Mr Lacimec's feet.[otherwise]  The big bronze latch on top is in the locked position."
 
 The latch is a thing in the chemistry lab.  It is scenery.  The description is "The latch on Mr Lacimec's briefcase is currently in the[if the teacher is livid] unlocked[otherwise] locked[end if] position."
@@ -528,9 +555,13 @@ Vicinity is a number variable.  The vicinity is 0.
 
 An every turn rule:
 	if vicinity is greater than 0 and the teacher is jolly, increase vicinity by 1;
-	if vicinity is 12:
+	if vicinity is 5 and the player is in the chemistry lab:
+		say "[if we have examined the window]Mr Lacimec is approaching the building.[otherwise]Through the window you can see your chemistry teacher, Mr Lacimec, approaching the building.";
+	if vicinity is 10 and the player is in the chemistry lab:
+		say "Mr Lacimec is nearly at the building.";
+	if vicinity is 14 and the player is in the chemistry lab:
 		say "You can hear Mr Lacimec in the science building.";
-	if vicinity is greater than 12:
+	if vicinity is greater than 14:
 		say "Mr Lacimec steps into the room.  He pulls the tests out of his suitcase and begins handing them out.  You are doomed.";
 		end the story saying "You have flunked chemistry.".
 		
@@ -539,14 +570,14 @@ After examining the window:
 		if vicinity is 2, say "Mr Lacimec is making his way towards the building.";
 		if vicinity is 3, say "Mr Lacimec is making his way towards the building.";
 		if vicinity is 4, say "Mr Lacimec is making his way towards the building.";
-		if vicinity is 5, say "Mr Lacimec is making his way towards the building.";
 		if vicinity is 6, say "Mr Lacimec is approaching the building.";
 		if vicinity is 7, say "Mr Lacimec is approaching the building.";
 		if vicinity is 8, say "Mr Lacimec is approaching the building.";
-		if vicinity is 9, say "Mr Lacimec is almost at the building.";
-		if vicinity is 10, say "Mr Lacimec is almost at the building.";
-		if vicinity is 11, say "Mr Lacimec is right underneath the window.";
-		if vicinity is 12, say "You can no longer see Mr Lacimec.";
+		if vicinity is 9, say "Mr Lacimec is approaching the building.";
+		if vicinity is 11, say "Mr Lacimec is almost at the building.";
+		if vicinity is 12, say "Mr Lacimec is almost at the building.";
+		if vicinity is 13, say "Mr Lacimec is right underneath the window.";
+		if vicinity is 14, say "You can no longer see Mr Lacimec.";
 	otherwise:
 		say "Mr Lacimec has stopped to collect his papers.".
 	
@@ -555,6 +586,8 @@ Testability is a kind of value.  Things have testability.  The testabilities are
 Instead of going to the science building:
 	if the player is in the chemistry lab and the player is testable:
 		say "You can't leave now!  You have chemistry.";
+	if the player is in the quad and Jane is in the computer lab:
+		say "You don't have class there.";
 	otherwise:
 		move the player to the science building.
 		
@@ -562,7 +595,16 @@ Instead of entering the gym:
 	if Jane is in the dance, move the player to the gym;
 	if Jane is not in the dance, say "You shouldn't go that way.  They're probably setting up for the dance tonight.".
 
-The Gym is east of the quad.  "The gym is a large building with high windows.  As you approach it, you can already hear loud music coming out and lights flashing from inside.[if we have not entered the gym for the second time]  You try to enter, but a large guard blocks your path."
+The Gym is east of the quad.  "The gym is a large building with high windows.  As you approach it from the west, you can already hear loud music coming out and lights flashing from inside.[if we have not entered the gym for the second time]  You try to enter, but a large guard blocks your path."
+
+Instead of going to the gym:
+	if the teacher is jolly:
+		say "You don't want to go that way.  They're probably still setting up for the dance.  Just go to your class.";
+	otherwise:
+		if we have not entered the gym for the second time, say "You make your way east towards the gym.  You're so excited about dancing with Jane that you don't see the football flying through the air toward you.[line break]*POW*[line break][line break]By the time you wake up, it is well into the dance.  Jane probably is wondering where you are.  You need to get in there now!";
+		move the player to the gym.
+
+The gymnasium is a thing in the Gym.  Understand "gym" as gymnasium.  Understand "dance" as gymnasium.  It is scenery.  The description is "The gym has flashing lights and loud misc coming out of it."
 
 Holdingdonut is a kind of value.  The holdingdonuts are donutinhand and iwantadonut.  People have holdingdonut.  People are usually iwantadonut.
 
@@ -570,6 +612,15 @@ The guard is a person in the gym.  Understand "senior" as guard.  The descriptio
 
 Instead of talking the guard:
 	if the guard is iwantadonut, say "'Sorry, pal.  You were late to the dance, and it's my job to make sure no one enters or leaves this dance between the hours of five minutes ago and when they tell me to leave.  I'm getting paid to stand here.'"
+	
+Instead of asking the guard about "money":
+	say "'I'm getting paid fifty dollars to stand here and keep latecomers like you out.  You're not getting into this dance.'".
+	
+Instead of asking the guard about "pay":
+	say "'I'm getting paid fifty dollars to stand here and keep latecomers like you out.  You're not getting into this dance.'".
+
+Instead of asking the guard about "job":
+	say "'I'm getting paid fifty dollars to stand here and keep latecomers like you out.  You're not getting into this dance.'".
 
 The shirt is a thing in the gym.  It is scenery.  Understand "donut shirt" or "shirt with a donut" as shirt.  The description is "The senior's shirt features a chocolate donut with a bite out of it.  He must really like donuts."
 
@@ -592,7 +643,7 @@ Instead of giving the donut to the DJ:
 	otherwise:
 		say "You can't see any such thing.".
 		
-The bodies are things in the dance.  Understand "crowd" or "dancers" as bodies.  The description is "These people are bouncing to and fro as a single entity.  It is as if they are one single dancing organism.  They are no longer human in their minds."
+The bodies are things in the dance.  It is scenery.  Understand "crowd" or "dancers" as bodies.  The description is "These people are bouncing to and fro as a single entity.  They are no longer human in their minds."
 
 The friend is a person in the dance.  Understand "Jane's friend" or "Janes friend" or "blonde" as friend.  It is scenery.  The description is "Jane's friend is tall and blonde.  She and Jane are talking to each other."
 
@@ -638,7 +689,38 @@ Worldovertaking is an action applying to nothing.  Understand "take over the wor
 Instead of worldovertaking:
 	say "You use your magic flute to take over the world, claiming Jane as your empress.[line break]MUAHAHAHAHAHAHAHA!";
 	end the story saying "You now rule the world.".
+	
+Dancing is an action applying to nothing.  Understand "dance" or "get down" or "shake it up" or "shake it" or "break it down" or "put your hands in the air and wave 'em like you just don't care" as dancing.
+
+Instead of dancing:
+	if the player is in the dance:
+		say "You start dancing around by yourself.  Who needs a date?[line break]You leave that dance with a renewed confidence in yourself, fully prepared to live the rest of your life in solitude.";
+		end the game in victory;
+	otherwise:
+		say "You dance to the music in your head.  At the moment, it is Mangnag Kind.[line break][line break]Oppan Mangnag Kind.  Doodoodeedoodeedoodee doodooda Mangnag Kind!  Op- Op- Op- Op- Oppan Mangnag Kind!  Doodoodeedoodeedoodee doodooda Mangnag Kind!  Op- Op- Op- Op- Oppan Mangnag Kind![line break]EEEEEEEEEEEEEEEEEESEXYLADEH!  Op- Op- Op- Op- Oppan Mangnag Kind!  EEEEEEEEEEEEEEEEEESEXYLADEH!  Op- Op- Op- E-E-E-E-E-E…".
+
+Multidancing is an action applying to one thing.  Understand "dance with [something]" as multidancing.
+
+Instead of multidancing:
+	if the noun is a person:
+		if the noun is Jane and Jane is in the dance:
+			say "You take Jane's hands and dance the night away with her.[line break]Congratulations!  You successfully managed to get to school on time, avoid flunking Chemistry, and get a date to the dance.[line break]Just another day in the life of a teenage wizard.";
+			end the game in victory;
+		if the noun is the friend:
+			say "You take Jane's friend in your arms and dance with her.  You don't recognize her.  She must not go to your school, because she's way prettier than Jane.  You both fall in love.[line break]Now you have a date even better than Jane.  Score!";
+			end the game in victory;  
+		otherwise:
+			say "You take [noun]'s hands and spin them around in a ballroom dance.[line break][noun] punches you in the face.";
+	otherwise:
+		say "You can only dance with something animate.".
 		
+Following is an action applying to one thing.  Understand "follow [something]" or "stalk [something]" as following.
+
+Instead of following:
+	if the noun is a person:
+		say "Don't be a stalker.";
+	otherwise:
+		say "You can only do that to something animate.".
 
 			
 		
