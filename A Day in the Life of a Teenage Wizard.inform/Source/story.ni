@@ -1,6 +1,6 @@
 "A Day in the Life of a Teenage Wizard" by Justin Kunimune
 
-The story headline is "Ordinary Problems, Magical Solutions".  The story description is "Just another day in the life.".  The story genre is "Comedy".  Use no scoring.
+The story headline is "Ordinary Problems, Magical Solutions".  The story description is "Just another day in the life.".  The story genre is "Comedy".  The story creation year is 2013.  Release along with cover art.  Use no scoring.
 
 When play begins:
 	now left hand status line is "[location]";
@@ -16,11 +16,15 @@ To say exit list:
 Instead of taking inventory:
 	say "You're carrying [a list of things carried by the player][if donutcount is one] and 1 donut[end if][if donutcount is greater than one] and [donutcount] donuts[end if][if the player wears something].  You are also wearing [a list of things worn by the player][end if]."
 	
-[Instead of taking all, say "What do you want to take, specifically?"]
+Rule for deciding whether all includes something:
+	stop.
+	
+Rule for printing a parser error when the latest parser error is the nothing to do error:
+	say "What do you mean, 'all'?" instead.
 	
 Understand "pick [something]" as taking.
 	
-The description of the player is "You are a sixteen-year-old with dark hair and dark eyes.[if the player is wearing the backpack]  You have a heavy-looking backpack on your back."
+The description of the player is "You are a sixteen-year-old with dark hair and dark eyes[if Jane is in the dance and the teacher is jolly] and a huge smile on your face[end if].[if the player is wearing the backpack]  You have a heavy-looking backpack on your back."
 
 The donut is a thing.  It is scenery.  Understand "pastry" or "chocolate donut" as donut.
 
@@ -54,6 +58,15 @@ Instead of giving the donut to Jane:
 	otherwise:
 		say "You can't see any such thing.".
 		
+Instead of showing the donut to Jane:
+	if donutcount is greater than 0:
+		if Jane is in the computer lab:
+			say "You wave a donut in front of her nose.  She cautiously pushes your hand away.";
+		otherwise:
+			say "You show Jane a donut.[line break]'That's nice,' she says.";
+	otherwise:
+		say "You can't see any such thing.".
+		
 Instead of giving the donut to the Guard:
 	if donutcount is greater than 0:
 		say "You pull out a donut and hand it to him.  His eyes widen.[line break]'You can only have it if you let me in,' you say alluringly.[line break]'Deal!' he exlaims without hesitation.  'They're only paying me fifty bucks, anyway.'[line break][line break]The guard steps aside to let you through.";
@@ -61,7 +74,14 @@ Instead of giving the donut to the Guard:
 		remove the guard from play;
 	otherwise:
 		say "You can't see any such thing.".
-
+		
+Instead of showing the donut to the Guard:
+	if donutcount is greater than 0:
+		say "You pull out a donut and wave it in front of his face.  His eyes widen.[line break]'You can only have it if you let me in,' you say alluringly.[line break]'Deal!' he exlaims without hesitation as he snatches the donut.  'They're only paying me fifty bucks, anyway.'[line break][line break]The guard steps aside to let you through.";
+		decrease donutcount by 1;
+		remove the guard from play;
+	otherwise:
+		say "You can't see any such thing.".
 
 The backpack is a thing.  Understand "bookbag" or "bag" or "schoolbag" or "school bag" or "book bag" or "pack" or "back pack" as backpack.  It is wearable.  It is a container.  It is closed and openable.  The description is "Your backpack is black and weighed down with all of your school books.[if the player is wearing the backpack]  Your shoulders ache from wearing it.[end if][line break]It is [if the backpack is open]open[otherwise]closed[end if]."
 
@@ -132,7 +152,7 @@ An every turn rule:
 	if the player is in the quad, move the donut to the quad;
 	if the player is in the gym, move the donut to the gym.
 
-The Basement is a room.  "The basement is a dark and dank area.  It is small; the only things here are an old chest and some wooden stairs leading up to [if basement door is unlocked]a locked[otherwise]an unlocked[end if] door.[if the basement door is locked]  You don't know how you managed to lock yourself in when you came down to get your book, but the important thing is the bus leaves in 10 minutes, so you'd better get out of here soon."
+The Basement is a room.  "The basement is a dark and dank area.  It is small; the only things here are an old chest and some wooden stairs leading up to [if basement door is unlocked]an unlocked[otherwise]a locked[end if] door.[if the basement door is locked]  You don't know how you managed to lock yourself in when you came down to get your book, but the important thing is the bus leaves soon, so you'd better get out of here soon."
 
 The door called the basement door is above the basement.  Understand "wooden door" as basement door.  Understand "trapdoor" or "wooden trapdoor" as basement door.  It is locked and lockable.  It is scenery.  The description is "It is a white wooden door with a brass handle."
 
@@ -275,7 +295,7 @@ Instead of entering the bus:
 	move the road to the school entrance;
 	move the player to the school entrance.
 
-The School Entrance is a room.  "The entrance to school is just a parking lot with a sign stating the name of your school.[if we have not entered the school entrance the second time]  The rest of your classmates are walking to the quad already.  You see Jane among them.  You have to ask her to the dance tonight before someone else does.[end if]  The quad is just to the north."
+The School Entrance is a room.  "The entrance to school is just a parking lot with a sign stating the name of your school.[if we have not entered the school entrance the second time]  The rest of your classmates are already entering the quad.  You see Jane among them.  You have to catch up to her and ask her to the dance tonight before someone else does.[end if]  The quad is just to the north."
 
 After entering the school entrance:
 	move the classmates to the school entrance;
@@ -295,25 +315,41 @@ The students are a thing in the quad.  Understand "classmates" or "people" as st
 
 The flowers are things in the quad.  Understand "flower" as flowers.  Understand "rose" or "roses" as flowers.  The description is "These roses have a lovely aroma.  They sure seem romantic.  You could give these to Jane."
 
-The tune is a thing in the quad.  Understand "melody" or "song" or "whistle" as tune.  It is scenery.  The description is "The tune starts off like your unlocking spell, but the third note repeats twice."
+The tune is a thing in the quad.  Understand "melody" or "song" or "whistle" or "strange tune" as tune.  It is scenery.  The description is "The tune starts off like your unlocking spell, but the third note repeats two more times."
 
-The hooded man is a person in the quad.  Understand "hood" or "cloak" or "hooded cloak" or "cloaked man" or "man in a hooded cloak" or "figure" as hooded man.  The description is "There is a man in a hooded cloak standing about the quad, whistling a strange tune.  The first three notes are similar to your unlocking spell, but then it repeats the last note twice.[if we have not examined the hooded man][line break]You wonder if you should tell security about this guy.[line break]Nah, he doesn't seem to be a threat."
+The hooded man is a person in the quad.  Understand "hood" or "cloak" or "hooded cloak" or "cloaked man" or "man in a hooded cloak" or "figure" as hooded man.  The description is "There is a man in a hooded cloak standing about the quad, whistling a strange tune.  The first three notes are similar to your unlocking spell, but then it repeats the third note two more times.[if we have not examined the hooded man][line break]You wonder if you should tell security about this guy.[line break]Nah, he doesn't seem to be a threat."
 
 Talking is an action applying to one thing.  Understand "talk to [something]" as talking.
 
 Instead of talking:
 	if the noun is not the hooded man and the noun is not Jane and the noun is not the guard and the noun is not Kyle and the noun is not the DJ and the noun is not the friend and the noun is not the classmates, say "You strike up a conversation with the [noun].  Weirdo.";
-	if the noun is the hooded man, say "You try to get the attention of the hooded man.  He ignores you and continues whistling.";
+	if the noun is the hooded man, say "You try to get the attention of the hooded man.  He ignores you and continues whistling a strange tune.";
 	if the noun is the classmates, say "Everyone is rushing off to class.  You should be, too.";
 	if the noun is the students, say "People are bustling to and fro all over the place.  No one seems to have time to talk.".
 	
 Instead of asking the hooded man about something:
 	say "There is no reply.  He simply continues to whistle."
 	
+Instead of showing something to the hooded man:
+	say "The hooded man ignores you.  He simply continues to whistle."
+
+Instead of telling the hooded man about something:
+	say "There is no reply.  He simply continues to whistle."
+	
+Instead of giving something to the hooded man:
+	if the noun is the donut:
+		if donutcount is greater than 0:
+			say "You hand the hooded man a donut.[line break]'Ooh, a donut!'  The hooded man removes his hood and takes the donut, devouring it ravenously.[line break]'Who are you?' you ask.[line break]'Oh, I'm the older you.'[line break][line break]Suddenly, a hole opens up in the science building, growing and growing until it absorbs all of the universe.";
+			end the story saying "A paradox has destroyed the universe.";
+		otherwise:
+			say "You can't see any such thing.";
+	otherwise:
+		say "The hooded man ignores you.  He simply continues to whistle.".
+	
 Writeraining is an action applying to nothing.  Understand "write down cdeee" or "put down cdeee" or "write cdeee" or "write cdeee down" or "write cdeee in book" or "write cdeee in the book" or "write cdeee on the book" or "write cdeee on book" or "write cdeee on the spell book" or "write cdeee in the spellbook" or "write cdeee on the spellbook" or "write cdeee on spellbook" or "write cdeee in spellbook" or "write cdeee on spell book" or "write cdeee in spell book" or "record cdeee" or "put cdeee in book" or "put cdeee in the book" or "put cdeee on the book" or "put cdeee on book" or "put cdeee on the spell book" or "put cdeee in the spellbook" or "put cdeee on the spellbook" or "put cdeee on spellbook" or "put cdeee in spellbook" or "put cdeee on spell book" or "put cdeee in spell book" as writeraining.
 
 After writeraining:
-	say "You scribble the word 'cdeee' into your spell book, along with the words 'From the hooded man'.";
+	say "You scribble the word 'cdeee' into your spell book, along with the words 'From the hooded man'.[line break][line break]Look at that!  It's time for computer science.";
 	change the rainspell of the spell book to raintrue.
 			
 Castraining is an action applying to nothing.  Understand "play cdeee" or "play cdeee on flute" as castraining.
@@ -321,7 +357,7 @@ Castraining is an action applying to nothing.  Understand "play cdeee" or "play 
 Things can be rainy or unrainy.  Things are usually unrainy.
 		
 Instead of castraining:
-	say "You play the tune you heard the hooded man whistling on your flute.[if the flute is rainy]  Nothing happens.  The rain will probably stop on it's own.[otherwise]  A sudden downpour comes down, soaking everyone in the quad.[end if][if Jane is in the computer lab and the flute is unrainy and the player is in the computer lab][line break]It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.";
+	say "You play the tune you heard the hooded man whistling on your flute.[if the flute is rainy]Nothing happens.  The rain will probably stop on it's own.[otherwise]A sudden downpour comes down, soaking everyone in the quad.[end if][if Jane is in the computer lab and the flute is unrainy and the player is in the computer lab][line break]It worked!  Jane stopped.  She seems to be waiting to see if the rain will stop.";
 	change the flute to rainy;
 	change the book to rainy;
 	if the player is in the chemistry lab and the teacher is livid:
@@ -329,7 +365,9 @@ Instead of castraining:
 		change the player to untestable;
 		move the player to the quad;
 	if the player is in the chemistry lab and the teacher is jolly:
-		say "Through the window, you notice Mr Lacimec continue walking seemingly undeterred by the rain.".
+		say "Through the window, you notice Mr Lacimec continue walking seemingly undeterred by the rain.  His waterproof briefcase is locked tightly, protecting its contents from the rain.";
+	if the rainspell of the book is rainfalse:
+		say "Maybe you should write this down.".
 
 An every turn rule:	
 	if the flute is rainy and the book is unrainy and a random chance of 1 in 4 succeeds:
@@ -351,17 +389,17 @@ Instead of going to the computer lab:
 			say "The rain has stopped.";
 		move the player to the computer lab;
 	otherwise:
-		say "You have some time to kill.".
+		say "You have some time to kill.  Why not look around the quad a bit?".
 
 The desks are things in the computer lab.  Understand "desk" as desks.  Understand "table" or "tables" as desks.  They are scenery.  They are supporters.  The description is "The desks are made of rectangular pieces of wood, with thin metal legs."
 
 The legs are things in the computer lab.  They are scenery.  The description is "The legs are made of several pieces of metal, and are covered in rust."
 
-The rust is a thing in the computer lab.  It is scenery.
+The rust is a thing in the computer lab.  It is scenery.  The description is "It's just rust."
 
 The computers are things on the desks.  They are scenery.  Understand "computer" as computers.  The description is "The computers are fairly new.  They are turned off, but you probably shouldn't turn them on without the teacher here.  They are all Banana brand computers."
 
-Jane is a person in the computer lab.  Understand "Janet" or "girl" or "crush" or "date" as Jane.  The description is "Jane is by far the prettiest girl in school, she gets straight A's, and she has a ton of friends.  She's way out of your league, but that won't stop you from trying."
+Jane is a person in the computer lab.  Understand "Janet" or "girl" or "crush" or "date" as Jane.  The description is "[if Jane is in the computer lab]Jane is by far the prettiest girl in school, she gets straight A's, and she has a ton of friends.  She's way out of your league, but that won't stop you from trying.[otherwise]Jane is talking to her friend on the other side of the dance."
 
 Bladderstate is a number variable.  The bladderstate is 0.
 
@@ -488,6 +526,15 @@ Instead of giving the flowers to Jane:
 		change the decisiveness of Jane to decisive;
 		move Jane to the dance.
 		
+Instead of showing the flowers to Jane:
+	if Jane is decisive:
+		say "Shouldn't you talk to her first?";
+	otherwise:
+		say "'Wow, thanks!' Jane exclaims.  'That's so sweet.  You know what?  I will go to the dance with you.  I'll meet you at the gym around seven.'[line break]She turns and walks out into the rain, and then sprints off towards the Math building.  Mission accompished: you have the perfect date to the dance.[line break][line break]Your next class is Chemistry.";
+		remove the flowers from play;
+		change the decisiveness of Jane to decisive;
+		move Jane to the dance.
+		
 Before going east:
 	if the player is in the computer lab and Jane is indecisive:
 		say "You bailed on Jane before she could make a decision!  She probably thinks you're a jerk now.  Nice going, you horrible person.";
@@ -515,7 +562,7 @@ The racks are things in the chemistry lab.  They are scenery.  The description i
 
 The whiteboard is a thing in the chemistry lab.  It is scenery.  Understand "white board" or "chalkboard" or "blackboard" or "chalk board" or "black board" or "SMART board" or "board" or "diagrams" or "equations" as whiteboard.  The description is "The whiteboard is covered in diagrams and equations.  You don't understand any of it."
 
-The window is a thing in the chemistry lab.  It is scenery.  Understand "through window" or "through the window" as window.  The description is "Through the window, you can see your chemistry teacher, Mr Lacimec.[if the flute is rainy]  It is raining on him."
+The window is a thing in the chemistry lab.  It is scenery.  Understand "through window" or "through the window" as window.  The description is "Through the window, you can see your chemistry teacher, Mr Lacimec.[if we have not examined the window]  He probably has the tests with him.  If only you could destroy them somehow…[end if][if the flute is rainy]  It is raining on him."
 
 Kyle is a person in the chemistry lab.  Understand "lab partner" as Kyle.  The description is "Kyle has black hair, is slight of build, and looks very stressed."
 
@@ -541,7 +588,7 @@ Studying is an action applying to one thing.  Understand "study [something]" as 
 Instead of studying:
 	say "I'm afraid it's too late for that."
 
-The teacher is a thing in the chemistry lab.  He is scenery.  Understand "Mr Lacimec" or "chemistry teacher" as the teacher.  The teacher can be jolly or livid.  The teacher is jolly.  The description is "[if the teacher is jolly and the flute is unrainy]Mr Lacimec is walking towards the science building with his waterproof breifcase in one hand and his coasters in his pocket.  He is smiling.  Or is that an evil grin?[end if][if the teacher is jolly and the flute is rainy]Mr Lacimec is walking through the rain with his waterproof briefcase in one hand and his coasters in his pocket.  He is undeterred by the rain.[end if][if the teacher is livid and the flute is unrainy]Mr Lacimec has stopped to collect his scattered papers.  He looks mad.[end if][if the teacher is livid and the flute is rainy]Mr Lacimec is now sitting and crying.  His papers are all scattered around him and getting soaked by the rain.[end if]"
+The teacher is a thing in the chemistry lab.  He is scenery.  Understand "Mr Lacimec" or "chemistry teacher" or "Lacimec" as the teacher.  The teacher can be jolly or livid.  The teacher is jolly.  The description is "[if the teacher is jolly and the flute is unrainy]Mr Lacimec is walking towards the science building with his waterproof breifcase in one hand and his coasters in his pocket.  He is smiling.  Or is that an evil grin?[end if][if the teacher is jolly and the flute is rainy]Mr Lacimec is walking through the rain with his waterproof briefcase in one hand and his coasters in his pocket.  He is undeterred by the rain.[end if][if the teacher is livid and the flute is unrainy]Mr Lacimec has stopped to collect his scattered papers.  He looks mad.[end if][if the teacher is livid and the flute is rainy]Mr Lacimec is now sitting and crying.  His papers are all scattered around him and getting soaked by the rain.[end if]"
 
 The papers are a thing in the chemistry lab.  Understand "paper" or "tests" as papers.  It is scenery.  The description is "The papers at Mr Lacimec's feet appear to be the tests."
 
@@ -588,7 +635,7 @@ Instead of going to the science building:
 		say "You can't leave now!  You have chemistry.";
 	if the player is in the quad and Jane is in the computer lab:
 		say "You don't have class there.";
-	otherwise:
+	if the player is in the quad and Jane is not in the computer lab:
 		move the player to the science building.
 		
 Instead of entering the gym:
@@ -643,6 +690,12 @@ Instead of giving the donut to the DJ:
 	otherwise:
 		say "You can't see any such thing.".
 		
+Instead of showing the donut to the DJ:
+	if donutcount is greater than 0:
+		say "You show a donut to the DJ.[line break]He spits on it.";
+	otherwise:
+		say "You can't see any such thing.".
+		
 The bodies are things in the dance.  It is scenery.  Understand "crowd" or "dancers" as bodies.  The description is "These people are bouncing to and fro as a single entity.  They are no longer human in their minds."
 
 The friend is a person in the dance.  Understand "Jane's friend" or "Janes friend" or "blonde" as friend.  It is scenery.  The description is "Jane's friend is tall and blonde.  She and Jane are talking to each other."
@@ -653,6 +706,14 @@ Instead of talking the friend:
 Instead of giving the donut to the friend:
 	if donutcount is greater than 0:
 		say "You hold a donut in front of Jane's friend's nose.  She sniffs it, and then looks at you.[line break]'A donut!' she exclaims, 'Yay, I love you, new boyfriend.  She picks you up and carries you into the sunset.";
+		end the game in death;
+		decrease donutcount by 1;
+	otherwise:
+		say "You can't see any such thing.".
+		
+Instead of showing the donut to the friend:
+	if donutcount is greater than 0:
+		say "You hold a donut in front of Jane's friend's nose.  She sniffs it, and then looks at you.[line break]'A donut!' she exclaims.  She chomps the donut down is one bite, along with your hand.";
 		end the game in death;
 		decrease donutcount by 1;
 	otherwise:
@@ -709,7 +770,7 @@ Instead of multidancing:
 		if the noun is the friend:
 			say "You take Jane's friend in your arms and dance with her.  You don't recognize her.  She must not go to your school, because she's way prettier than Jane.  You both fall in love.[line break]Now you have a date even better than Jane.  Score!";
 			end the game in victory;  
-		otherwise:
+		if the noun is not jane and the noun is not the friend or jane is not in the dance:
 			say "You take [noun]'s hands and spin them around in a ballroom dance.[line break][noun] punches you in the face.";
 	otherwise:
 		say "You can only dance with something animate.".
@@ -721,7 +782,236 @@ Instead of following:
 		say "Don't be a stalker.";
 	otherwise:
 		say "You can only do that to something animate.".
-
-			
 		
+Instead of showing the flute to someone:
+	say "You hold up the magic flute and demonstrate its magical powers.";
+	end the story saying "You have revealed wizardry to a mortal.".
+	
+Instead of giving the flute to someone:
+	say "You hold up the magic flute and demonstrate its magical powers.";
+	end the story saying "You have revealed wizardry to a mortal.".
+
+Instead of telling someone about "the flute":
+	say "You hold up the magic flute and demonstrate its magical powers.";
+	end the story saying "You have revealed wizardry to a mortal.".
+	
+Instead of showing the book to someone:
+	say "You hold up the spell book and demonstrate its magical powers.";
+	end the story saying "You have revealed wizardry to a mortal.".
+	
+Instead of giving the book to someone:
+	say "You hold up the spell book and demonstrate its magical powers.";
+	end the story saying "You have revealed wizardry to a mortal.".
+
+Instead of telling someone about "the book":
+	say "You hold up the spell book and demonstrate its magical powers.";
+	end the story saying "You have revealed wizardry to a mortal.".
+			
+Instead of telling someone about "magic":
+	say "You explain wizardry and your spell book and your magic flute.";
+	end the story saying "You have revealed wizardry to a mortal.".
+	
+Instead of asking someone for something:
+	say "'No.'".
+	
+Before waiting:
+	say "You sit down for a moment and stare into space."
+	
+After waiting:
+	say "Okay, now you're bored."
+	
+Instead of waking someone:
+	say "You slap [noun] across the face repeatedly.[line break]'WAKE UP!  WAKE UP!'[line break]If they weren't awake before, they sure are now.".
+
+Instead of throwing:
+	say "You throw like a girl."
+	
+Instead of attacking something:
+	if the noun is not Jane and the noun is not the friend:
+		if the noun is the hooded man:
+			say "Something about him makes you afraid to raise your fist.";
+		if the noun is Kyle:
+			say "You lash out at Kyle, blackening his eye and breaking his arm.[line break]'Ow,' he says.";
+		if the noun is the guard:
+			say "You lunge at the guard and slam your fist into his stomach.  He doesn't react.";
+		if the noun is the posters:
+			say "You wouldn't do that to Jason Biever!  You love his music!";
+		if the noun is a door:
+			say "You attack the door, but it is too strong to break through.";
+		if the noun is the DJ:
+			say "You approach the DJ menacingly, but he turns up the music before you reach him, turning your ears inside out.";
+			end the game in death;
+		if the noun is not the hooded man and the noun is not kyle and the noun is not the guard and the noun is not the posters and the noun is not the door and the noun is not the DJ:
+			say "Violence isn't the answer to this one.[line break](It usually is, but not this time)[line break]".
+			
+Instead of touching:
+	if the noun is the walls:
+		say "The walls are cold and rough.";
+	if the noun is Jane:
+		end the story saying "You have been suspended for harrassment.";
+	if the noun is the chest:
+		say "The chest is strangely warm.";
+	if the noun is the book:
+		say "The leather feels ancient.";
+	if the noun is the flute:
+		say "The wood on the flute appears handcrafted.";
+	if the noun is the donut:
+		if donutcount is greater than 0:
+			say "You touch the donut, getting chocolate on your fingers.  You lick your fingers.  Mmmmmm…";
+		otherwise:
+			say "You can't see any such thing.";
+	if the noun is the chemicals:
+		say "You dip your finger into a weird-looking chemical.";
+		end the story saying "You have dissolved.";
+	if the noun is not the chemicals and the noun is not the donut and the noun is not the flute and the noun is not the book and the noun is not the chest and the noun is not Jane and the noun is not the walls:
+		say "You carress the [noun] gently.  It feels nice.".
+		
+Instead of smelling:
+	if the noun is Jane:
+		say "She smells like flowers.";
+	if the noun is the chest:
+		say "It smells old.";
+	if the noun is the flute:
+		say "It smells like magic.";
+	if the noun is the book:
+		say "It smells like something died on it.";
+	if the noun is not the book and the noun is not the chest and the noun is not the flute and the noun is not Jane:
+		say "It smells like a [noun]."
+		
+Instead of listening:
+	if the noun is Jane:
+		say "Don't you know anything about relationships?  You never listen to the other person!  Duh!";
+	if the noun is the music:
+		say "You can't hear anything but the music.";
+	if the player is in the dance and the noun is not Jane and the noun is not the music:
+		say "You can't hear anything over the music.";
+	if the noun is the tune:
+		say "The first three notes are like your unlocking spell, but then the third note repeats two more times.";
+	if the noun is not Jane and the noun is not the music and the player is not in the dance:
+		say "Do you hear that?  It sounds like your imaginary friend, Bob.  He is telling you that the [noun] doesn't make noise, and that if you are hearing voices, then you are losing your mind.".
+		
+Instead of tasting:
+	if the noun is the chemicals:
+		say "You gulp down some chemicals.";
+		end the game in death;
+	otherwise:
+		say "You lick the [noun].  Ew, it tastes like [noun]!".
+		
+Instead of waving:
+	if the noun is the chemicals:
+		say "You shake a test tube vigorously.  It begins to smoke.  Uh-oh.";
+		end the story saying "You have exploded.";
+	otherwise:
+		say "You shake the [noun] around like an idiot.".
+		
+Instead of pulling:
+	if the noun is a door:
+		say "You have to push, moron.";
+	otherwise:
+		say "You grab onto the [noun] and tug with all your might.[line break][line break]Unfortunately, the [noun] wins the tug-of-war.".
+		
+Instead of pushing:
+	if the noun is a door:
+		say "You have to pull, moron.";
+	if the noun is a person:
+		say "You shove [noun].  [noun] shoves you back.";
+	if the noun is not a door and the noun is not the person:
+		say "You push on the [noun].  It doesn't budge.".
+		
+Instead of turning:
+	say "You spin yourself until you get dizzy.  Then, you fall off of a cliff.".
+	
+Instead of squeezing:
+	say "That's not a stress-relief toy.".
+	
+Instead of burning:
+	if the noun is the donut:
+		if donutcount is greater than 0:
+			say "Noooooo!  That was a perfectly good donut!";
+			decrease donutcount by 1;
+		otherwise:
+			say "You can't see any such thing.";
+	if the noun is the posters:
+		say "You set fire to the posters.  The Jason Biever eyes on them turn red and glare at you.[line break]Uh-oh.";
+		end the story saying "You have incurred the anger of Jason Biever.";
+	if the noun is not the posters and the noun is not the donut:
+		say "You blast your heat vison at the [noun].  It doesn't catch.".
+		
+Teleporting is an action applying to nothing.  Understand "telepurt" as teleporting.
+
+Instead of teleporting:
+	move the player to the science building.
+	
+Instead of waking up:
+	say "You shake your head side-to-side.  You do it so vigorously, in fact, that your brain pops out.";
+	end the game in death.
+	
+Instead of thinking:
+	say "Thinking never got anything done.  It's time for action!"
+	
+Instead of cutting:
+	say "You Karate-chop the [noun].[line break]Ow!"
+		
+Instead of looking under:
+	say "You see the ground."
+	
+Instead of jumping:
+	say "You jump for joy, up into the sky![line break]On the way back down, you break your legs.";
+	end the game in death.
+	
+Instead of tying:
+	say "Who needs rope when you have duct tape?"
+	
+Taping is an action applying to two things.  Understand "tape [something] to [something]" as taping.
+
+Instead of taping:
+	say "You suddenly realize that you have no duct tape.[line break]Nooooooooooooo!  How will you survive without duct tape?";
+	end the game in death.
+	
+Instead of drinking the chemicals:
+	say "You swallow some green stuff and some purple stuff.";
+	end the story saying "You have exploded.".
+	
+Instead of swearing obscenely:
+	say "Watch your language!".
+	
+Instead of swearing mildly:
+	say "That's not very nice.".
+	
+Flying is an action applying to nothing.  Understand "fly" as flying.
+
+Instead of flying:
+	say "You take off into the sky, free as a bird.[line break][line break]Wait a minute…[line break]You're out of gas!";
+	end the story saying "You have crashed.".
+	
+Exploding is an action applying to nothing.  Understand "explode" or "blow up" or "die" or "self destruct" or "self-destruct" or "commit suicide" as exploding.
+
+Instead of exploding:
+	say "Self destruct sequence initiated.[line break]3…[line break]2…[line break]1…[line break]BOOOOOOOM!";
+	end the story saying "You have exploded.".
+	
+Instead of saying sorry:
+	say "You're not sorry."
+	
+Understand "hello" or "wave hello" as waving hands.
+
+Instead of waving hands:
+	if the player is in the quad:
+		say "No one notices you.";
+	otherwise:
+		say "Hello.".
+		
+Instead of singing:
+	say "You break out into your favorite Jason Biever song, 'As Long as You Appreciate Me.'";
+	if Jane is indecisive:
+		say "Jane gasps.[line break]'Are you singing Jason Biever?' she asks.[line break]'Yes,' you reply.[line break]Jane slaps you repeatedly, punches you in the gut, roundhouse-kicks you in the face, and then throws you out of the window.".
+		
+Instead of climbing:
+	say "No can do.  You have twig-arms and chicken-legs."
+	
+Instead of sleeping:
+	say "You have insomnia."
+	
+Defenestrating is an action applying to one thing.  Understand "defenestrate [something]" as defenestrating.
+
 
