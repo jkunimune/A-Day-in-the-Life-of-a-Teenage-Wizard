@@ -30,6 +30,8 @@ Understand "pick [something]" as taking.
 
 Understand "upstairs" as up.
 
+Understand "downstairs" as down.
+
 Understand "lick [something]" as tasting.
 	
 [Player description changes based on where you are in the game and what you are wearing]
@@ -247,8 +249,19 @@ Playing is an action applying to one thing.  Understand "play [something]" or "p
 Instead of playing:
 	if the player is not holding the flute, say "You don't have anything to play.";
 	if the player is holding the flute:
-		if the noun is the flute, say "You play a charming melody on your flute.  The flute grows warm and seems to vibrate with energy--an energy almost magical.[line break]Try playing something specific.";
+		if the noun is the flute, say "You play a charming melody on your flute.  The flute grows warm and seems to vibrate with energy--an energy almost magical.[line break]Try playing a specific melody.";
 		if the noun is not the flute, say "You play the song '[noun]'.  You may know how to play, but that doesn't mean you're good.".
+		
+[This lets people play various tunes, since when you try to play something, inform assumes that something is a tangible object]
+Mary Had a Little Lamb is a thing in the basement.  It is scenery.
+Happy Birthday is a thing in the basement.  It is scenery.
+The Alphabet song is a thing in the basement.  It is scenery.
+The Star Spangled Banner is a thing in the basement.  It is scenery.
+Jingle Bells is a thing in the basement.  It is scenery.
+Do Re Mi is a thing in the basement.  It is scenery.
+Baa Baa Black sheep is a thing in the basement.  It is scenery.
+Chopsticks is a thing in the basement.  It is scenery.
+The thing called Heart and Joy is in the basement.  It is scenery.
 		
 [This is the first spell you learn, the unlocking one.  It unlocks anything applicable in the room]
 Magicing is an action applying to nothing.  Understand "CDEFG" or "play CDEFG" or "play CDEFG on flute" as magicing.
@@ -289,6 +302,8 @@ The Living Room is up from the basement door.  "Your living room is a long room 
 
 The thing called the front door is in the living room.  It is scenery.  The description is "It is open, and through it you can see the bus stop in front of your house."
 
+The thing called the stop is in the living room.  Understand "bus stop" as stop.  It is scenery.  The description is "You don't see a bus.  You may have missed it."
+
 The small table is a supporter in the living room.  It is scenery.  The description is "The table is small and made of glass."
 
 The chairs are supporters in the living room.  Understand "seats" or "chair" or "seat" as chairs.  It is scenery.  The description is "These chairs are pretty typical.  Just some hard, uncomfortable seats."
@@ -323,7 +338,7 @@ The curb is a thing in the street.  It is scenery.  Understand "sidewalk" as cur
 
 The house is a thing in the street.  It is scenery.  Understand "home" as house.  The description is "Your small 1-story house sits next to the road."
 
-The classmates are things in the street.  They are scenery.  Understand "students" or "friend" or "Todd" or "lab partner" or "Kyle" or "crush" or "Jane" as classmates.  The description is "From here, you recognize your friend, Todd, your lab partner, Kyle, and Jane, your crush."
+The classmates are things in the street.  They are scenery.  Understand "students" or "friend" or "Todd" or "lab partner" or "Kyle" or "crush" or "Jane" or "faces" as classmates.  The description is "From here, you recognize your friend, Todd, your lab partner, Kyle, and Jane, your crush."
 
 [I originally intended to have an extra puzzle here where the player had to use a transportation spell to get him to school, but due to time constraints and its general disassociation with the story, I removed it]
 Instead of entering the bus:
@@ -343,7 +358,7 @@ The cars are a thing in the school entrance.  They are scenery.  Understand "par
 
 The thing called the school is a thing in the school entrance.  It is scenery.  Understand "quad" or "academy" or "highschool" or "buildings" as school.  The description is "Your high school is a cluster of buildings sitting atop a low hill to your north."
 
-The schoolsign is a thing in the school entrance.  It is scenery.  Understand "school name" as schoolsign.  The printed name of the schoolsign is "sign".  The description is "The sign is a big colorful rectangle supported by two poles with your school's name printed across."
+The schoolsign is a thing in the school entrance.  It is scenery.  Understand "school name" or "name" or "sign" as schoolsign.  The printed name of the schoolsign is "sign".  The description is "The sign is a big colorful rectangle supported by two poles with your school's name printed across."
 
 The poles are things in the school entrance.  They are scenery.  Understand "posts" or "signposts" or "pole" as poles.  The description is "The poles are a couple of inches thick and appear to be made out of cast aluminum."
 
@@ -433,7 +448,7 @@ Instead of going to the computer lab:
 	if the player is holding the flowers and the rainspell of the book is raintrue:
 		move the player to the computer lab;
 		if the book is beforecs:
-			say "You step into the computer lab just as class begins.  Jane, your crush, is already sitting down.[line break]'Good morning, class,' the teacher says, 'Today, we will be working on our text-adventure games.'[line break]………[line break]'Remember, games are due next class,' the teacher concludes.  Everyone begins to pack up their backpacks and leave.  Jane is leaving, too.  You have to stop her so you can ask her to the dance!";
+			say "You step into the computer lab just as class begins.  Jane, your crush, is already sitting down.[line break]'Good morning, class,' the teacher says, 'Today, we will be working on our text-adventure games.'[line break]• • •[line break]'Remember, games are due next class,' the teacher concludes.  Everyone begins to pack up their backpacks and leave.  Jane is leaving, too.  You have to stop her so you can ask her to the dance!";
 			change the book to aftercs;
 		if the flute is rainy:
 			change the flute to unrainy;
@@ -456,6 +471,7 @@ Bladderstate is a number variable.  The bladderstate is 0.
 
 Decisiveness is a kind of value.  The decisivenesses are decisive and indecisive.  People have decisiveness.  People are usually decisive.
 
+[This is the Jane dialogue tree]
 Instead of asking Jane about "dance":
 	if Jane is in the dance:
 		say "You tap Jane on the shoulder.  She seems glad to see you.  You have the most amazing night of your life, you and Jane have a long happy relationship, and you live happily ever after.";
@@ -494,6 +510,7 @@ Instead of asking Jane about "dance":
 				if the bladderstate is 3, say "[line break]You bounce up and down nervously.  You can't hold it much longer.  Jane looks at you funny.[line break]";
 				if the bladderstate is 4, say "[line break]You can't hold it any longer!  You run to the bathroom without hesitation.  How embarrassing.";
 				if the bladderstate is 4, end the story saying "You have failed to get a date to the dance.";
+				if the bladderstate is 4, stop;
 			if bladderstate is less than 4, say "[line break]'Do you have a date for that?' you inquire abruptly.[line break]'Not yet,' answers Jane, 'If I don't get one soon, I'll probably just skip the dance and go whitewater rafting.  Have you ever been whitewater rafting?'";
 			if player consents:
 				say "[line break][line break][line break]'Pretty fun, huh?' says Jane.";
@@ -502,6 +519,7 @@ Instead of asking Jane about "dance":
 				if the bladderstate is 3, say "[line break]You bounce up and down nervously.  You can't hold it much longer.  Jane looks at you funny.[line break]";
 				if the bladderstate is 4, say "[line break]You can't hold it any longer!  You run to the bathroom without hesitation.  How embarrassing.";
 				if the bladderstate is 4, end the story saying "You have failed to get a date to the dance.";
+				if the bladderstate is 4, stop;
 			otherwise:
 				say "[line break][line break][line break]'It's where you ride down choppy rivers in a raft,' Jane elaborates, 'The best part of it, I think, is just the gurgling, rushing, splashing sound the water makes.'[line break][line break]All those sound effects make you think of is the flushing of a toilet.[line break]";
 				increase bladderstate by 1;
@@ -509,6 +527,7 @@ Instead of asking Jane about "dance":
 				if the bladderstate is 3, say "[line break]You bounce up and down nervously.  You can't hold it much longer.  Jane looks at you funny.[line break]";
 				if the bladderstate is 4, say "[line break]You can't hold it any longer!  You run to the bathroom without hesitation.  How embarrassing.";
 				if the bladderstate is 4, end the story saying "You have failed to get a date to the dance.";
+				if the bladderstate is 4, stop;
 			if bladderstate is less than 4, say "[line break]'Yeah… so, do you want to come to the dance with me?' you blurt out.[line break]'Oh.  Really?  Well…'[line break][line break]She's indecisive!  You should give her something to tip the scales.";
 			change Jane to indecisive.
 	
@@ -550,6 +569,7 @@ Instead of talking Jane:
 				if the bladderstate is 3, say "[line break]You bounce up and down nervously.  You can't hold it much longer.  Jane looks at you funny.[line break]";
 				if the bladderstate is 4, say "[line break]You can't hold it any longer!  You run to the bathroom without hesitation.  How embarrassing.";
 				if the bladderstate is 4, end the story saying "You have failed to get a date to the dance.";
+				if the bladderstate is 4, stop;
 			if bladderstate is less than 4, say "[line break]'Do you have a date for that?' you inquire abruptly.[line break]'Not yet,' answers Jane, 'If I don't get one soon, I'll probably just skip the dance and go whitewater rafting.  Have you ever been whitewater rafting?'";
 			if player consents:
 				say "[line break][line break][line break]'Pretty fun, huh?' says Jane.";
@@ -558,6 +578,7 @@ Instead of talking Jane:
 				if the bladderstate is 3, say "[line break]You bounce up and down nervously.  You can't hold it much longer.  Jane looks at you funny.[line break]";
 				if the bladderstate is 4, say "[line break]You can't hold it any longer!  You run to the bathroom without hesitation.  How embarrassing.";
 				if the bladderstate is 4, end the story saying "You have failed to get a date to the dance.";
+				if the bladderstate is 4, stop;
 			otherwise:
 				say "[line break][line break][line break]'It's where you ride down choppy rivers in a raft,' Jane elaborates, 'The best part of it, I think, is just the gurgling, rushing, splashing sound the water makes.'[line break][line break]All those sound effects make you think of is the flushing of a toilet.[line break]";
 				increase bladderstate by 1;
@@ -565,6 +586,7 @@ Instead of talking Jane:
 				if the bladderstate is 3, say "[line break]You bounce up and down nervously.  You can't hold it much longer.  Jane looks at you funny.[line break]";
 				if the bladderstate is 4, say "[line break]You can't hold it any longer!  You run to the bathroom without hesitation.  How embarrassing.";
 				if the bladderstate is 4, end the story saying "You have failed to get a date to the dance.";
+				if the bladderstate is 4, stop;
 			if bladderstate is less than 4, say "[line break]'Yeah… so, do you want to come to the dance with me?' you blurt out.[line break]'Oh.  Really?  Well…'[line break][line break]She's indecisive!  You should give her something to tip the scales.";
 			change Jane to indecisive.
 
